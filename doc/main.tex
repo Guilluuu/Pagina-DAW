@@ -1,0 +1,406 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{float}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{csquotes}
+
+\setlist[itemize]{noitemsep, topsep=0.25\baselineskip}
+
+\begin{document}
+
+\begin{titlepage}
+
+{\includegraphics[width=0.3\textwidth]{imgs_documento/usc_logo.png}\par}
+\centering
+\vspace{1cm}
+\centering
+
+\vspace{1cm}
+{\scshape\Large Desarrollo de Aplicaciones Web\par}
+\vspace{1cm}
+{\scshape\Large Prototipo de proyecto \par}
+{\scshape\Huge Página web de PetCare \par}
+\vspace{2cm}
+{\Large Autores\par}
+\vspace{0.5cm}
+\begin{tabular}{c}
+\textbf{Marina Collazo Couñago}\\[0.35cm]
+\textbf{Guillermo Fernández Castro}\\[0.35cm]
+\textbf{Andrés Daparte Cabo}
+\end{tabular}
+
+\vfill
+{\Large Febrero 2026 \par}
+\end{titlepage} 
+
+\tableofcontents
+
+\section{Introducción}
+
+\textbf{Tema propuesto}: Página web para la franquicia de clínicas veterinarias “PetCare”.
+
+\textbf{Objetivo del proyecto}: Digitalizar la presencia de dicha franquicia e informar y facilitar sus servicios para alcanzar una mayor clientela, ampliando el alcance de la empresa.
+
+\textbf{Público}: Dueños de mascotas que requieran de cuidados, atención de urgencia, mantenimiento u otros servicios relacionados al bienestar y salud de la mascota.
+
+\textbf{Alcance}: El proyecto tiene como objetivo el desarrollo de un frontend mediante maquetación básica de interfaces web, implementando una navegación funcional entre por lo menos 5 páginas alternativas.
+
+El proyecto abarca el diseño y desarrollo del frontend de un sitio web fundamentalmente informativo para una franquicia de clínicas veterinarias. El entregable final consistirá en un prototipo funcional de al menos 9 páginas enlazadas entre sí, involucrando la maquetación visual de las interfaces de usuario de dichas páginas.
+
+\section{Inventario de contenido}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{imgs_documento/inventarioDeContenido.png}
+\caption{Inventario de contenido}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabularx}{\textwidth}{>{\raggedright\arraybackslash}p{3.6cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{5.2cm}}
+\toprule
+\textbf{Páginas} & \textbf{Elementos clave a exponer} & \textbf{Objetivo del usuario} \\
+\midrule
+Página Principal &
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+\item Buscador global de clínicas.
+\item Botón destacado de Urgencias.
+\item Accesos rápidos a Servicios y Consejos.
+\end{itemize}
+\end{minipage}
+& Acceder rápidamente a la información crítica o iniciar la navegación. \\
+\addlinespace
+Urgencias &
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+\item Listado filtrado: solo clínicas abiertas ahora.
+\item Botones de llamada directa.
+\item Aviso de “Llamar antes de acudir”.
+\end{itemize}
+\end{minipage}
+& Obtener atención veterinaria inmediata sin fricción. \\
+\addlinespace
+Clínicas &
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+\item Buscador por ubicación.
+\item Fichas con dirección y horario.
+\item Formulario emergente para reservar.
+\end{itemize}
+\end{minipage}
+& Localizar un centro y realizar la transacción (reservar cita). \\
+\addlinespace
+Servicios y servicio específico &
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+\item Catálogo de tratamientos (Cirugía, Rayos X...).
+\item Páginas de detalle con explicación del procedimiento.
+\end{itemize}
+\end{minipage}
+& Informarse sobre qué tratamientos ofrece la franquicia. \\
+\addlinespace
+Consejos de Salud y consejo específico &
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+\item Artículos educativos.
+\item Filtros por especie (Perros/Gatos).
+\item Enlaces cruzados para pedir cita.
+\end{itemize}
+\end{minipage}
+& Resolver dudas sobre cuidados y prevención (fidelización). \\
+\addlinespace
+Sobre Nosotros &
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+\item Filosofía y valores (Sostenibilidad).
+\item Información corporativa.
+\end{itemize}
+\end{minipage}
+& Generar confianza y credibilidad en la marca. \\
+\bottomrule
+\end{tabularx}
+\caption{Inventario de contenidos, formato tabla}
+\end{table}
+
+\section{Storyboards}
+\begin{figure}[H]
+\centering
+\rotatebox{90}{\includegraphics[width=\textheight,keepaspectratio]{imgs_documento/storyboard_daw.png}}
+\caption{Storyboard}
+\end{figure}
+
+\section{Arquitectura de información}
+
+\begin{figure}[H]
+\centering
+\includegraphics[ width=1.2\textwidth,height=0.95\textheight,keepaspectratio,clip,trim=0 1950 0 0]{imgs_documento/arquitecturaDeInformacion.png}
+\caption{Arquitectura de información (1/3)}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1.2\textwidth,height=0.95\textheight,keepaspectratio,clip,trim=0 0 0 1407]{imgs_documento/arquitecturaDeInformacion.png}
+\caption{Arquitectura de información (2/2)}
+\end{figure}
+
+\section{Mapa de navegación}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth]{imgs_documento/mapaDeNavegacion.png}
+\caption{Mapa de navegación}
+\end{figure}
+
+\section{Casos de uso abordados}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/casosDeUso_daw.png}
+\caption{Casos de uso}
+\end{figure}
+\clearpage
+
+\section{Guía de estilos y aspectos técnicos}
+
+El diseño de visual de PetCare está fundamentado en proporcionar una estilización de la identidad y asociarse a la psicología del color sanitaria priorizando unos tonos más pasteles, reduciendo la posibilidad de fatiga visual y transmitiendo calma. Se reservan colores más saturados únicamente para las llamadas a acción para guiar la atención del usuario, como sucede por ejemplo en la página principal con el botón grande de “Urgencias”.
+
+\subsection{Paleta de colores}
+
+Se definió un esquema cromático dividido en tres categorías funcionales:
+
+\subsubsection{Colores base}
+
+\begin{itemize}
+\item \#ADB2D4: Usado como acento primario, para estados “seleccionado” y filtros activos.
+\item \#C7D9DD: Utilizado en fondos con degradado suave.
+\item \#D5E5D5: Aplicado en fondos de sección alternativos y badges (etiquetas) de categoría.
+\item \#EEF1DA: Fondos cálidos para secciones informativas ligeras.
+\end{itemize}
+
+\subsubsection{Colores de llamada a la acción}
+
+\begin{itemize}
+\item \#EF5A6F: Color Crítico. Reservado exclusivamente para el botón flotante y avisos de “Urgencias”.
+\item \#7B82A8: Botones de acción principal (CTA), como “Pedir cita” o “Buscar”.
+\item \#88C9A1: Acciones secundarias o de confirmación (ej: “Ver clínicas cercanas”).
+\end{itemize}
+
+\subsubsection{Colores para tipografías y tonos neutros}
+
+\begin{itemize}
+\item Texto Principal (\#2A2D3F): Tono Dark Charcoal para títulos y lectura principal.
+\item Texto Secundario (\#4A4a5E): Tono Medium Gray para cuerpo de texto, descripciones y etiquetas.
+\item Fondos Neutros: Blanco puro (\#FFFFFF) para tarjetas y contenedores; Off-white (\#F9FAFB) para fondos de inputs en formularios.
+\end{itemize}
+
+\subsection{Tipografías}
+
+Se utilizan principalmente dos familias tipográficas de Google Fonts para distinguir claramente la estructura de la página.
+
+Para Títulos: Poppins (Sans-serif geométrica)
+
+Peso: Utilizada exclusivamente en seminegrita.
+
+Propósito: Aportar modernidad y estilizar.
+
+Aplicación: Encabezados h1, h2, h3 y títulos de tarjetas.
+
+Para Cuerpo: Inter (Sans-serif humanista)
+
+Pesos: Utilizada en diversos pesos.
+
+Propósito: Aportar mayor legibilidad independientemente del tamaño de la pantalla del dispositivo.
+
+Aplicación: Párrafos, descripciones, etiquetas de formularios y textos de botones.
+
+\subsection{Identidad visual en el diseño}
+
+Como rasgo relativamente distintivo de la interfaz de usuario se han definido múltiples bordes asimétricos suavizando la rigidez de una maquetación con bordes más afilados.
+
+\section{Interfaces}
+
+\subsection{Bocetos a mano alzada}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/bocetos1.png}
+\caption{Bocetos (1/5)}
+\end{figure}
+\clearpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/bocetos2.png}
+\caption{Bocetos (2/5)}
+\end{figure}
+\clearpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/bocetos3.png}
+\caption{Bocetos (3/5)}
+\end{figure}
+\clearpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/bocetos4.png}
+\caption{Bocetos (4/5)}
+\end{figure}
+\clearpage
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/bocetos5.png}
+\caption{Bocetos (5/5)}
+\end{figure}
+\clearpage
+
+\subsection{Wireframes}
+
+\subsubsection{Página principal}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/wireframes/Wireframe_home.png}
+\caption{Wireframe de página principal}
+\end{figure}
+\clearpage
+
+\subsubsection{Clínicas}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/wireframes/Wireframe_clinicas.png}
+\caption{Wireframe de página de clínicas}
+\end{figure}
+\clearpage
+
+\subsubsection{Urgencias}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/wireframes/Wireframe_urgencias.png}
+\caption{Wireframe de página de urgencias}
+\end{figure}
+\clearpage
+
+\subsubsection{Servicios y tratamientos}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/wireframes/Wireframe-ServiciosYTratamientos.png}
+\caption{Wireframe de página de servicios y tratamientos}
+\end{figure}
+\clearpage
+
+\subsubsection{Servicio específico}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/wireframes/Wireframe_ServicioConcreto.png}
+\caption{Wireframede la página de un servicio específico}
+\end{figure}
+\clearpage
+
+\subsubsection{Sobre nosotros}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/wireframes/Wireframe_QuienesSomos.png}
+\caption{Wireframe de página de información sobre la franquicia}
+\end{figure}
+\clearpage
+
+\subsubsection{Consejos de salud}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/wireframes/Wireframe_Consejos-de-salud.png}
+\caption{Wireframe de la página de consejos de salud para mascotas}
+\end{figure}
+\clearpage
+
+\subsubsection{Consejo específico}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/wireframes/Wireframe_ConsejoSalud.png}
+\caption{Wireframe de la página de un consejo de salud específico}
+\end{figure}
+\clearpage
+
+\subsubsection{Solicitud de cita}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/wireframes/Wireframe_ventanaModalCita.png}
+\caption{Wireframe del formulario para “Pedir cita”}
+\end{figure}
+
+\subsection{Mockups}
+
+\subsubsection{Página principal}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/mockups/home.png}
+\caption{Mockup de página principal}
+\end{figure}
+\clearpage
+
+\subsubsection{Clínicas}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/mockups/clinicas.png}
+\caption{Mockup de página de clínicas}
+\end{figure}
+\clearpage
+
+\subsubsection{Urgencias}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/mockups/urgencias.png}
+\caption{Mockup de página de urgencias}
+\end{figure}
+\clearpage
+
+\subsubsection{Servicios y tratamientos}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/mockups/servicios.png}
+\caption{Mockup de página de servicios y tratamientos}
+\end{figure}
+\clearpage
+
+\subsubsection{Consejos de salud}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/mockups/consejos.png}
+\caption{Mockup de la página de consejos de salud para mascotas}
+\end{figure}
+\clearpage
+
+\subsubsection{Sobre nosotros}
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/mockups/quienes-somos.png}
+\caption{Mockup de página de información sobre la franquicia}
+\end{figure}
+
+\section{Estructura de ficheros}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/estructuraDeFicheros.png}
+\caption{Estructura de ficheros}
+\end{figure}
+
+\end{document}
