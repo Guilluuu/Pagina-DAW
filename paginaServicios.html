@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -14,26 +14,56 @@
     <a href="paginaServicios.html"> Servicios</a>
     <a href="paginaConsejosSalud.html"> Consejos de salud</a>
     <a href="paginaSobreNosotros.html"> Sobre Nosotros</a>
-    <button onclick="document.location='paginaClinicas.html'">Pedir cita</button>
-    <button onclick="document.location='paginaUrgencias.html'">Urgencias</button>
+    <a href="paginaClinicas.html">Pedir cita</a>
+    <a href="paginaUrgencias.html">Urgencias</a>
   </nav>
 
-  <head>
+  <header>
     <h2>Servicios y tratamientos</h2>
     <p> textotextotextotextotexto </p>
-    <button> Buscar </button>
-    <form name="buscarServicio">
-      <input type="text" placeholder="Buscar servicios..." name="servicio">
-    </form>
+    <search>
+      <form name="buscarServicio">
+        <input type="search" placeholder="Buscar servicios..." name="servicio">
+        <button>
+          <img src="images/search-icon.svg" alt="Icono de búsqueda" style="width:16px; height:16px;">
+          Buscar
+        </button>
+      </form>
+    </search>
     <button>Ordenar</button>
-  </head>
+  </header>
 
   <main>
-    <section>
-      <h3> Nombre del tratamiento </h3>
-      <p> textotextotextotextotextotextotexto </p>
-      <img src="images/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-    </section>
+    <ul>
+      <li>
+        <article>
+          <img src="images/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
+          <strong> Nombre del tratamiento </strong>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
+            Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..</p>
+        </article>
+      </li>
+
+      <li>
+        <article>
+          <img src="images/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
+          <strong> Nombre del tratamiento </strong>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
+            Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..</p>
+        </article>
+      </li>
+
+      <li>
+        <article>
+          <img src="images/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
+          <strong> Nombre del tratamiento </strong>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
+            Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..</p>
+        </article>
+      </li>
+
+
+    </ul>
   </main>
 
 </body>

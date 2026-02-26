@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -14,24 +14,64 @@
     <a href="paginaServicios.html"> Servicios</a>
     <a href="paginaConsejosSalud.html"> Consejos de salud</a>
     <a href="paginaSobreNosotros.html"> Sobre Nosotros</a>
-    <button onclick="document.location='paginaClinicas.html'">Pedir cita</button>
-    <button onclick="document.location='paginaUrgencias.html'">Urgencias</button>
+    <a href="paginaClinicas.html">Pedir cita</a>
+    <a href="paginaUrgencias.html">Urgencias</a>
   </nav>
 
-  <head>
-    <h2>Consejos de salud para tus mascotas</h2>
-    <button>Perros</button>
-    <button>Gatos</button>
-    <button>Otros</button>
-  </head>
+  <header>
+    <h1>Consejos de salud para tus mascotas</h1>
+    
+    <a href="paginaConsejosSalud.html">Perros</a>
+    <a href="paginaConsejosSalud.html">Gatos</a>
+    <a href="paginaConsejosSalud.html">Otros</a>
+    <search>
+      <form name="buscarClinica">
+        <input type="search" placeholder="Buscar consejos..." name="clinica">
+        <button>
+          <img src="images/search-icon.svg" alt="Icono de búsqueda" style="width:16px; height:16px;">
+          Buscar
+        </button>
+      </form>
+    </search>
+  </header>
+
 
   <main>
-    <section>
-      <h3> Nombre del consejo </h3>
-      <p> Tipo del consejo </p>
-      <p> textotextotextotextotexto </p>
-      <img src="images/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-    </section>
+    <ul>
+      <li>
+        <article>
+          <img src="images/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
+
+          <a href="paginaConsejoEspecifico.html">Nombre del consejo</a>
+          <p>Tipo del consejo</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
+            Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..</p>
+        </article>
+      </li>
+
+      <li>
+        <article>
+          <img src="images/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
+
+          <a href="paginaConsejoEspecifico.html">Nombre del consejo</a>
+          <p>Tipo del consejo</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
+            Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..</p>
+        </article>
+      </li>
+      
+      <li>
+        <article>
+          <img src="images/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
+
+          <a href="paginaConsejoEspecifico.html">Nombre del consejo</a>
+          <p>Tipo del consejo</p>
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
+            Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..</p>
+        </article>
+      </li>
+  
+    </ul>
   </main>
 
 </body>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare - Pedir Cita</title>
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+</head>
+
+<body>
+    <nav>
+        <a href="paginaPrincipal.html"> <img src="images/logo.png" alt="logo PetCare" width="40" height="40"> </a>
+        <a href="paginaServicios.html"> Servicios</a>
+        <a href="paginaConsejosSalud.html"> Consejos de salud</a>
+        <a href="paginaSobreNosotros.html"> Sobre Nosotros</a>
+        <a href="paginaClinicas.html">Pedir cita</a>
+        <a href="paginaUrgencias.html">Urgencias</a>
+    </nav>
+
+    <header>
+        <h1>Nombre de la clínica</h1>
+        <address>Dirección de la clínica</address>
+        <p>Por favor, complete el siguiente formulario para agendar una cita con nosotros.</p>
+    </header>
+
+    <main>
+        <section>
+            <form action="paginaClinicas.html" method="get">
+
+                <fieldset>
+                    <legend>Datos del Propietario</legend>
+                    <p>
+                        <label for="nombre">Nombre completo:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre completo">
+                    </p>
+                    <p>
+                        <label for="telefono">Teléfono de contacto:</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Número de teléfono">
+                    </p>
+                    <p>
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+                    </p>
+                </fieldset>
+
+
+
+                <fieldset>
+                    <legend>Datos de la Mascota</legend>
+                    <label for="nombreMascota">Nombre de la mascota:</label>
+                    <input type="text" id="nombreMascota" name="nombreMascota" required>
+                    <label for="especie">Especie de tu mascota:</label>
+                    <input type="radio" id="perro" name="especie" value="perro" required>
+                    <label for="perro">Perro</label>
+                    <input type="radio" id="gato" name="especie" value="gato">
+                    <label for="gato">Gato</label>
+                    <input type="radio" id="otro" name="especie" value="otro">
+                    <label for="otro">Otro</label>
+                </fieldset>
+
+
+
+                <fieldset>
+                    <legend>Horario de la cita</legend>
+                    <p>
+                        <label for="fecha">Fecha de la cita:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </p>
+                    <p>
+                        <label for="hora">Hora de la cita:</label>
+                        <input type="time" id="hora" name="hora" required>
+                    </p>
+                </fieldset>
+
+
+
+                <p>
+                    <button type="submit">Enviar Solicitud</button>
+                    <button type="reset">Limpiar Formulario</button>
+                </p>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
