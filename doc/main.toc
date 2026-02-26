@@ -1,0 +1,46 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{}%
+\contentsline {section}{\numberline {2}Inventario de contenido}{3}{}%
+\contentsline {section}{\numberline {3}Storyboards}{5}{}%
+\contentsline {section}{\numberline {4}Arquitectura de información}{6}{}%
+\contentsline {section}{\numberline {5}Mapa de navegación}{8}{}%
+\contentsline {section}{\numberline {6}Casos de uso abordados}{9}{}%
+\contentsline {section}{\numberline {7}Guía de estilos y aspectos técnicos}{10}{}%
+\contentsline {subsection}{\numberline {7.1}Paleta de colores}{10}{}%
+\contentsline {subsubsection}{\numberline {7.1.1}Colores base}{10}{}%
+\contentsline {subsubsection}{\numberline {7.1.2}Colores de llamada a la acción}{10}{}%
+\contentsline {subsubsection}{\numberline {7.1.3}Colores para tipografías y tonos neutros}{10}{}%
+\contentsline {subsection}{\numberline {7.2}Tipografías}{10}{}%
+\contentsline {subsection}{\numberline {7.3}Identidad visual en el diseño}{11}{}%
+\contentsline {section}{\numberline {8}Interfaces}{12}{}%
+\contentsline {subsection}{\numberline {8.1}Bocetos a mano alzada}{12}{}%
+\contentsline {subsection}{\numberline {8.2}Wireframes}{17}{}%
+\contentsline {subsubsection}{\numberline {8.2.1}Página principal}{17}{}%
+\contentsline {subsubsection}{\numberline {8.2.2}Clínicas}{18}{}%
+\contentsline {subsubsection}{\numberline {8.2.3}Urgencias}{19}{}%
+\contentsline {subsubsection}{\numberline {8.2.4}Servicios y tratamientos}{20}{}%
+\contentsline {subsubsection}{\numberline {8.2.5}Servicio específico}{21}{}%
+\contentsline {subsubsection}{\numberline {8.2.6}Sobre nosotros}{22}{}%
+\contentsline {subsubsection}{\numberline {8.2.7}Consejos de salud}{23}{}%
+\contentsline {subsubsection}{\numberline {8.2.8}Consejo específico}{24}{}%
+\contentsline {subsubsection}{\numberline {8.2.9}Solicitud de cita}{25}{}%
+\contentsline {subsection}{\numberline {8.3}Mockups}{26}{}%
+\contentsline {subsubsection}{\numberline {8.3.1}Página principal}{26}{}%
+\contentsline {subsubsection}{\numberline {8.3.2}Clínicas}{27}{}%
+\contentsline {subsubsection}{\numberline {8.3.3}Urgencias}{28}{}%
+\contentsline {subsubsection}{\numberline {8.3.4}Servicios y tratamientos}{29}{}%
+\contentsline {subsubsection}{\numberline {8.3.5}Consejos de salud}{30}{}%
+\contentsline {subsubsection}{\numberline {8.3.6}Sobre nosotros}{31}{}%
+\contentsline {subsubsection}{\numberline {8.3.7}Servicio específico}{32}{}%
+\contentsline {subsubsection}{\numberline {8.3.8}Solicitud de cita}{33}{}%
+\contentsline {section}{\numberline {9}Estructura de ficheros}{35}{}%
+\contentsline {section}{\numberline {10}Mapas de etiquetas HTML}{36}{}%
+\contentsline {subsection}{\numberline {10.1}Página principal}{36}{}%
+\contentsline {subsection}{\numberline {10.2}Clínicas}{38}{}%
+\contentsline {subsection}{\numberline {10.3}Urgencias}{40}{}%
+\contentsline {subsection}{\numberline {10.4}Servicios y tratamientos}{42}{}%
+\contentsline {subsection}{\numberline {10.5}Servicio específico}{44}{}%
+\contentsline {subsection}{\numberline {10.6}Sobre nosotros}{46}{}%
+\contentsline {subsection}{\numberline {10.7}Consejos de salud}{48}{}%
+\contentsline {subsection}{\numberline {10.8}Consejo específico}{50}{}%
+\contentsline {subsection}{\numberline {10.9}Solicitud de cita}{52}{}%
