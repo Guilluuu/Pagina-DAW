@@ -1,31 +1,101 @@
 @import "main.css";
-.service-header{
 
+.service-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6%;
+    gap: 80px;
 }
-.service-header strong{
-    margin-top: %;
-    margin-bottom: 2%;
-    font-size: 25px;
-    margin-left: 4%;
-    
+
+
+.service-header-text {
+    max-width: 550px;
 }
-.service-header img{
-    margin-left: 40%;
+
+
+.service-header-text strong {
+    display: block;
+    font-size: 42px; 
+    margin-bottom: 16px;
 }
+
+
+.service-header-text p {
+    font-size: 20px;
+    color: #6b7280;   
+}
+
+
+.service-header img {
+
+    width: 480px;
+    border-radius: 20px;
+}
+
 .service-hgroup{
+    
+    margin-top: 3%;
 
 }
 .service-hgroup p {
     max-width: 90%;     
-    margin-left: 7%;
-    margin-right: 7%;
+    margin-left: 20%;
+    margin-right: 20%;
     
     text-align: justify;
     line-height: 1.6;
-    color: #5f6b73;
+    color: #616161;
     font-size: 15px;
 
 }
 .service-hgroup h2{
-    margin-left: 6%;    
+    margin-left: 18%;    
+}
+
+.service-footer{
+    text-align: center;
+}
+
+.service-footer {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0;
+}
+
+.service-footer-card {
+    background: linear-gradient(135deg, #dfe7c7, #bcd3c2);
+    padding: 50px 60px;
+    border-radius: 28px;
+    text-align: center;
+    max-width: 700px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.service-footer-card strong {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.service-footer-card p {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 28px;
+}
+
+.service-footer-btn {
+    display: inline-block;
+    background: #7b82b8;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    transition: 0.2s;
+}
+
+.service-footer-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(0,0,0,0.18);
 }
