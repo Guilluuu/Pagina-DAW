@@ -1,0 +1,62 @@
+.main-navbar {
+    display: flex;
+    align-items: center; /* Centra los elementos verticalmente en el eje transversal */
+    padding: 1rem 5%;
+    background-color: #ffffff;
+    font-family: sans-serif;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Sombra sutil para separar la navbar */
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #6c757d; /* Color gris para los enlaces estándar */
+    font-size: 0.9rem;
+    margin-left: 2rem;
+}
+
+/* --- LOGO --- */
+.main-logo {
+    display: flex;
+    align-items: center;
+    color: #4a5568 !important; /* Texto oscuro */
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 0 !important; /* Resetea el margen genérico */
+}
+
+.main-logo img {
+    height: 35px;
+    margin-right: 10px;
+}
+
+/* --- SEPARACIÓN IZQUIERDA/DERECHA --- */
+/* Como no podemos modificar el HTML para agrupar los enlaces derechos en un div, 
+   aplicamos este margen al primer enlace después del logo */
+.main-navbar a:nth-child(2) {
+    margin-left: auto; /* (Absorbe todo el espacio sobrante en el contenedor flex, empujando el resto a la derecha) */
+}
+
+/* --- BOTONES FINALES --- */
+/* Utilizamos pseudo-clases (selectores basados en la posición del elemento en el DOM) 
+   para aislar los dos últimos enlaces sin añadir clases en el HTML */
+
+/* Botón "Pedir cita" (Penúltimo elemento) */
+.main-navbar a:nth-last-child(2) {
+    background-color: #7b86a8; /* Azul grisáceo */
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+}
+
+/* Botón "Urgencias" (Último elemento) */
+.main-navbar a:last-child {
+    background-color: #f4647c; /* Rosa/rojo */
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+}
+.bg-gradient-1{
+    background: #2A7B9B;
+    background: linear-gradient(0deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
