@@ -76,21 +76,30 @@ a:link, a:visited {
     font-size: 0.9rem
 }
 
-.contenedor-tarjetas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: space-around;
-    margin-top: 2rem;
-    list-style: none;
+main {
+    max-width: 1000px; 
+    margin: 0 auto;    
+    padding: 0 1rem;   
 }
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 5rem;
+    margin-top: 2rem;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 5rem;
+}
+
 
 .tarjeta {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  padding: 1rem;
+  padding: 1.5rem;
   width:100%;
+  max-width: 30rem;
 }
 
 .tarjeta-cabecera {
@@ -110,11 +119,20 @@ a:link, a:visited {
 
 .ubicacion {
   grid-column: 2;
+  color: var(--color-texto-secondary);
+  
 }
 
 .alerta-urgencias {
   grid-column: 2;
   justify-self: start;
+  font-size: 0.7rem;
+  padding: 0.2rem;
+}
+
+.horario {
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .linea-flex {
@@ -126,6 +144,7 @@ a:link, a:visited {
 .separador-tarjeta {
   width: 100%;
   color: black;
+  margin:0;
 }
 
 .tarjeta-pie {
