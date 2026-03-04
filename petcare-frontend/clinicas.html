@@ -10,45 +10,70 @@
 </head>
 
 <body>
-  <nav>
+  <nav class="main-navbar">
     <a href="index.html"> <img src="assets/imgs/logo.png" alt="logo PetCare" style="width:40px;height:40px;"> </a>
     <a href="servicios.html"> Servicios</a>
     <a href="consejos.html"> Consejos de salud</a>
     <a href="sobre-nosotros.html"> Sobre Nosotros</a>
-    <a href="clinicas.html">Pedir cita</a>
-    <a href="urgencias.html">Urgencias</a>
+    <a class="borde-asimetrico" href="clinicas.html">Pedir cita</a>
+    <a class="borde-asimetrico" href="urgencias.html">Urgencias</a>
   </nav>
 
-  <header>
+  <header class="header-busqueda bg-gradient-1">
     <h1>Encuentra tu clínica</h1>
     <p> textotextotextotextotexto </p>
-    <search>
-      <form name="buscarClinica">
-        <input type="search" placeholder="Encuentra tu clínica..." name="clinica">
-        <button>
-          <img src="assets/imgs/search-icon.svg" alt="Icono de búsqueda" style="width:16px; height:16px;">
+    <search class="contenedor-busqueda">
+      <form name="buscarClinica" class="formulario-busqueda">
+        <input class="boton input-busqueda borde-asimetrico" type="search" placeholder="Encuentra tu clínica..." name="clinica">
+        <button class="boton boton-buscar borde-asimetrico">
+          <img src="assets/imgs/search-icon.svg" class="icono-pequeno" alt="Icono de búsqueda">
           Buscar
-        </button>      </form>
+        </button>      
+      </form>
+      <a href="clinicas.html" class="boton boton-clinicas filtro borde-asimetrico">
+        <img class="icono-pequeno" src="assets/imgs/placeholder.png" alt=""> Clínicas más cercanas
+      </a>
+      <menu class="contenedor-filtros">
+        <li><button class="boton borde-asimetrico filtro">Ordenar</button></li>
+        <li><button class="boton borde-asimetrico filtro">Horarios</button></li>
+        <li><button class="boton borde-asimetrico filtro">Servicios</button></li>
+      </menu>
     </search>
-    <a href="clinicas.html">Clínicas más cercanas</a>
-    <button>Ordenar</button>
-    <button>Horarios</button>
-    <button>Servicios</button>
+
   </header>
 
   <main>
-
-    <ul>
+    <ul class="contenedor-tarjetas">
       <li>
-        <article>
-          <strong> Nombre de la clínica </strong>
-          <address>Ubicación de la clínica</address>
-          <p> Esta clínica atiende en casos de urgencias</p>
-          <time datetime="08:00">08:00</time>
-          <p> Horario de la clínica </p>
-          <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-          <p>Numero de teléfono</p>
-          <a href="pedir-cita.html">Pedir cita</a>
+        <article class="tarjeta borde-asimetrico">
+          <header class="tarjeta-cabecera">
+            <img class="foto-pequena" src="assets/imgs/placeholder.png" alt="imagen consejo 1">
+            <strong class="titulo-clinica"> Nombre de la clínica </strong>
+            <address class="linea-flex ubicacion">
+              <img class="icono-pequeno" src="assets/imgs/placeholder.png">
+              Ubicación de la clínica
+            </address>
+            <p class="linea-flex filtro"> 
+              <img class="icono-pequeno" src="assets/imgs/placeholder.png"> 
+              Esta clínica atiende en casos de urgencias
+            </p>
+          </header>
+
+          <hr class="separador-tarjeta">
+
+          <p class="linea-flex"> 
+            <img class="icono-pequeno" src="assets/imgs/placeholder.png"> 
+            Horario de la clínica 
+            <time datetime="08:00">08:00</time>
+          </p>
+
+          <footer class="tarjeta-pie">
+            <p class="linea-flex">
+              <img class="icono-pequeno" src="assets/imgs/placeholder.png"> 
+              Numero de teléfono
+            </p>
+            <a class="filtro" href="pedir-cita.html">Pedir cita</a>
+          </footer>
         </article>
       </li>
       <li>

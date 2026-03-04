@@ -1,1 +1,137 @@
 @import "main.css";
+
+.boton {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+}
+
+.header-busqueda{
+  padding: 5rem;
+}
+
+.contenedor-busqueda {
+  display: flex;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.formulario-busqueda {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.filtro {
+  background-color: var(--color-fondo-inputs);
+  border: 2px solid gainsboro;
+}
+
+.boton-buscar {
+  border: none;
+  background-color: var(--color-cta-primary);
+  color: white;
+}
+
+.boton-clinicas {
+  border: none;
+  background-color: var(--color-cta-secondary);
+  color: white;
+}
+
+.contenedor-filtros {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+}
+
+.input-busqueda {
+    background-color: white;
+    border: none;
+    width: 20rem;
+    padding: 0.6rem 1.2rem;
+}
+
+.icono-pequeno {
+  width: 1rem;
+  height: 1rem;
+}
+
+.foto-pequena {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  grid-column: 1;
+  grid-row: 1/4;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: var(--color-texto-main);
+    font-size: 0.9rem
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+    margin-top: 2rem;
+    list-style: none;
+}
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  width:100%;
+}
+
+.tarjeta-cabecera {
+  display: grid;
+  grid-template-columns: 2rem 1fr;
+  grid-template-rows: auto auto auto;
+  column-gap: 0.5rem;
+  row-gap: 0.4rem;
+  align-items: center;
+}
+
+.titulo-clinica {
+  grid-column: 2;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.ubicacion {
+  grid-column: 2;
+}
+
+.alerta-urgencias {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.linea-flex {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.separador-tarjeta {
+  width: 100%;
+  color: black;
+}
+
+.tarjeta-pie {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+

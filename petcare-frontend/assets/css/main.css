@@ -21,9 +21,9 @@
 }
 
 body {
-    font-family: var(--font-body) ;
-    color: var(--color-text-secondary);
-    background-color: var(--color-bg-card);
+    font-family: var(--fuente-normal) ;
+    color: var(--color-texto-secondary);
+    background-color: var(--color-fondo-tarjetas);
     margin: 0;
     padding: 0;
 }
@@ -90,6 +90,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 .bg-gradient-1{
     background: #2A7B9B;
-    background: linear-gradient(0deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
-    opacity: 75%;
+    background: linear-gradient(0deg, rgba(42, 123, 155, 0.3) 0%, rgba(87, 199, 133, 0.3) 50%, rgba(237, 221, 83, 0.3) 100%);
 }
