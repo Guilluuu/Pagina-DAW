@@ -1,1 +1,119 @@
 @import "main.css";
+.boton {
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+}
+
+.filtro {
+  background-color: var(--color-fondo-inputs);
+  border: 2px solid gainsboro;
+}
+
+.titulo {
+  align-self: center;
+}
+
+.boton-clinicas {
+  border: none;
+  background-color: var(--color-fondo-tarjetas);
+  padding: 3rem 2rem;
+  font-weight: bold;
+}
+
+.icono-pequeno {
+  width: 1rem;
+  height: 1rem;
+}
+.icono-grande {
+  width: 2rem;
+  height: 2rem;
+}
+
+.header {
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: var(--color-texto-main);
+    font-size: 0.9rem
+}
+
+main {
+    max-width: 1000px; 
+    margin: 0 auto;    
+    padding: 0 1rem;   
+}
+
+.contenedor-tarjetas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 5rem;
+    margin-top: 2rem;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 5rem;
+}
+
+
+.tarjeta {
+  display: grid;
+  grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'foto titulo'
+    'foto ubicacion'
+    'foto alerta'
+    'separador separador'
+    'horario horario'
+    'telefono pedir-cita';
+  align-items: center;
+  justify-items: start;
+  gap: 2rem;
+  background-color: #f2f2f2;
+  padding: 1.5rem;
+  width:100%;
+  max-width: 30rem;
+}
+.titulo-clinica {  grid-area:titulo; }
+.ubicacion {  grid-area: ubicacion; }
+.horario {  grid-area: horario; }
+.numero-telefono {  grid-area: telefono; }
+
+.alerta-urgencias {  
+  grid-area: alerta; 
+  padding: 0.25rem 0.5rem;
+}
+
+.foto-clinica {
+  grid-area:foto;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.separador-tarjeta {
+  grid-area: separador;
+  width: 100%;
+  color: var(--color-texto-secondary);
+}
+
+.pedir-cita {
+  grid-area: pedir-cita;
+  justify-self: end;
+  align-self: end;
+}
+
+.linea-flex {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+

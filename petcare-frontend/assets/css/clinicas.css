@@ -60,14 +60,6 @@
   height: 1rem;
 }
 
-.foto-pequena {
-  width: 2rem;
-  height: 2rem;
-  object-fit: cover;
-  grid-column: 1;
-  grid-row: 1/4;
-}
-
 a:link, a:visited {
     text-decoration: none;
     color: var(--color-texto-main);
@@ -110,16 +102,23 @@ main {
   width:100%;
   max-width: 30rem;
 }
-.titulo-clinica {  grid-area:titulo; }
+.titulo-clinica {  
+  grid-area:titulo; 
+}
 .ubicacion {  grid-area: ubicacion; }
-.alerta-urgencias {  grid-area: alerta; }
 .horario {  grid-area: horario; }
 .numero-telefono {  grid-area: telefono; }
+
+.alerta-urgencias {  
+  grid-area: alerta; 
+  padding: 0.25rem 0.5rem;
+}
 
 .foto-clinica {
   grid-area:foto;
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .separador-tarjeta {

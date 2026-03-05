@@ -19,72 +19,130 @@
     <a href="urgencias.html">Urgencias</a>
   </nav>
 
-  <header>
-    <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-    <h2>Si es posible, llame antes de acudir a la clínica</h2>
-    <a href="clinicas.html">Clínicas más cercanas</a>
+  <header class="header bg-gradient-1">
+    <h1 class="titulo"> <img src="assets/imgs/warning-icon.svg" class="icono-grande" alt="Icono de alerta"> Trate de llamar antes de acudir a la clínica</h1>
+    <a class="borde-asimetrico boton boton-clinicas" href="clinicas.html">Clínicas abiertas más cercanas</a>
   </header>
 
   <main>
-    <ul>
+    <ul class="contenedor-tarjetas">
       <li>
-        <article>
-          <strong> Nombre de la clínica </strong>
-          <p>
-            <img src="assets/imgs/gps-icon.svg" alt="Icono de ubicación" style="width:16px; height:16px;">
-            Ubicación
-          </p>
-          <address>Ubicación de la clínica</address>
-          <p>
-            <img src="assets/imgs/warning-icon.svg" alt="Icono de aviso" style="width:16px; height:16px;">
+        <article class="tarjeta borde-asimetrico">
+          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica1.jpg" alt="imagen consejo 1">
+          <strong class="titulo-clinica"> Nombre de la clínica </strong>
+          <address class="linea-flex ubicacion">
+            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
+            Ubicación de la clínica
+          </address>
+          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
+            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
             Esta clínica atiende en casos de urgencias
           </p>
-          <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-          <p>Numero de teléfono</p>
-          <!-- <button>Llamar ahora</button> -->
-          <a href="tel:+34000000000">Llamar ahora</a>
+
+          <hr class="separador-tarjeta">
+
+          <p class="linea-flex horario">
+            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
+            Horario de la clínica
+            <time datetime="08:00">08:00</time>
+          </p>
+
+          <p class="linea-flex numero-telefono">
+            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
+            Numero de teléfono
+          </p>
+          <a class="pedir-cita boton borde-asimetrico filtro" href="pedir-cita.html">Pedir cita</a>
         </article>
       </li>
 
       <li>
-        <article>
-          <strong> Nombre de la clínica </strong>
-          <p>
-            <img src="assets/imgs/gps-icon.svg" alt="Icono de ubicación" style="width:16px; height:16px;">
-            Ubicación
-          </p>
-          <address>Ubicación de la clínica</address>
-          <p>
-            <img src="assets/imgs/warning-icon.svg" alt="Icono de aviso" style="width:16px; height:16px;">
+        <article class="tarjeta borde-asimetrico">
+          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica2.jpg" alt="imagen consejo 1">
+          <strong class="titulo-clinica"> Nombre de la clínica </strong>
+          <address class="linea-flex ubicacion">
+            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
+            Ubicación de la clínica
+          </address>
+          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
+            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
             Esta clínica atiende en casos de urgencias
           </p>
-          <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-          <p>Numero de teléfono</p>
-          <a href="tel:+34000000000">Llamar ahora</a>
+
+          <hr class="separador-tarjeta">
+
+          <p class="linea-flex horario">
+            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
+            Horario de la clínica
+            <time datetime="08:00">08:00</time>
+          </p>
+
+          <p class="linea-flex numero-telefono">
+            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
+            Numero de teléfono
+          </p>
+          <a class="pedir-cita boton borde-asimetrico filtro" href="pedir-cita.html">Pedir cita</a>
         </article>
       </li>
 
       <li>
-        <article>
-          <strong> Nombre de la clínica </strong>
-          <p>
-            <img src="assets/imgs/gps-icon.svg" alt="Icono de ubicación" style="width:16px; height:16px;">
-            Ubicación
-          </p>
-          <address>Ubicación de la clínica</address>
-          <p>
-            <img src="assets/imgs/warning-icon.svg" alt="Icono de aviso" style="width:16px; height:16px;">
+        <article class="tarjeta borde-asimetrico">
+          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica3.jpg" alt="imagen consejo 1">
+          <strong class="titulo-clinica"> Nombre de la clínica </strong>
+          <address class="linea-flex ubicacion">
+            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
+            Ubicación de la clínica
+          </address>
+          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
+            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
             Esta clínica atiende en casos de urgencias
           </p>
-          <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-          <p>Numero de teléfono</p>
-          <a href="tel:+34000000000">Llamar ahora</a>
+
+          <hr class="separador-tarjeta">
+
+          <p class="linea-flex horario">
+            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
+            Horario de la clínica
+            <time datetime="08:00">08:00</time>
+          </p>
+
+          <p class="linea-flex numero-telefono">
+            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
+            Numero de teléfono
+          </p>
+          <a class="pedir-cita boton borde-asimetrico filtro" href="pedir-cita.html">Pedir cita</a>
+        </article>
+      </li>
+
+      <li>
+        <article class="tarjeta borde-asimetrico">
+          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica4.jpeg" alt="imagen consejo 1">
+          <strong class="titulo-clinica"> Nombre de la clínica </strong>
+          <address class="linea-flex ubicacion">
+            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
+            Ubicación de la clínica
+          </address>
+          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
+            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
+            Esta clínica atiende en casos de urgencias
+          </p>
+
+          <hr class="separador-tarjeta">
+
+          <p class="linea-flex horario">
+            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
+            Horario de la clínica
+            <time datetime="08:00">08:00</time>
+          </p>
+
+          <p class="linea-flex numero-telefono">
+            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
+            Numero de teléfono
+          </p>
+          <a class="pedir-cita boton borde-asimetrico filtro" href="pedir-cita.html">Pedir cita</a>
         </article>
       </li>
     </ul>
   </main>
-
-
 </body>
 
 </html>
