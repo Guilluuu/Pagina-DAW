@@ -73,15 +73,34 @@ main {
 }
 
 .contenedor-tarjetas {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem 5rem;
     margin-top: 2rem;
     padding: 0;
     list-style: none;
     margin-bottom: 5rem;
+    width: 100%;
+    overflow: hidden; 
 }
 
+.contenedor-tarjetas li {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    .contenedor-tarjetas li {
+        width: 47%; 
+    }
+
+    .contenedor-tarjetas li:nth-child(odd) {
+        float: left; 
+        margin-right: 6%;
+    }
+
+    .contenedor-tarjetas li:nth-child(even) {
+        float: right; 
+        margin-right: 0;
+    }
+}
 
 .tarjeta {
   display: grid;
@@ -96,10 +115,10 @@ main {
     'telefono pedir-cita';
   align-items: center;
   justify-items: start;
-  gap: 2rem;
+  gap: 1rem;
   background-color: #f2f2f2;
   padding: 1.5rem;
-  width:100%;
+  width:90%;
   max-width: 30rem;
 }
 .titulo-clinica {  
@@ -124,7 +143,9 @@ main {
 .separador-tarjeta {
   grid-area: separador;
   width: 100%;
-  color: var(--color-texto-secondary);
+  background-color: gainsboro;
+  border:0;
+  height: 1px;
 }
 
 .pedir-cita {
@@ -141,4 +162,50 @@ main {
   gap: 0.5rem;
 }
 
+.modal {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.modal:target {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-contenido {
+  background-color: var(--color-fondo-tarjetas, #fff);
+  padding: 2rem;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.modal-contenido iframe {
+  width: 100%;
+  height: 550px;
+  border: none;
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--color-texto-main, #333);
+  font-weight: bold;
+  line-height: 1;
+}
+
+.cerrar-modal:hover {
+  color: red;
+}
 
