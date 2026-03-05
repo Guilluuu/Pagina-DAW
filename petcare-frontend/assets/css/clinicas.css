@@ -1,7 +1,6 @@
 @import "main.css";
 
 .boton {
-  display: flex;
   align-items: center;
   padding: 0.8rem 1.2rem;
 }
@@ -12,7 +11,6 @@
 
 .contenedor-busqueda {
   display: flex;
-  align-items: start;
   flex-wrap: wrap;
   gap: 1rem;
 }
@@ -94,63 +92,54 @@ main {
 
 
 .tarjeta {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'foto titulo'
+    'foto ubicacion'
+    'foto alerta'
+    'separador separador'
+    'horario horario'
+    'telefono pedir-cita';
+  align-items: center;
+  justify-items: start;
+  gap: 2rem;
   background-color: #f2f2f2;
   padding: 1.5rem;
   width:100%;
   max-width: 30rem;
 }
+.titulo-clinica {  grid-area:titulo; }
+.ubicacion {  grid-area: ubicacion; }
+.alerta-urgencias {  grid-area: alerta; }
+.horario {  grid-area: horario; }
+.numero-telefono {  grid-area: telefono; }
 
-.tarjeta-cabecera {
-  display: grid;
-  grid-template-columns: 2rem 1fr;
-  grid-template-rows: auto auto auto;
-  column-gap: 0.5rem;
-  row-gap: 0.4rem;
-  align-items: center;
+.foto-clinica {
+  grid-area:foto;
+  width: 100%;
+  height: 100%;
 }
 
-.titulo-clinica {
-  grid-column: 2;
-  margin: 0;
-  font-size: 1.2rem;
-}
-
-.ubicacion {
-  grid-column: 2;
+.separador-tarjeta {
+  grid-area: separador;
+  width: 100%;
   color: var(--color-texto-secondary);
-  
 }
 
-.alerta-urgencias {
-  grid-column: 2;
-  justify-self: start;
-  font-size: 0.7rem;
-  padding: 0.2rem;
-}
-
-.horario {
-  font-weight: bold;
-  font-size: 0.8rem;
+.pedir-cita {
+  grid-area: pedir-cita;
+  justify-self: end;
+  align-self: end;
 }
 
 .linea-flex {
   display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
   gap: 0.5rem;
-  align-items: center;
-}
-
-.separador-tarjeta {
-  width: 100%;
-  color: black;
-  margin:0;
-}
-
-.tarjeta-pie {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 
