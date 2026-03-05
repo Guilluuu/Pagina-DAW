@@ -18,6 +18,37 @@
 
     --fuente-cabeceras: 'Poppins', sans-serif;
     --fuente-normal: 'Inter', sans-serif;
+
+    /* Sobreescritura de la paleta de colores de Bootstrap */
+    --bs-primary: var(--color-cta-primary);
+    --bs-secondary: var(--color-cta-secondary);
+    --bs-danger: var(--color-cta-critical);
+    --bs-info: var(--color-acentuado-primario);
+    --bs-dark: var(--color-texto-main);
+    --bs-light: var(--color-fondo-primario);    
+
+    /* Variantes RGB (formato numérico de los colores que permite a Bootstrap calcular transparencias con la función rgba) */
+    --bs-primary-rgb: 123, 130, 168;
+    --bs-secondary-rgb: 136, 201, 161;
+    --bs-danger-rgb: 239, 90, 111;
+    --bs-info-rgb: 173, 178, 212;
+    --bs-dark-rgb: 42, 45, 63;
+    --bs-light-rgb: 238, 241, 218;
+
+    /* Sobreescritura de textos y fondos globales de Bootstrap */
+    --bs-body-color: var(--color-texto-main);
+    --bs-body-color-rgb: 42, 45, 63;
+    --bs-secondary-color: var(--color-texto-secondary);
+    
+    --bs-heading-color: var(--color-texto-main);
+    
+    --bs-body-bg: var(--color-fondo-tarjetas);
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-secondary-bg: var(--color-fondo-inputs);
+
+    /* Sobreescritura de tipografías globales de Bootstrap */
+    --bs-body-font-family: var(--fuente-normal);
+    --bs-heading-font-family: var(--fuente-cabeceras);
 }
 
 body {
@@ -40,14 +71,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* CSS para el navbar */
 .main-navbar {
     display: flex;
-    align-items: center; /* Centra los elementos verticalmente en el eje transversal */
+    align-items: center;
     background-color: #ffffff;
     font-family: sans-serif;
     padding: 5px;
-    box-shadow: 0 2px 4px var(--color-acentuado-primario); /* Sombra sutil para separar la navbar */
+    box-shadow: 0 2px 4px var(--color-acentuado-primario);
 }
 
 .main-navbar a {
@@ -57,11 +87,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 2rem;
 }
 
-/* --- LOGO --- */
 .main-logo {
     display: flex;
     align-items: center;
-    color: #4a5568; /* Texto oscuro */
+    color: #4a5568;
     font-weight: bold;
     font-size: 1.2rem;
     margin-left: 0;
@@ -73,18 +102,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-navbar a:nth-child(2) {
-    margin-left: auto; /* (Absorbe todo el espacio sobrante en el contenedor flex, empujando el resto a la derecha) */
+    margin-left: auto; 
 }
 
 .main-navbar a:nth-last-child(2) {
-    background-color: #7b86a8; /* Azul grisáceo */
+    background-color: #7b86a8;
     color: white;
     padding: 0.6rem 1.2rem;
 }
 
-/* Botón "Urgencias" (Último elemento) */
 .main-navbar a:last-child {
-    background-color: #f4647c; /* Rosa/rojo */
+    background-color: #f4647c;
     color: white;
     padding: 0.6rem 1.2rem;
 }
