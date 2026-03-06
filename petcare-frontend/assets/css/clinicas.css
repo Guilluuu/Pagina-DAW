@@ -1,5 +1,11 @@
 @import "main.css";
 
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 3vw;
+  }
+}
+
 .boton {
   align-items: center;
   padding: 0.8rem 1.2rem;
