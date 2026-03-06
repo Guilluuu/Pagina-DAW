@@ -16,14 +16,14 @@
 
 .service-header-text strong {
     display: block;
-    font-size: 42px; 
+    font-size: 42px;
     margin-bottom: 16px;
 }
 
 
 .service-header-text p {
     font-size: 20px;
-    color: #6b7280;   
+    color: #6b7280;
 }
 
 
@@ -34,15 +34,15 @@
 }
 
 .service-hgroup{
-    
+
     margin-top: 3%;
 
 }
 .service-hgroup p {
-    max-width: 90%;     
+    max-width: 90%;
     margin-left: 20%;
     margin-right: 20%;
-    
+
     text-align: justify;
     line-height: 1.6;
     color: #616161;
@@ -50,11 +50,7 @@
 
 }
 .service-hgroup h2{
-    margin-left: 18%;    
-}
-
-.service-footer{
-    text-align: center;
+    margin-left: 18%;
 }
 
 .service-footer {
