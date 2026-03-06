@@ -51,6 +51,9 @@
     --bs-heading-font-family: var(--fuente-cabeceras);
 }
 
+
+
+
 body {
     font-family: var(--fuente-normal) ;
     color: var(--color-texto-secondary);
@@ -58,6 +61,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-headings);
@@ -72,21 +77,24 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .main-navbar {
-    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 5;
     width: 100%;
     display: flex;
-    align-items: center;
     background-color: #ffffff;
     font-family: sans-serif;
     padding: 5px;
     box-shadow: 0 2px 4px var(--color-acentuado-primario);
+    align-items: center;
 }
 
 .main-navbar a {
     text-decoration: none;
     color: #6c757d;
-    font-size: 0.9rem;
-    margin-left: 2rem;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 0.6rem 1.2rem;
 }
 
 .main-logo {
@@ -95,30 +103,63 @@ h1, h2, h3, h4, h5, h6 {
     color: #4a5568;
     font-weight: bold;
     font-size: 1.2rem;
-    margin-left: 0;
 }
-
 .main-logo img {
-    height: 35px;
-    margin-right: 10px;
+    height: 45px;
 }
 
 .main-navbar a:nth-child(2) {
     margin-left: auto; 
 }
 
-.main-navbar a:nth-last-child(2) {
+
+a.pedir-cita-navbar{
     background-color: #7b86a8;
     color: white;
     padding: 0.6rem 1.2rem;
 }
 
-.main-navbar a:last-child {
+a.urgencias-navbar{
     background-color: #f4647c;
     color: white;
     padding: 0.6rem 1.2rem;
 }
+
 .bg-gradient-1{
     background: #2A7B9B;
     background: linear-gradient(0deg, rgba(42, 123, 155, 0.3) 0%, rgba(87, 199, 133, 0.3) 50%, rgba(237, 221, 83, 0.3) 100%);
+}
+
+.menu-hamburguesa-moviles {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: auto; 
+}
+
+@media (max-width: 600px) {
+    .menu-hamburguesa-moviles {
+        display: block; 
+    }
+    
+    .main-navbar {
+        flex-wrap: wrap; 
+    }
+
+    .main-navbar a:first-child{
+        margin: 0;
+    }
+
+    .main-navbar a:not(:first-child) { 
+        display: none;
+        width: 100%;
+        text-align: center;
+        margin: 0.5rem 0 !important; 
+    }
+
+    .main-navbar.menu-abierto a:not(:first-child) { 
+        display: block; 
+    }
 }
