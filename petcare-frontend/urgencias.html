@@ -5,12 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PetCare</title>
-  <link rel="icon" type="image/x-icon" href="/images/logo.png">
+  <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+  <link rel="stylesheet" href="assets/css/urgencias.css">
 </head>
 
 <body>
-  <nav>
-    <a href="index.html"> <img src="assets/imgs/logo.png" alt="logo PetCare" style="width:40px;height:40px;"> </a>
+  <nav class="main-navbar">
+    <a href="index.html"> <img src="assets/imgs/logo.svg" alt="logo PetCare" style="width:40px;height:40px;"> </a>
     <a href="servicios.html"> Servicios</a>
     <a href="consejos.html"> Consejos de salud</a>
     <a href="sobre-nosotros.html"> Sobre Nosotros</a>
@@ -18,72 +19,126 @@
     <a href="urgencias.html">Urgencias</a>
   </nav>
 
-
-  <header>
-    <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-    <h2>Si es posible, llame antes de acudir a la clínica</h2>
-    <a href="clinicas.html">Clínicas más cercanas</a>
+  <header class="header bg-gradient-1">
+    <h1 class="titulo"> <img src="assets/imgs/warning-icon.svg" class="icono-grande" alt="Icono de alerta"> Trate de llamar antes de acudir a la clínica</h1>
+    <a class="borde-asimetrico boton boton-clinicas" href="clinicas.html">Clínicas abiertas más cercanas</a>
   </header>
 
   <main>
-    <ul>
+    <ul class="contenedor-tarjetas">
       <li>
-        <article>
-          <strong> Nombre de la clínica </strong>
-          <p>
-            <img src="assets/imgs/gps-icon.svg" alt="Icono de ubicación" style="width:16px; height:16px;">
-            Ubicación
+        <article class="tarjeta borde-asimetrico">
+          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica1.jpg" alt="imagen consejo 1">
+          <strong class="titulo-clinica"> Nombre de la clínica </strong>
+          <address class="linea-flex ubicacion">
+            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
+            Ubicación de la clínica
+          </address>
+          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
+            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
+            Atiende urgencias
           </p>
-          <address>Ubicación de la clínica</address>
-          <p>
-            <img src="assets/imgs/warning-icon.svg" alt="Icono de aviso" style="width:16px; height:16px;">
-            Esta clínica atiende en casos de urgencias
+
+          <hr class="separador-tarjeta">
+
+          <p class="linea-flex horario">
+            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
+            Horario de la clínica
+            <time datetime="08:00">08:00</time>
           </p>
-          <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-          <p>Numero de teléfono</p>
-          <!-- <button>Llamar ahora</button> -->
-          <a href="tel:+34000000000">Llamar ahora</a>
-        </article>
+
+          <p class="linea-flex numero-telefono">
+            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
+            Numero de teléfono
+          </p>
+          <a class="llamar-ahora boton borde-asimetrico filtro" href="tel:+34000000000"">Llamar</a>
       </li>
 
       <li>
-        <article>
-          <strong> Nombre de la clínica </strong>
-          <p>
-            <img src="assets/imgs/gps-icon.svg" alt="Icono de ubicación" style="width:16px; height:16px;">
-            Ubicación
+        <article class="tarjeta borde-asimetrico">
+          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica1.jpg" alt="imagen consejo 1">
+          <strong class="titulo-clinica"> Nombre de la clínica </strong>
+          <address class="linea-flex ubicacion">
+            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
+            Ubicación de la clínica
+          </address>
+          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
+            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
+            Atiende urgencias
           </p>
-          <address>Ubicación de la clínica</address>
-          <p>
-            <img src="assets/imgs/warning-icon.svg" alt="Icono de aviso" style="width:16px; height:16px;">
-            Esta clínica atiende en casos de urgencias
+
+          <hr class="separador-tarjeta">
+
+          <p class="linea-flex horario">
+            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
+            Horario de la clínica
+            <time datetime="08:00">08:00</time>
           </p>
-          <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-          <p>Numero de teléfono</p>
-          <a href="tel:+34000000000">Llamar ahora</a>
-        </article>
+
+          <p class="linea-flex numero-telefono">
+            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
+            Numero de teléfono
+          </p>
+          <a class="llamar-ahora boton borde-asimetrico filtro" href="tel:+34000000000"">Llamar</a>
       </li>
 
       <li>
-        <article>
-          <strong> Nombre de la clínica </strong>
-          <p>
-            <img src="assets/imgs/gps-icon.svg" alt="Icono de ubicación" style="width:16px; height:16px;">
-            Ubicación
+        <article class="tarjeta borde-asimetrico">
+          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica1.jpg" alt="imagen consejo 1">
+          <strong class="titulo-clinica"> Nombre de la clínica </strong>
+          <address class="linea-flex ubicacion">
+            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
+            Ubicación de la clínica
+          </address>
+          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
+            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
+            Atiende urgencias
           </p>
-          <address>Ubicación de la clínica</address>
-          <p>
-            <img src="assets/imgs/warning-icon.svg" alt="Icono de aviso" style="width:16px; height:16px;">
-            Esta clínica atiende en casos de urgencias
+
+          <hr class="separador-tarjeta">
+
+          <p class="linea-flex horario">
+            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
+            Horario de la clínica
+            <time datetime="08:00">08:00</time>
           </p>
-          <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-          <p>Numero de teléfono</p>
-          <a href="tel:+34000000000">Llamar ahora</a>
-        </article>
+
+          <p class="linea-flex numero-telefono">
+            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
+            Numero de teléfono
+          </p>
+          <a class="llamar-ahora boton borde-asimetrico filtro" href="tel:+34000000000"">Llamar</a>
+      </li>
+
+      <li>
+        <article class="tarjeta borde-asimetrico">
+          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica1.jpg" alt="imagen consejo 1">
+          <strong class="titulo-clinica"> Nombre de la clínica </strong>
+          <address class="linea-flex ubicacion">
+            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
+            Ubicación de la clínica
+          </address>
+          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
+            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
+            Atiende urgencias
+          </p>
+
+          <hr class="separador-tarjeta">
+
+          <p class="linea-flex horario">
+            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
+            Horario de la clínica
+            <time datetime="08:00">08:00</time>
+          </p>
+
+          <p class="linea-flex numero-telefono">
+            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
+            Numero de teléfono
+          </p>
+          <a class="llamar-ahora boton borde-asimetrico filtro" href="tel:+34000000000"">Llamar</a>
       </li>
     </ul>
   </main>
-
 
 </body>
 

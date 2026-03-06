@@ -1,0 +1,109 @@
+@import "main.css";
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.icono-pequeno {
+  width: 1rem;
+  height: 1rem;
+}
+
+.icono-mascota {
+  width: 4rem;
+  height: 4rem;
+}
+
+.titulo { margin: 0; }
+
+.input-texto {
+  background-color: var(--color-fondo-inputs);
+  border: solid thin gainsboro;
+  padding: 0.6rem 1.2rem;
+}
+.header-formulario {
+  padding: 0 0 1rem 0;
+}
+
+.fieldset {
+  border: none;
+
+}
+
+.fieldset-propietario {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#datos-contacto {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 0.5rem;
+}
+
+#datos-contacto > input {
+  width: 100%;
+}
+
+.fieldset-mascota{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.opciones-especie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.opciones-especie > label {
+  background-color: var(--color-fondo-inputs);
+  border: solid thin gainsboro;
+  padding: 1rem 3rem;
+}
+
+.opciones-especie > label:hover {
+  background-color: var(--color-acentuado-primario);
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0; 
+  height: 0;
+}
+
+input[type="radio"]:checked + label {
+  background-color: var(--color-acentuado-primario);
+}
+
+.fieldset-cita{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+#fecha > input, #hora > input {
+  border: 0;
+  font-family: var(--fuente-normal);
+  padding: 0.6rem 1.2rem;
+}
+
+.boton-submit {
+  background-color: var(--color-cta-primary);
+  color: white;
+  border: none;
+  padding: 1rem 0rem;
+  font-size: 1.5rem;  
+  font-weight: bold;
+  width: 100%;
+
+}
