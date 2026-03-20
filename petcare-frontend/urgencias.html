@@ -6,17 +6,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PetCare</title>
   <link rel="icon" type="image/x-icon" href="/images/logo.svg">
+  <!-- Añadimos bootstrap (archivos necesarios descargados en local)-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/js/bootstrap.bundle.min.js">
   <link rel="stylesheet" href="assets/css/urgencias.css">
 </head>
 
 <body>
   <nav class="main-navbar">
-    <a href="index.html"> <img src="assets/imgs/logo.svg" alt="logo PetCare" style="width:40px;height:40px;"> </a>
+    <a class="main-logo" href="index.html"> <img src="assets/imgs/logo.svg" alt="logo PetCare"> PetCare </a>
     <a href="servicios.html"> Servicios</a>
     <a href="consejos.html"> Consejos de salud</a>
     <a href="sobre-nosotros.html"> Sobre Nosotros</a>
-    <a href="clinicas.html">Pedir cita</a>
-    <a href="urgencias.html">Urgencias</a>
+    <a class="pedir-cita-navbar borde-asimetrico" href="clinicas.html">Pedir cita</a>
+    <a class="urgencias-navbar borde-asimetrico" href="urgencias.html">Urgencias</a>
+    <button class="menu-hamburguesa-moviles">☰</button>
   </nav>
 
   <header class="header bg-gradient-1">

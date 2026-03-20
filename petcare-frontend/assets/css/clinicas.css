@@ -62,11 +62,6 @@
   height: 1rem;
 }
 
-a:link, a:visited {
-    text-decoration: none;
-    color: var(--color-texto-main);
-    font-size: 0.9rem
-}
 
 main {
     max-width: 1000px; 

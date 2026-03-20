@@ -65,9 +65,9 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-headings);
+    font-family: var(--fuente-cabeceras);
     font-weight: 600;
-    color: var(--color-text-main);
+    color: var(--color-texto-main);
     margin-top: 0;
 }
 
@@ -137,6 +137,10 @@ a.urgencias-navbar{
     font-size: 1.5rem;
     cursor: pointer;
     margin-left: auto; 
+}
+
+a {
+    text-decoration: none;
 }
 
 @media (max-width: 600px) {
