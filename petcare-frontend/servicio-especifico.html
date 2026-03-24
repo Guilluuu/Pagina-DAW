@@ -1,72 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetCare</title>
+    <title>PetCare | Diagnóstico por Imagen</title>
     <link rel="icon" type="image/x-icon" href="assets/imgs/logo.svg">
-    <!-- Añadimos bootstrap (archivos necesarios descargados en local)-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="assets/css/servicio-especifico.css">
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </head>
 
 <body>
-    <nav class="main-navbar">
-        <a class="main-logo" href="index.html"> <img src="assets/imgs/logo.svg" alt="logo PetCare"> PetCare </a>
-        <a href="servicios.html"> Servicios</a>
-        <a href="consejos.html"> Consejos de salud</a>
-        <a href="sobre-nosotros.html"> Sobre Nosotros</a>
+    <nav class="main-navbar" aria-label="Navegación principal">
+        <a class="main-logo" href="index.html">
+            <img src="assets/imgs/logo.svg" alt="Logo de PetCare">
+            PetCare
+        </a>
+
+        <a href="servicios.html">Servicios</a>
+        <a href="consejos.html">Consejos de salud</a>
+        <a href="sobre-nosotros.html">Quiénes somos</a>
         <a class="pedir-cita-navbar borde-asimetrico" href="clinicas.html">Pedir cita</a>
         <a class="urgencias-navbar borde-asimetrico" href="urgencias.html">Urgencias</a>
-        <button class="menu-hamburguesa-moviles">☰</button>
+        <button class="menu-hamburguesa-moviles" type="button" aria-label="Abrir menú">☰</button>
     </nav>
 
     <main>
-        <header class = "bg-gradient-1 service-header">
-        <hgroup class="service-header-text">
-            <strong>Esto es el nombre de un servicio aleatorio</strong>
-            <p>Esto es el texto de un servicio aleatorio</p>
-        </hgroup>
-            <img src="assets/imgs/img-servicio-especifico-banner.png" alt="imagen consejo 1" style="width:35%;height:35%;">
+        <header class="bg-gradient-1 cabecera-servicio">
+
+            <section class="intro-servicio">
+                <article class="texto-servicio">
+                    <h1>Diagnóstico por Imagen</h1>
+                    <p>Tecnología avanzada para diagnósticos precisos y tratamientos efectivos</p>
+                </article>
+
+                <figure class="imagen-servicio">
+                    <img src="assets/imgs/img-servicio-especifico-banner.png" alt="Especialistas realizando una prueba de diagnóstico por imagen">
+                </figure>
+            </section>
         </header>
-        <hgroup class="service-hgroup">
-            <h2>1. Lorem Ipsum</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
-                Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero.
-                Cras elementum porttitor ex, eget pharetra tortor egestas ac. Mauris ultrices leo mollis, sodales nibh
-                vitae, lobortis turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae; Etiam molestie vulputate velit, sed interdum turpis. Sed eget magna dignissim, rhoncus sapien sit
-                amet, feugiat risus. Mauris at nunc scelerisque, porttitor nulla scelerisque, porta risus. Cras
-                elementum ut libero nec cursus. Phasellus at vehicula sem, ac ultricies lectus.</p>
-            <h2>2. Lorem Ipsum</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
-                Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero.
-                Cras elementum porttitor ex, eget pharetra tortor egestas ac. Mauris ultrices leo mollis, sodales nibh
-                vitae, lobortis turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae; Etiam molestie vulputate velit, sed interdum turpis. Sed eget magna dignissim, rhoncus sapien sit
-                amet, feugiat risus. Mauris at nunc scelerisque, porttitor nulla scelerisque, porta risus. Cras
-                elementum ut libero nec cursus. Phasellus at vehicula sem, ac ultricies lectus.</p>
-            <h2>3. Lorem Ipsum</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
-                Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero.
-                Cras elementum porttitor ex, eget pharetra tortor egestas ac. Mauris ultrices leo mollis, sodales nibh
-                vitae, lobortis turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-                curae; Etiam molestie vulputate velit, sed interdum turpis. Sed eget magna dignissim, rhoncus sapien sit
-                amet, feugiat risus. Mauris at nunc scelerisque, porttitor nulla scelerisque, porta risus. Cras
-                elementum ut libero nec cursus. Phasellus at vehicula sem, ac ultricies lectus.</p>
-        </hgroup>
+
+        <section class="contenido-servicio" aria-labelledby="detalle-servicio">
+            <h2 id="detalle-servicio" class="visually-hidden">Detalle del servicio</h2>
+
+            <article>
+                <h3>1. Radiología Digital</h3>
+                <p>
+                    Contamos con equipos de radiología digital de última generación que nos permiten obtener imágenes de alta
+                    calidad en segundos. Esta tecnología reduce significativamente el tiempo de exposición de tu mascota a la
+                    radiación y proporciona resultados inmediatos.
+                </p>
+                <p>
+                    Las radiografías digitales pueden ser ampliadas, mejoradas y compartidas fácilmente con especialistas
+                    cuando es necesario. Esto agiliza el proceso de diagnóstico y permite tomar decisiones terapéuticas más
+                    rápidas y precisas.
+                </p>
+                <p>
+                    Utilizamos la radiología para diagnosticar una amplia variedad de condiciones, desde fracturas óseas hasta
+                    problemas cardíacos y respiratorios. Nuestro equipo de radiólogos veterinarios está altamente capacitado en
+                    la interpretación de imágenes complejas.
+                </p>
+            </article>
+
+            <article>
+                <h3>2. Ecografía Veterinaria</h3>
+                <p>
+                    La ecografía es una herramienta diagnóstica no invasiva que nos permite visualizar los órganos internos en
+                    tiempo real. Es especialmente útil para evaluar el corazón, abdomen, sistema reproductivo y detectar masas
+                    o anomalías.
+                </p>
+                <p>
+                    Nuestros ecógrafos de alta resolución proporcionan imágenes detalladas que ayudan a identificar problemas
+                    antes de que se conviertan en emergencias. El procedimiento es completamente indoloro y no requiere
+                    sedación en la mayoría de los casos.
+                </p>
+                <p>
+                    Realizamos ecocardiografías especializadas para evaluar la función cardíaca, ecografías abdominales para
+                    problemas digestivos y urinarios, y estudios de gestación para monitorear el desarrollo de cachorros y
+                    gatitos.
+                </p>
+            </article>
+
+            <article>
+                <h3>3. Tomografía y Resonancia</h3>
+                <p>
+                    Para casos complejos, contamos con acceso a servicios de tomografía computarizada y resonancia magnética a
+                    través de nuestra red de especialistas. Estas tecnologías proporcionan imágenes tridimensionales detalladas
+                    de estructuras internas.
+                </p>
+                <p>
+                    La tomografía es particularmente útil para evaluar traumatismos, problemas neurológicos y planificar
+                    cirugías complejas. La resonancia es ideal para diagnosticar lesiones de tejidos blandos, problemas
+                    cerebrales y de médula espinal.
+                </p>
+                <p>
+                    Coordinamos estos estudios especializados y trabajamos en conjunto con radiólogos veterinarios para
+                    interpretar los resultados y desarrollar el mejor plan de tratamiento para tu mascota.
+                </p>
+            </article>
+        </section>
     </main>
 
-    <footer class="service-footer">
-        <section class="service-footer-card">
-            <strong>¿Necesitas más información sobre este servicio?</strong>
-            <p>Nuestro equipo está disponible para responder todas tus preguntas.</p>
-            <a href="clinicas.html" class="service-footer-btn">Encuentra tu clínica más cercana</a>
+    <footer class="cta-servicio">
+        <section class="cta-servicio__caja">
+            <h2>¿Necesitas más información sobre este servicio?</h2>
+            <p>Nuestro equipo está disponible para responder todas tus preguntas</p>
+            <a class="cta-servicio__boton borde-asimetrico" href="clinicas.html">Encuentra tu clínica más cercana</a>
         </section>
     </footer>
-
 </body>
-
 </html>
