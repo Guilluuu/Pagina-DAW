@@ -82,7 +82,7 @@ main {
 .tarjeta {
   display: grid;
   grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
     'foto titulo'
     'foto ubicacion'
@@ -103,7 +103,10 @@ main {
 }
 .ubicacion {  grid-area: ubicacion; }
 .horario {  grid-area: horario; }
-.numero-telefono {  grid-area: telefono; }
+.numero-telefono {  
+  grid-area: telefono; 
+  font-size: 0.8rem;
+}
 
 .alerta-urgencias {  
   grid-area: alerta; 
