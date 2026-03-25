@@ -37,11 +37,12 @@
   gap: 1rem;
 }
 
-a:link, a:visited {
-    text-decoration: none;
-    color: var(--color-texto-main);
-    font-size: 0.9rem
+main a:link, main a:visited, header a:link, header a:visited{
+  text-decoration: none;
+  color: var(--color-texto-main);
 }
+
+
 
 main {
     max-width: 1000px; 
