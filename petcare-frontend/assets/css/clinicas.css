@@ -81,6 +81,12 @@ main {
   margin-bottom: 2rem;
 }
 
+main a:link, main a:visited, header a:link, header a:visited{
+  text-decoration: none;
+  color: var(--color-texto-main);
+}
+
+
 @media screen and (min-width: 992px) {
     .contenedor-tarjetas li {
         width: 47%; 
