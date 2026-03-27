@@ -4,78 +4,111 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetCare</title>
-  <link rel="logo" type="image/x-icon" href="assets/imgs/logo.svg">
+  <title>PetCare | Inicio</title>
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo.svg">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
   <nav class="main-navbar">
-    <a href="index.html"> <img src="assets/imgs/logo.svg" alt="logo PetCare" style="width:40px;height:40px;"> </a>
-    <a href="servicios.html"> Servicios</a>
-    <a href="consejos.html"> Consejos de salud</a>
-    <a href="sobre-nosotros.html"> Sobre Nosotros</a>
-    <a href="clinicas.html">Pedir cita</a>
-    <a href="urgencias.html">Urgencias</a>
+    <a class="main-logo" href="index.html">
+      <img src="assets/imgs/logo.svg" alt="Logo de PetCare">
+      PetCare
+    </a>
+    <a href="servicios.html">Servicios</a>
+    <a href="consejos.html">Consejos de salud</a>
+    <a href="sobre-nosotros.html">Quiénes somos</a>
+    <a class="pedir-cita-navbar borde-asimetrico" href="clinicas.html">Pedir cita</a>
+    <a class="urgencias-navbar borde-asimetrico" href="urgencias.html">Urgencias</a>
+    <button class="menu-hamburguesa-moviles" type="button" aria-label="Abrir menú">☰</button>
   </nav>
-  
-  <header>
-    <section>
-      <h2>Encuentra tu clínica</h2>
-      <a href="clinicas.html">Todas las clinicas</a>
-      <form name="buscarClinica">
-        <input type="search" placeholder="Encuentra tu clínica..." name="clinica">
-        <button>
-          <img src="assets/imgs/search-icon.svg" alt="Icono de búsqueda" style="width:16px; height:16px;">
+
+  <header class="hero-home bg-gradient-1">
+    <section class="hero-home__busqueda">
+      <h1>Encuentra tu clínica</h1>
+      <a class="hero-home__enlace-secundario borde-asimetrico" href="clinicas.html">Todas las clínicas</a>
+
+      <form class="hero-home__formulario" action="#" method="get">
+        <label class="visually-hidden" for="buscar-clinica">Buscar clínica</label>
+        <input id="buscar-clinica" type="search" name="clinica" placeholder="Buscar clínica...">
+        <button type="submit">
+          <img src="assets/imgs/search-icon.svg" alt="">
           Buscar
         </button>
       </form>
-      <a href="clinicas.html">Clínicas más cercanas</a>
-      <a href="urgencias.html">Urgencias</a>
+
+      <menu class="hero-home__acciones">
+        <li>
+          <a class="hero-home__boton hero-home__boton--secundario" href="clinicas.html">Clínicas más cercanas</a>
+        </li>
+        <li>
+          <a class="hero-home__boton hero-home__boton--urgencia" href="urgencias.html">Urgencias</a>
+        </li>
+      </menu>
     </section>
-    <section>
+
+    <aside class="hero-home__destacado">
       <a href="urgencias.html">Urgencias</a>
-    </section>
+    </aside>
   </header>
 
   <main>
-    <section>
-      <h2> Esto es el título de un consejo de salud animal aleatorio </h2>
-      <p> Esto es el texto de un consejo animal aleatorio</p>
-      <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:200px;height:200px;">
-    </section>
-    <section>
-      <h2> Esto es el título de un consejo de salud animal aleatorio 2 </h2>
-      <p> Esto es el texto de un consejo animal aleatorio 2 </p>
-      <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:200px;height:200px;">
+    <section class="consejos-home" aria-labelledby="consejos-home-titulo">
+      <h2 id="consejos-home-titulo" class="visually-hidden">Consejos destacados</h2>
+
+      <article class="consejo-home consejo-home--imagen-izquierda">
+        <figure class="consejo-home__imagen">
+          <img src="assets/imgs/placeholder.png" alt="Consejo destacado de salud animal">
+        </figure>
+        <section class="consejo-home__texto">
+          <h3>Esto es el título de un consejo de salud animal aleatorio</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a ante luctus lacus facilisis convallis non vitae purus.
+            Duis volutpat odio diam, nec condimentum erat feugiat id. Nunc sem lacus, pharetra pulvinar mauris eget, porttitor iaculis nisi.
+            Phasellus et dolor congue, suscipit augue ut, lacinia erat. Pellentesque ut risus id nibh malesuada pharetra.
+            Phasellus cursus ex vitae laoreet malesuada. Maecenas in lobortis leo. Pellentesque tempor dolor eu erat ullamcorper,
+            sed semper diam euismod. Ut vel fermentum nisl, non blandit lacus.
+          </p>
+        </section>
+      </article>
+
+      <article class="consejo-home consejo-home--imagen-derecha">
+        <figure class="consejo-home__imagen">
+          <img src="assets/imgs/placeholder.png" alt="Segundo consejo destacado de salud animal">
+        </figure>
+        <section class="consejo-home__texto">
+          <h3>Esto es el título de un consejo de salud animal aleatorio</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a ante luctus lacus facilisis convallis non vitae purus.
+            Duis volutpat odio diam, nec condimentum erat feugiat id. Nunc sem lacus, pharetra pulvinar mauris eget, porttitor iaculis nisi.
+            Phasellus et dolor congue, suscipit augue ut, lacinia erat. Pellentesque ut risus id nibh malesuada pharetra.
+            Phasellus cursus ex vitae laoreet malesuada. Maecenas in lobortis leo. Pellentesque tempor dolor eu erat ullamcorper,
+            sed semper diam euismod. Donec iaculis diam quam, et imperdiet turpis molestie tincidunt.
+          </p>
+        </section>
+      </article>
     </section>
   </main>
 
-  <footer>
-    <section>
-
-      <strong>Un poco sobre nosotros</strong>
+  <footer class="footer-home">
+    <section class="footer-home__bloque">
+      <h2>Un poco sobre nosotros</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a ante luctus lacus facilisis convallis non
-        vitae purus. Duis volutpat odio diam, nec condimentum erat feugiat id. Nunc sem lacus, pharetra pulvinar mauris
-        eget, porttitor iaculis nisi.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a ante luctus lacus facilisis convallis non vitae purus.
+        Duis volutpat odio diam, nec condimentum erat feugiat id. Nunc sem lacus, pharetra pulvinar mauris eget, porttitor iaculis nisi.
+        Phasellus et dolor congue, suscipit augue ut, lacinia erat. Pellentesque ut risus id nibh malesuada pharetra.
       </p>
     </section>
 
-
-    <section>
-      <strong>Redes sociales</strong>
-      <a href="https://www.youtube.com">
-        <img src="images/youtube-icon.svg" alt="YouTube">
-      </a>
-      <a href="https://www.instagram.com">
-        <img src="images/instagram-icon.svg" alt="Instagram">
-      </a>
-      <a href="https://www.linkedin.com">
-        <img src="images/linkedin-icon.svg" alt="LinkedIn">
-      </a>
+    <section class="footer-home__bloque footer-home__bloque--social">
+      <h2>Redes sociales</h2>
+      <menu class="footer-home__redes">
+        <li><a href="https://www.youtube.com" aria-label="YouTube"><img src="assets/imgs/youtube-icon.svg" alt=""></a></li>
+        <li><a href="https://www.instagram.com" aria-label="Instagram"><img src="assets/imgs/instagram-icon.svg" alt=""></a></li>
+        <li><a href="https://www.linkedin.com" aria-label="LinkedIn"><img src="assets/imgs/linkedin-icon.svg" alt=""></a></li>
+      </menu>
     </section>
-
   </footer>
 </body>
 

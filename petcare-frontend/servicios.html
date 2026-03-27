@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PetCare</title>
-  <link rel="icon" type="image/x-icon" href="assets/imgs/logo.svg">
-  <link rel="stylesheet" href="assets/css/servicios.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare | Servicios</title>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/logo.svg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/servicios.css">
+    <link rel="stylesheet" href="assets/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="assets/js/main.js">
 </head>
-
 <body>
-  <nav class="main-navbar">
-    <a href="index.html"> <img src="assets/imgs/logo.svg" alt="logo PetCare" style="width:40px;height:40px;"> </a>
-    <a href="servicios.html"> Servicios</a>
-    <a href="consejos.html"> Consejos de salud</a>
-    <a href="sobre-nosotros.html"> Sobre Nosotros</a>
-    <a href="clinicas.html">Pedir cita</a>
-    <a href="urgencias.html">Urgencias</a>
-  </nav>
+    <nav class="main-navbar" aria-label="Navegación principal">
+        <a class="main-logo" href="index.html">
+            <img src="assets/imgs/logo.svg" alt="Logo de PetCare">
+            PetCare
+        </a>
 
+        <a href="servicios.html">Servicios</a>
+        <a href="consejos.html">Consejos de salud</a>
+        <a href="sobre-nosotros.html">Quiénes somos</a>
+        <a class="pedir-cita-navbar borde-asimetrico" href="clinicas.html">Pedir cita</a>
+        <a class="urgencias-navbar borde-asimetrico" href="urgencias.html">Urgencias</a>
+        <button class="menu-hamburguesa-moviles" type="button" aria-label="Abrir menú">☰</button>
+    </nav>
 
-  <header>
-    <h2>Servicios y tratamientos</h2>
-    <p> textotextotextotextotexto </p>
-    <search>
-      <form name="buscarServicio">
-        <input type="search" placeholder="Buscar servicios..." name="servicio">
-        <button>
-          <img src="assets/imgs/search-icon.svg" alt="Icono de búsqueda" style="width:16px; height:16px;">
-          Buscar
-        </button>
-      </form>
-    </search>
-    <button>Ordenar</button>
-  </header>
+    <header class="bg-gradient-1 cabecera-servicios">
+        <h1>Servicios y tratamientos</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a ante luctus lacus
+            facilisis convallis non vitae purus. Duis volutpat odio diam, nec condimentum erat feugiat id.
+        </p>
+    </header>
 
-  <main>
-    <ul>
-      <li>
-        <article>
-          <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-          <a href="servicio-especifico.html">Nombre del servicio</a>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
-            Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..</p>
-        </article>
-      </li>
+    <main>
+        <section class="controles-servicios" aria-label="Buscar y ordenar servicios">
+            <form class="buscador-servicios" action="#" method="get" role="search">
+                <label for="buscar-servicio" class="visually-hidden">Buscar servicios</label>
+                <input id="buscar-servicio" type="search" name="servicio" placeholder="Buscar servicios...">
+                <button type="submit">Buscar</button>
+            </form>
 
-      <li>
-        <article>
-          <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-          <a href="servicio-especifico.html">Nombre del servicio</a>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
-            Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..</p>
-        </article>
-      </li>
+            <button class="btn-ordenar" type="button">↕ Ordenar A-Z</button>
+        </section>
 
-      <li>
-        <article>
-          <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100px;height:100px;">
-          <a href="servicio-especifico.html">Nombre del servicio</a>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
-            Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..</p>
-        </article>
-      </li>
-    </ul>
-  </main>
+        <section class="seccion-listado-servicios" aria-labelledby="titulo-listado-servicios">
+            <h2 id="titulo-listado-servicios" class="visually-hidden">Listado de servicios</h2>
 
+            <ul class="lista-servicios">
+                <li>
+                    <a class="tarjeta-servicio" href="servicio-especifico.html">
+                        <img src="assets/imgs/placeholder.png" alt="Cirugía veterinaria">
+                        <h3 class="titulo-tarjeta">Cirugía Veterinaria</h3>
+                        <p>
+                            Procedimientos quirúrgicos especializados para garantizar la salud de tu mascota
+                            con tecnología de vanguardia y protocolos de seguridad rigurosos.
+                        </p>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="tarjeta-servicio" href="servicio-especifico.html">
+                        <img src="assets/imgs/placeholder.png" alt="Diagnóstico por imagen">
+                        <h3 class="titulo-tarjeta">Diagnóstico por Imagen</h3>
+                        <p>
+                            Tecnología avanzada de radiología digital, ecografía y estudios especializados
+                            para diagnósticos precisos y tratamientos efectivos.
+                        </p>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="tarjeta-servicio" href="servicio-especifico.html">
+                        <img src="assets/imgs/placeholder.png" alt="Medicina interna">
+                        <h3 class="titulo-tarjeta">Medicina Interna</h3>
+                        <p>
+                            Diagnóstico y tratamiento de enfermedades complejas con un enfoque sistemático
+                            y basado en evidencia por nuestros especialistas.
+                        </p>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="tarjeta-servicio" href="servicio-especifico.html">
+                        <img src="assets/imgs/placeholder.png" alt="Odontología veterinaria">
+                        <h3 class="titulo-tarjeta">Odontología Veterinaria</h3>
+                        <p>
+                            Cuidado dental completo para mantener la salud bucal de tu mascota,
+                            desde limpiezas profesionales hasta tratamientos especializados.
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
 </body>
-
 </html>

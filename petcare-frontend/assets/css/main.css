@@ -5,8 +5,8 @@
     --color-fondo-gradiente: #C7D9DD;
     --color-fondo-alternativo: #D5E5D5;
     --color-fondo-primario: #EEF1DA;
-    --color-acentuado-primario: #ADB2D4; 
-    
+    --color-acentuado-primario: #ADB2D4;
+
     --color-cta-critical: #EF5A6F;
     --color-cta-primary: #7B82A8;
     --color-cta-secondary: #88C9A1;
@@ -25,7 +25,7 @@
     --bs-danger: var(--color-cta-critical);
     --bs-info: var(--color-acentuado-primario);
     --bs-dark: var(--color-texto-main);
-    --bs-light: var(--color-fondo-primario);    
+    --bs-light: var(--color-fondo-primario);
 
     /* Variantes RGB (formato numérico de los colores que permite a Bootstrap calcular transparencias con la función rgba) */
     --bs-primary-rgb: 123, 130, 168;
@@ -39,9 +39,9 @@
     --bs-body-color: var(--color-texto-main);
     --bs-body-color-rgb: 42, 45, 63;
     --bs-secondary-color: var(--color-texto-secondary);
-    
+
     --bs-heading-color: var(--color-texto-main);
-    
+
     --bs-body-bg: var(--color-fondo-tarjetas);
     --bs-body-bg-rgb: 255, 255, 255;
     --bs-secondary-bg: var(--color-fondo-inputs);
@@ -49,6 +49,31 @@
     /* Sobreescritura de tipografías globales de Bootstrap */
     --bs-body-font-family: var(--fuente-normal);
     --bs-heading-font-family: var(--fuente-cabeceras);
+
+    /*CHATGPT variables para responsibidad y tamaño de las cosas*/
+    --espacio-x-mobile: 1rem;
+    --espacio-x-tablet: 8%;
+    --espacio-x-desktop: 10%;
+
+    --ancho-contenido-texto: 52rem;
+    --ancho-contenido-estrecho: 44rem;
+    --ancho-grid-servicios: 1100px;
+
+    --fs-h1-mobile: 2.25rem;
+    --fs-h1-tablet: 3rem;
+    --fs-h1-desktop: 3.5rem;
+
+    --fs-h2-mobile: 1.75rem;
+    --fs-h2-tablet: 2rem;
+    --fs-h2-desktop: 2.25rem;
+
+    --fs-body-mobile: 1rem;
+    --fs-body-tablet: 1.05rem;
+    --fs-body-desktop: 1.1rem;
+
+    --radio-tarjeta: 1.5rem;
+    --sombra-tarjeta: 0 4px 14px rgba(42, 45, 63, 0.08);
+    --sombra-tarjeta-hover: 0 10px 24px rgba(42, 45, 63, 0.14);
 }
 
 
@@ -65,14 +90,14 @@ body {
 
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-headings);
+    font-family: var(--fuente-cabeceras);
     font-weight: 600;
-    color: var(--color-text-main);
+    color: var(--color-texto-main);
     margin-top: 0;
 }
 
 .borde-asimetrico {
-    border-radius: 0px 12px 0px 12px; 
+    border-radius: 0px 12px 0px 12px;
 }
 
 
@@ -109,7 +134,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .main-navbar a:nth-child(2) {
-    margin-left: auto; 
+    margin-left: auto;
 }
 
 
@@ -136,30 +161,34 @@ a.urgencias-navbar{
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    margin-left: auto; 
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media (max-width: 600px) {
     .menu-hamburguesa-moviles {
-        display: block; 
+        display: block;
     }
-    
+
     .main-navbar {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 
     .main-navbar a:first-child{
         margin: 0;
     }
 
-    .main-navbar a:not(:first-child) { 
+    .main-navbar a:not(:first-child) {
         display: none;
         width: 100%;
         text-align: center;
-        margin: 0.5rem 0 !important; 
+        margin: 0.5rem 0 !important;
     }
 
-    .main-navbar.menu-abierto a:not(:first-child) { 
-        display: block; 
+    .main-navbar.menu-abierto a:not(:first-child) {
+        display: block;
     }
 }
