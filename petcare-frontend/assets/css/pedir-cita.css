@@ -30,7 +30,7 @@ body {
 
 .fieldset {
   border: none;
-
+  margin: 0.5rem;
 }
 
 .fieldset-propietario {
@@ -61,6 +61,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem;
+  gap: 0.5rem;
 }
 
 .opciones-especie > label {
