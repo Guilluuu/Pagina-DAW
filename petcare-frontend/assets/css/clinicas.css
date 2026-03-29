@@ -32,7 +32,7 @@
   color: white;
 }
 
-.boton-clinicas {
+.boton-reset {
   border: none;
   background-color: var(--color-cta-secondary);
   color: white;

@@ -43,8 +43,8 @@
           Buscar
         </button>
       </form>
-      <a href="clinicas.html" class="boton boton-clinicas filtro borde-asimetrico">
-        <img class="icono-pequeno" src="assets/imgs/location-arrow.svg" alt=""> Clínicas más cercanas
+      <a href="clinicas.html" class="boton boton-reset filtro borde-asimetrico">
+        <img class="icono-pequeno" src="assets/imgs/restart.svg" alt=""> Reestablecer
       </a>
       <menu class="contenedor-filtros">
         <li><button class="boton borde-asimetrico filtro">Ordenar</button></li>
@@ -55,124 +55,36 @@
   </header>
 
   <main>
-    <ul class="contenedor-tarjetas">
-      <li>
-        <article class="tarjeta borde-asimetrico">
-          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica1.jpg" alt="imagen consejo 1">
-          <strong class="titulo-clinica"> Ana María </strong>
-          <address class="linea-flex ubicacion">
-            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
-            Ubicación de la clínica
-          </address>
-          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
-            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
-            Atiende urgencias
-          </p>
-
-          <hr class="separador-tarjeta">
-
-          <p class="linea-flex horario">
-            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
-            Horario de la clínica
-            <time datetime="08:00">08:00</time>
-          </p>
-
-          <p class="linea-flex numero-telefono">
-            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
-            Número
-          </p>
-          <a class="pedir-cita boton borde-asimetrico filtro" href="#modal-cita">Pedir cita</a>
-        </article>
-      </li> 
-
-      <li>
-        <article class="tarjeta borde-asimetrico">
-          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica2.jpg" alt="imagen consejo 1">
-          <strong class="titulo-clinica"> Pepa </strong>
-          <address class="linea-flex ubicacion">
-            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
-            Ubicación de la clínica
-          </address>
-          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
-            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
-            Atiende urgencias
-          </p>
-
-          <hr class="separador-tarjeta">
-
-          <p class="linea-flex horario">
-            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
-            Horario de la clínica 
-            <time datetime="08:00">08:00</time>
-          </p>
-
-          <p class="linea-flex numero-telefono">
-            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
-            Número
-          </p>
-          <a class="pedir-cita boton borde-asimetrico filtro" href="#modal-cita">Pedir cita</a>
-        </article>
-      </li>
-
-      <li>
-        <article class="tarjeta borde-asimetrico">
-          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica3.jpg" alt="imagen consejo 1">
-          <strong class="titulo-clinica"> Ana Susana </strong>
-          <address class="linea-flex ubicacion">
-            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
-            Ubicación de la clínica
-          </address>
-          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
-            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
-            Atiende urgencias
-          </p>
-
-          <hr class="separador-tarjeta">
-
-          <p class="linea-flex horario">
-            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
-            Horario de la clínica
-            <time datetime="08:00">08:00</time>
-          </p>
-
-          <p class="linea-flex numero-telefono">
-            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
-            Número
-          </p>
-          <a class="pedir-cita boton borde-asimetrico filtro" href="#modal-cita">Pedir cita</a>
-        </article>
-      </li>
-
-      <li>
-        <article class="tarjeta borde-asimetrico">
-          <img class="foto-clinica foto-pequena" src="assets/imgs/clinica4.jpeg" alt="imagen consejo 1">
-          <strong class="titulo-clinica"> Adoración </strong>
-          <address class="linea-flex ubicacion">
-            <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
-            Ubicación de la clínica
-          </address>
-          <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
-            <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
-            Atiende urgencias
-          </p>
-
-          <hr class="separador-tarjeta">
-
-          <p class="linea-flex horario">
-            <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
-            Horario de la clínica
-            <time datetime="08:00">08:00</time>
-          </p>
-
-          <p class="linea-flex numero-telefono">
-            <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
-            Número
-          </p>
-          <a class="pedir-cita boton borde-asimetrico filtro" href="#modal-cita">Pedir cita</a>
-        </article>
-      </li>
-    </ul>
+    <ul class="contenedor-tarjetas"></ul>
   </main>
+
+  <template id="molde-clinica">
+    <li>
+      <article class="tarjeta borde-asimetrico">
+        <img class="foto-clinica foto-pequena" src="" alt="Foto clínica">
+        <strong class="titulo-clinica">Nombre</strong>
+        <address class="linea-flex ubicacion">
+          <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
+          <span class="texto-ubicacion">Ubicación</span>
+        </address>
+        <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
+          <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
+          Atiende urgencias
+        </p>
+        <hr class="separador-tarjeta">
+        <p class="linea-flex horario">
+          <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
+          Horario
+          <time class="texto-horario">00:00</time>
+        </p>
+        <p class="linea-flex numero-telefono">
+          <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
+          <span class="texto-telefono">Teléfono</span>
+        </p>
+        <a class="pedir-cita boton borde-asimetrico filtro" href="#modal-cita">Pedir cita</a>
+      </article>
+    </li>
+  </template>
 
   <div id="modal-cita" class="modal">
     <div class="modal-contenido borde-asimetrico">

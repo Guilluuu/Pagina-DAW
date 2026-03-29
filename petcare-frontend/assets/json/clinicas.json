@@ -1,0 +1,32 @@
+{
+  "clinicas": [
+    {
+      "nombre": "Clinica1",
+      "ubicacion": "Ubicación1",
+      "foto": "assets/imgs/clinica1.jpg",
+      "horario": "08:00-22:00",
+      "telefono": "+34123456789"
+    },
+    {
+      "nombre": "Clinica2",
+      "ubicacion": "Ubicación2",
+      "foto": "assets/imgs/clinica2.jpg",
+      "horario": "08:00-22:00",
+      "telefono": "+34123456789"
+    },
+    {
+      "nombre": "Clinica3",
+      "ubicacion": "Ubicación3",
+      "foto": "assets/imgs/clinica3.jpg",
+      "horario": "08:00-22:00",
+      "telefono": "+34123456789"
+    },
+    {
+      "nombre": "Clinica4",
+      "ubicacion": "Ubicación4",
+      "foto": "assets/imgs/clinica4.jpeg",
+      "horario": "08:00-22:00",
+      "telefono": "+34123456789"
+    }
+  ]
+}
