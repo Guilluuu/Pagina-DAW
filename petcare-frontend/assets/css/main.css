@@ -1,5 +1,5 @@
-@import url('/assets/fonts/inter.css');
-@import url('/assets/fonts/poppins.css');
+@import url('/petcare-frontend/assets/fonts/inter.css');
+@import url('/petcare-frontend/assets/fonts/poppins.css');
 
 :root {
     --color-fondo-gradiente: #C7D9DD;
