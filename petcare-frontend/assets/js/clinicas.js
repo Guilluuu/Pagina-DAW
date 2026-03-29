@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
   $.getJSON("/petcare-frontend/assets/json/clinicas.json", (datos) => {
     let clinicas = datos.clinicas;
@@ -16,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     inicializarBuscador();
     inicializarOrden();
+    inicializarHorario();
   });
 });
 
@@ -24,6 +26,7 @@ function inicializarBuscador() {
   let tarjetasclinica=$('.contenedor-tarjetas li');
   let funcbusqueda = (e) => {
     e.preventDefault();
+    mostrarTodasLasClinicas();
     let input = $('.input-busqueda');
     let txt = input.val().toLowerCase().trim();
     tarjetasclinica.each(function() {
@@ -43,12 +46,14 @@ function inicializarBuscador() {
 }
 
 function inicializarOrden(){
+  let ordenascendente = true;
   let btnordenar = document.querySelector('.contenedor-filtros li:first-child button');
   let contenedortarjetas = document.querySelector('.contenedor-tarjetas');
-  let ordenascendente = true;
 
   btnordenar.addEventListener("click", (e) => {
     e.preventDefault();
+    mostrarTodasLasClinicas();
+    vaciarInput();
 
     let tarjetasarray = Array.from(contenedortarjetas.querySelectorAll('li'));
     tarjetasarray.sort(function(a,b){
@@ -67,9 +72,49 @@ function inicializarOrden(){
     });
 
     ordenascendente = !ordenascendente;
+    horariosencencido = false;
+    inicializarHorario();
 
     tarjetasarray.forEach(function(tarjeta){
       contenedortarjetas.appendChild(tarjeta);
     });
   });
+}
+
+function inicializarHorario(){
+  let horariosencencido = false;
+  let btn = document.querySelectorAll('.contenedor-filtros li button')[1];
+
+  btn.addEventListener("click", (e)=>{
+    e.preventDefault();
+    horariosencencido = !horariosencencido;
+    mostrarTodasLasClinicas();
+    vaciarInput();
+
+    let fechahoy = new Date();
+    let hora = fechahoy.getHours().toString().padStart(2, '0');
+    let minutos = fechahoy.getMinutes().toString().padStart(2, '0');
+    let horahoytexto = hora + ":" + minutos;
+
+    let tarjetas = $('.contenedor-tarjetas li');
+    tarjetas.each(function(){
+      let li = $(this);
+      let textohorario = li.find('.texto-horario').text().trim();
+      if (horariosencencido) {
+        let partes = textohorario.split("-");
+        let abre = partes[0].trim();
+        let cierra = partes[1].trim();
+        if (horahoytexto >= abre && horahoytexto <= cierra) li.css('display', "");
+        else li.css("display", "none");
+      }
+    });
+  });
+}
+
+function mostrarTodasLasClinicas(){
+  $('.contenedor-tarjetas li').each(function(){ $(this).css('display', "")});
+}
+
+function vaciarInput(){
+  $('.input-busqueda').val("");
 }
