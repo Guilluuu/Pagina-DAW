@@ -18,6 +18,7 @@
   background-color: var(--color-fondo-tarjetas);
   padding: 3rem 2rem;
   font-weight: bold;
+  font-size: 2rem;
 }
 
 .icono-pequeno {
@@ -102,11 +103,16 @@ main {
 .titulo-clinica {  
   grid-area:titulo; 
 }
-.ubicacion {  grid-area: ubicacion; }
+.ubicacion {  
+  grid-area: ubicacion; 
+  font-size: 0.8rem;
+  width: 150%;
+}
 .horario {  grid-area: horario; }
 .numero-telefono {  
-  grid-area: telefono; 
   font-size: 0.8rem;
+  width: 150%;
+  grid-area: telefono; 
 }
 
 .alerta-urgencias {  

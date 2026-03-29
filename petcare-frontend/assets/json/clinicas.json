@@ -1,32 +1,52 @@
 {
   "clinicas": [
     {
-      "nombre": "Clinica1",
-      "ubicacion": "Ubicación1",
+      "nombre": "Clínica Veterinaria Peludos",
+      "ubicacion": "Calle Mayor 15, Madrid",
       "foto": "assets/imgs/clinica1.jpg",
-      "horario": "08:00-10:00",
-      "telefono": "+34123456789"
+      "horario": "08:00-14:00",
+      "telefono": "+34 912 345 678",
+      "urgencias": false
     },
     {
-      "nombre": "Clinica2",
-      "ubicacion": "Ubicación2",
+      "nombre": "Centro Veterinario San Roque",
+      "ubicacion": "Avenida Constitución 42, Sevilla",
       "foto": "assets/imgs/clinica2.jpg",
-      "horario": "08:00-22:00",
-      "telefono": "+34123456789"
+      "horario": "10:00-21:30",
+      "telefono": "+34 954 112 233",
+      "urgencias": true
     },
     {
-      "nombre": "Clinica3",
-      "ubicacion": "Ubicación3",
+      "nombre": "Hospital Veterinario Huellas",
+      "ubicacion": "Calle Gran Vía 88, Barcelona",
       "foto": "assets/imgs/clinica3.jpg",
-      "horario": "08:00-22:00",
-      "telefono": "+34123456789"
+      "horario": "00:00-23:59",
+      "telefono": "+34 931 987 654",
+      "urgencias": true
     },
     {
-      "nombre": "Clinica4",
-      "ubicacion": "Ubicación4",
+      "nombre": "Consultorio El Gato Feliz",
+      "ubicacion": "Plaza del Ayuntamiento 3, Valencia",
       "foto": "assets/imgs/clinica4.jpeg",
-      "horario": "08:00-22:00",
-      "telefono": "+34123456789"
+      "horario": "16:00-20:30",
+      "telefono": "+34 963 456 789",
+      "urgencias": false
+    },
+    {
+      "nombre": "Urgencias 24h Patitas",
+      "ubicacion": "Calle Alcalá 200, Madrid",
+      "foto": "assets/imgs/clinica1.jpg",
+      "horario": "00:00-23:59",
+      "telefono": "+34 900 123 456",
+      "urgencias": true
+    },
+    {
+      "nombre": "Clínica La Mascota",
+      "ubicacion": "Avenida de América 12, Bilbao",
+      "foto": "assets/imgs/clinica2.jpg",
+      "horario": "09:00-18:00",
+      "telefono": "+34 944 555 666",
+      "urgencias": false
     }
   ]
 }

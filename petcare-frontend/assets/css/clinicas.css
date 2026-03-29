@@ -125,10 +125,15 @@ main a:link, main a:visited, header a:link, header a:visited{
 .titulo-clinica {  
   grid-area:titulo; 
 }
-.ubicacion {  grid-area: ubicacion; }
+.ubicacion {  
+  grid-area: ubicacion; 
+  font-size: 0.8rem;
+  width: 150%;
+}
 .horario {  grid-area: horario; }
 .numero-telefono {  
   font-size: 0.8rem;
+  width: 150%;
   grid-area: telefono; 
 }
 
