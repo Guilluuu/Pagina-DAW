@@ -12,6 +12,12 @@ document.addEventListener("DOMContentLoaded", function() {
       copia.querySelector('.texto-ubicacion').textContent=clinica.ubicacion;
       copia.querySelector('.texto-horario').textContent=clinica.horario;
       copia.querySelector('.texto-telefono').textContent=clinica.telefono;
+
+      let btncita = copia.querySelector(".pedir-cita");
+      btncita.addEventListener("click", () => {
+        sessionStorage.setItem('nombreclinica', clinica.nombre);
+        sessionStorage.setItem('ubicacionclinica', clinica.ubicacion);
+      });
       contenedor.append(copia);
     });
 
