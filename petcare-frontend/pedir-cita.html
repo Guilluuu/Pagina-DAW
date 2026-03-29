@@ -2,6 +2,16 @@
 <html lang="es">
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="authors" content="Marina Collazo Couñago, Guillermo Fernández Castro, Andrés Daparte Cabo">
+  <meta name="keywords" content="width=device-width, initial-scale=1.0">
+  <title>PetCare - Pedir Cita</title>
+  <link rel="icon" type="image/x-icon" href="assets/imgs/logo.svg">
+  <!-- Añadimos bootstrap (archivos necesarios descargados en local)-->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="assets/css/pedir-cita.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetCare - Pedir Cita</title>
@@ -22,29 +32,36 @@
     <address class="linea-flex ubicacion">
       <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
       Ubicación de la clínica
-    </address>     
+    </address>
   </header>
 
   <main>
     <form action="clinicas.html" method="get" target="_top">
       <fieldset class="fieldset fieldset-propietario">
-        <input class="borde-asimetrico input-texto" type="text" id="nombre" name="nombre" required placeholder="Nombre completo">
+        <input class="borde-asimetrico input-texto" type="text" id="nombre" name="nombre" required
+          placeholder="Nombre completo">
         <div id="datos-contacto">
-          <input class="borde-asimetrico input-texto" type="tel" id="telefono" name="telefono" required placeholder="Número de teléfono">
-          <input class="borde-asimetrico input-texto" type="email" id="email" name="email" required placeholder="Correo electrónico">
+          <input class="borde-asimetrico input-texto" type="tel" id="telefono" name="telefono" required
+            placeholder="Número de teléfono">
+          <input class="borde-asimetrico input-texto" type="email" id="email" name="email" required
+            placeholder="Correo electrónico">
         </div>
       </fieldset>
 
       <fieldset class="fieldset fieldset-mascota">
-        <input class="borde-asimetrico input-texto" type="text" id="nombreMascota" name="nombreMascota" required placeholder="Nombre de la mascota">
+        <input class="borde-asimetrico input-texto" type="text" id="nombreMascota" name="nombreMascota" required
+          placeholder="Nombre de la mascota">
         <label for="especie">Tipo de mascota</label>
         <div class="opciones-especie">
           <input type="radio" id="perro" name="especie" value="perro" required>
-          <label class="borde-asimetrico" for="perro"><img class="icono-mascota" src="assets/imgs/dog-svgrepo-com.svg" alt="Perro"></label>
+          <label class="borde-asimetrico" for="perro"><img class="icono-mascota" src="assets/imgs/dog-svgrepo-com.svg"
+              alt="Perro"></label>
           <input type="radio" id="gato" name="especie" value="gato">
-          <label class="borde-asimetrico" for="gato"><img class="icono-mascota" src="assets/imgs/cat-svgrepo-com.svg" alt="Gato"></label>
+          <label class="borde-asimetrico" for="gato"><img class="icono-mascota" src="assets/imgs/cat-svgrepo-com.svg"
+              alt="Gato"></label>
           <input type="radio" id="otro" name="especie" value="otro">
-          <label class="borde-asimetrico" for="otro"><img class="icono-mascota" src="assets/imgs/mouse.svg" alt="Otro"></label>
+          <label class="borde-asimetrico" for="otro"><img class="icono-mascota" src="assets/imgs/mouse.svg"
+              alt="Otro"></label>
         </div>
       </fieldset>
 
