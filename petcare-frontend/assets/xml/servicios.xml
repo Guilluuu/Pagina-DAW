@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<servicios>
+    <servicio id="cirugia-veterinaria">
+        <nombre>Cirugía Veterinaria</nombre>
+        <imagen>assets/imgs/placeholder.png</imagen>
+        <descripcion-corta>Procedimientos quirúrgicos especializados para garantizar la salud de tu mascota con tecnología de vanguardia y protocolos de seguridad rigurosos.</descripcion-corta>
+        <subtitulo>Tecnología avanzada para intervenciones seguras y precisas</subtitulo>
+        <banner>assets/imgs/img-servicio-especifico-banner.png</banner>
+
+        <bloque>
+            <titulo>1. Cirugía General</titulo>
+            <texto>Realizamos intervenciones quirúrgicas habituales con protocolos de seguridad estrictos.</texto>
+            <texto>Contamos con monitorización continua y seguimiento postoperatorio personalizado.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Cirugía Especializada</titulo>
+            <texto>Abordamos procedimientos de mayor complejidad con apoyo diagnóstico y planificación previa.</texto>
+        </bloque>
+    </servicio>
+
+    <servicio id="diagnostico-por-imagen">
+        <nombre>Diagnóstico por Imagen</nombre>
+        <imagen>assets/imgs/placeholder.png</imagen>
+        <descripcion-corta>Tecnología avanzada de radiología digital, ecografía y estudios especializados para diagnósticos precisos y tratamientos efectivos.</descripcion-corta>
+        <subtitulo>Tecnología avanzada para diagnósticos precisos y tratamientos efectivos</subtitulo>
+        <banner>assets/imgs/img-servicio-especifico-banner.png</banner>
+
+        <bloque>
+            <titulo>1. Radiología Digital</titulo>
+            <texto>Contamos con equipos de radiología digital de última generación que nos permiten obtener imágenes de alta calidad en segundos.</texto>
+            <texto>Las radiografías digitales pueden ser ampliadas, mejoradas y compartidas fácilmente con especialistas.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Ecografía Veterinaria</titulo>
+            <texto>La ecografía es una herramienta diagnóstica no invasiva que nos permite visualizar los órganos internos en tiempo real.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>3. Tomografía y Resonancia</titulo>
+            <texto>Para casos complejos, contamos con acceso a servicios de tomografía computarizada y resonancia magnética.</texto>
+        </bloque>
+    </servicio>
+
+    <servicio id="medicina-interna">
+        <nombre>Medicina Interna</nombre>
+        <imagen>assets/imgs/placeholder.png</imagen>
+        <descripcion-corta>Diagnóstico y tratamiento de enfermedades complejas con un enfoque sistemático y basado en evidencia por nuestros especialistas.</descripcion-corta>
+        <subtitulo>Atención especializada para enfermedades complejas y crónicas</subtitulo>
+        <banner>assets/imgs/img-servicio-especifico-banner.png</banner>
+
+        <bloque>
+            <titulo>1. Diagnóstico integral</titulo>
+            <texto>Estudiamos patologías complejas mediante pruebas específicas y evaluación clínica completa.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Seguimiento continuado</titulo>
+            <texto>Realizamos planes de control y tratamiento adaptados a cada mascota.</texto>
+        </bloque>
+    </servicio>
+
+    <servicio id="odontologia-veterinaria">
+        <nombre>Odontología Veterinaria</nombre>
+        <imagen>assets/imgs/placeholder.png</imagen>
+        <descripcion-corta>Cuidado dental completo para mantener la salud bucal de tu mascota, desde limpiezas profesionales hasta tratamientos especializados.</descripcion-corta>
+        <subtitulo>Salud bucodental para mejorar el bienestar general de tu mascota</subtitulo>
+        <banner>assets/imgs/img-servicio-especifico-banner.png</banner>
+
+        <bloque>
+            <titulo>1. Limpieza dental</titulo>
+            <texto>Eliminamos sarro y placa para prevenir infecciones y enfermedades periodontales.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Tratamientos especializados</titulo>
+            <texto>Realizamos extracciones, revisiones y tratamientos adaptados a cada caso.</texto>
+        </bloque>
+    </servicio>
+</servicios>
