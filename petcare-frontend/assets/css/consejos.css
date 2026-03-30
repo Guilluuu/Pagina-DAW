@@ -1,13 +1,11 @@
 @import "main.css";
 
 .consejos-tab-icon-button {
-
     max-width: 4rem;
     max-height: 4rem;
 }
 
-
 li.nav-item {
-    
     flex: wrap;
 }
+

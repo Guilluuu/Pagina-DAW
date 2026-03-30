@@ -31,173 +31,77 @@
   </nav>
 
 
-  <header>
-    <h1>Consejos de salud para tus mascotas</h1>
+  <header class="bg-gradient-1 p-5">
+    
+    <article class="w-100 w-md-50">
+      <h1>Consejos de salud para tus mascotas</h1>
+      <p>
+        Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+      </p>
+    </article>
 
-    <ul class="nav nav-tabs" id="categoria-animales" role="tablist">
+
+  </header>
+
+
+  <main class="container mt-4">
+
+    <ul class="nav nav-tabs justify-content-center border-0 gap-3" id="categoria-animales" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#perros-tab-pane"
-          type="button" role="tab" aria-controls="perros-tab-pane" aria-selected="true">
+        <button class="nav-link d-flex flex-column align-items-center border rounded p-3 text-muted active"
+          id="home-tab" data-bs-toggle="tab" data-bs-target="#perros-tab-pane" type="button" role="tab"
+          aria-controls="perros-tab-pane" aria-selected="true">
           <img class="consejos-tab-icon-button" src="assets/imgs/dog-svgrepo-com.svg" alt="Icono de perro">
           Perros
         </button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#gatos-tab-pane" type="button"
-          role="tab" aria-controls="gatos-tab-pane" aria-selected="false">
+        <button class="nav-link d-flex flex-column align-items-center border rounded p-3 text-muted" id="profile-tab"
+          data-bs-toggle="tab" data-bs-target="#gatos-tab-pane" type="button" role="tab" aria-controls="gatos-tab-pane"
+          aria-selected="false">
           <img class="consejos-tab-icon-button" src="assets/imgs/cat-svgrepo-com.svg" alt="Icono de gato">
           Gatos
         </button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#otros-tab-pane" type="button"
-          role="tab" aria-controls="otros-tab-pane" aria-selected="false">
+        <button class="nav-link d-flex flex-column align-items-center border rounded p-3 text-muted" id="contact-tab"
+          data-bs-toggle="tab" data-bs-target="#otros-tab-pane" type="button" role="tab" aria-controls="otros-tab-pane"
+          aria-selected="false">
           <img class="consejos-tab-icon-button" src="assets/imgs/bird-svgrepo-com.svg" alt="Icono de otros animales">
           Otros
         </button>
       </li>
     </ul>
 
-    <search class="w-50 mt-4 m-auto">
-      <form class="d-flex" role="search" name="buscarClinica">
+    <search class="w-100 w-md-50 mt-4 m-auto">
+      <form class="d-flex flex-column flex-md-row bg-white shadow-sm rounded-3 p-1" role="search" name="buscarClinica">
+
         <input class="form-control me-2" type="search" placeholder="Buscar consejos..." aria-label="Search" />
-        <button class="btn btn-secondary d-flex" type="submit">
+        <button class="btn btn-secondary d-flex justify-content-center p-3 ps-lg-4 pe-lg-4 borde-asimetrico"
+          type="submit">
           <img class="img-fluid fit-max" src="assets/imgs/search-icon.svg" alt="Icono de búsqueda"
-            style="width:1em; height:auto;">
+            style="width:1em; height:auto; margin-right: 1mm;">
           Buscar
         </button>
       </form>
     </search>
-
-  </header>
-
-
-  <main class="container">
     <ul class="row list-unstyled g-4 justify-content-center mt-3">
 
-      <li class="col-12 col-md-6">
-        <article class="card borde-asimetrico">
-          <img class="card-img-top" src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100%;">
+      <li class="col-12 col-md-6 borde-asimetrico p-0 shadow-lg mb-5 bg-body-secondary">
+        <article class="card border-white borde-asimetrico">
+          <img class="card-img-top object-fit-cover borde-asimetrico-top-right" src="assets/imgs/perros.jpg" imagen
+            consejo 1" style="width:100%;">
 
           <section class="card-body">
-            <a class="" href="consejo-especifico.html">Nombre del consejo</a>
-            <p class="card-text">Tipo del consejo</p>
-            <p class="card-text secondary"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur
-              ipsum, a
-              volutpat felis.
-              Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..
-            </p>
-          </section>
-
-        </article>
-
-      </li>
-
-      <li class="col-12 col-md-6">
-        <article class="card borde-asimetrico">
-          <img class="card-img-top" src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100%;">
-
-          <section class="card-body">
-            <a href="consejo-especifico.html">Nombre del consejo</a>
-            <p class="card-text">Tipo del consejo</p>
+            <a href="consejo-especifico.html" class="h5 fw-bold text-dark text-decoration-none d-block mb-2">Nombre del
+              consejo</a>
+            <span class="card-text badge bg-success bg-opacity-10 text-success fw-normal mb-2">Tipo del consejo</span>
             <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a
               volutpat felis.
               Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..
             </p>
           </section>
-
         </article>
-
-      </li>
-
-      <li class="col-12 col-md-6">
-        <article class="card borde-asimetrico">
-          <img class="card-img-top" src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100%;">
-
-          <section class="card-body">
-            <a href="consejo-especifico.html">Nombre del consejo</a>
-            <p class="card-text">Tipo del consejo</p>
-            <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a
-              volutpat felis.
-              Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..
-            </p>
-          </section>
-
-        </article>
-
-      </li>
-
-
-
-      <li class="col-12 col-md-6">
-        <article class="card borde-asimetrico">
-          <img class="card-img-top" src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100%;">
-
-          <section class="card-body">
-            <a href="consejo-especifico.html">Nombre del consejo</a>
-            <p class="card-text">Tipo del consejo</p>
-            <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a
-              volutpat felis.
-              Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..
-            </p>
-          </section>
-
-        </article>
-
-      </li>
-
-
-      <li class="col-12 col-md-6">
-        <article class="card borde-asimetrico">
-          <img class="card-img-top" src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100%;">
-
-          <section class="card-body">
-            <a href="consejo-especifico.html">Nombre del consejo</a>
-            <p class="card-text">Tipo del consejo</p>
-            <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a
-              volutpat felis.
-              Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..
-            </p>
-          </section>
-
-        </article>
-
-      </li>
-
-
-      <li class="col-12 col-md-6">
-        <article class="card borde-asimetrico">
-          <img class="card-img-top" src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100%;">
-
-          <section class="card-body">
-            <a href="consejo-especifico.html">Nombre del consejo</a>
-            <p class="card-text">Tipo del consejo</p>
-            <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a
-              volutpat felis.
-              Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..
-            </p>
-          </section>
-
-        </article>
-
-      </li>
-
-
-      <li class="col-12 col-md-6">
-        <article class="card borde-asimetrico">
-          <img class="card-img-top" src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:100%;">
-
-          <section class="card-body">
-            <a href="consejo-especifico.html">Nombre del consejo</a>
-            <p class="card-text">Tipo del consejo</p>
-            <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a
-              volutpat felis.
-              Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero..
-            </p>
-          </section>
-
-        </article>
-
       </li>
 
 

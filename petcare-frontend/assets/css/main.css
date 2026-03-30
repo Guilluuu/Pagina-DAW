@@ -100,6 +100,13 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0px 12px 0px 12px;
 }
 
+.borde-asimetrico-2 {
+    border-radius: 0px 24px 0px 24px;
+}
+.borde-asimetrico-top-right {
+    border-radius: 0px 24px 0px 0px;
+}
+
 
 .main-navbar {
     position: sticky;
