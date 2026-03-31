@@ -103,7 +103,6 @@
     justify-items: start;
     gap: 0.9rem;
 
-    border-radius: var(--radio-tarjeta);
     background-color: var(--color-fondo-tarjetas);
     box-shadow: var(--sombra-tarjeta);
 
@@ -121,7 +120,6 @@
     width: 6rem;
     height: 6rem;
     object-fit: cover;
-    border-radius: 14px;
 }
 
 .titulo-tarjeta {

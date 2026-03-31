@@ -1,11 +1,12 @@
-@import url('/petcare-frontend/assets/fonts/inter.css');
-@import url('/petcare-frontend/assets/fonts/poppins.css');
+@import url('../fonts/inter.css');
+@import url('../fonts/poppins.css');
 
 :root {
     --color-fondo-gradiente: #C7D9DD;
     --color-fondo-alternativo: #D5E5D5;
     --color-fondo-primario: #EEF1DA;
     --color-acentuado-primario: #ADB2D4;
+    --color-acentuado-secundario: #d5d8eb;
 
     --color-cta-critical: #EF5A6F;
     --color-cta-primary: #7B82A8;
@@ -76,9 +77,6 @@
     --sombra-tarjeta-hover: 0 10px 24px rgba(42, 45, 63, 0.14);
 }
 
-
-
-
 body {
     font-family: var(--fuente-normal) ;
     color: var(--color-texto-secondary);
@@ -86,8 +84,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--fuente-cabeceras);
@@ -107,7 +103,6 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 0px 24px 0px 0px;
 }
 
-
 .main-navbar {
     position: sticky;
     top: 0;
@@ -116,7 +111,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     background-color: #ffffff;
     font-family: sans-serif;
-    padding: 5px;
+    padding: 0.5rem;
     box-shadow: 0 2px 4px var(--color-acentuado-primario);
     align-items: center;
 }
@@ -125,8 +120,8 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     color: #6c757d;
     font-size: 1rem;
-    margin: 1rem;
-    padding: 0.6rem 1.2rem;
+    margin: 0.4rem;
+    padding: 0.4rem 0.8rem;
 }
 
 .main-logo {
@@ -137,7 +132,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.2rem;
 }
 .main-logo img {
-    height: 45px;
+    height: 32px;
 }
 
 .main-navbar a:nth-child(2) {
@@ -158,7 +153,6 @@ a.urgencias-navbar{
 }
 
 .bg-gradient-1{
-    background: #2A7B9B;
     background: linear-gradient(0deg, rgba(42, 123, 155, 0.3) 0%, rgba(87, 199, 133, 0.3) 50%, rgba(237, 221, 83, 0.3) 100%);
 }
 

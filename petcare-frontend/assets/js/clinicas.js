@@ -1,31 +1,40 @@
+let clinicasGlobal = [];
 
 document.addEventListener("DOMContentLoaded", function() {
-  $.getJSON("/petcare-frontend/assets/json/clinicas.json", (datos) => {
-    let clinicas = datos.clinicas;
-    let contenedor = $(".contenedor-tarjetas");
-    let template = document.getElementsByTagName("template")[0];
-
-    clinicas.forEach(clinica =>{
-      let copia = template.content.cloneNode(true);
-      copia.querySelector('.foto-clinica').src=clinica.foto;
-      copia.querySelector('.titulo-clinica').textContent=clinica.nombre;
-      copia.querySelector('.texto-ubicacion').textContent=clinica.ubicacion;
-      copia.querySelector('.texto-horario').textContent=clinica.horario;
-      copia.querySelector('.texto-telefono').textContent=clinica.telefono;
-
-      let btncita = copia.querySelector(".pedir-cita");
-      btncita.addEventListener("click", () => {
-        sessionStorage.setItem('nombreclinica', clinica.nombre);
-        sessionStorage.setItem('ubicacionclinica', clinica.ubicacion);
-      });
-      contenedor.append(copia);
-    });
+  $.getJSON("assets/json/clinicas.json", (datos) => {
+    clinicasGlobal = datos.clinicas;
+    renderizarTarjetas(clinicasGlobal);
 
     inicializarBuscador();
     inicializarOrden();
     inicializarHorario();
+
   });
 });
+
+function renderizarTarjetas(listaClinicas) {
+  let contenedor = $(".contenedor-tarjetas");
+  contenedor.empty(); // Método de jQuery que elimina todos los nodos hijos y sus eventos asociados
+  let template = document.getElementsByTagName("template")[0];
+
+  listaClinicas.forEach(clinica => {
+    let copia = template.content.cloneNode(true);
+    copia.querySelector('.foto-clinica').src = clinica.foto;
+    copia.querySelector('.titulo-clinica').textContent = clinica.nombre;
+    copia.querySelector('.texto-ubicacion').textContent = clinica.ubicacion;
+    copia.querySelector('.texto-horario').textContent = clinica.horario;
+    copia.querySelector('.texto-telefono').textContent = clinica.telefono;
+
+    let btncita = copia.querySelector(".pedir-cita");
+    btncita.addEventListener("click", () => {
+      sessionStorage.setItem('nombreclinica', clinica.nombre);
+      sessionStorage.setItem('ubicacionclinica', clinica.ubicacion);
+    });
+    
+    contenedor.append(copia);
+  });
+}
+
 
 function inicializarBuscador() {
   let formbusqueda=$('form[name="buscarClinica"]');

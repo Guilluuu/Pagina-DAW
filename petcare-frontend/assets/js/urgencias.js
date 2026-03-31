@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-  $.getJSON("/petcare-frontend/assets/json/clinicas.json", (datos) => {
+  $.getJSON("assets/json/clinicas.json", (datos) => {
     let clinicas = datos.clinicas;
     let contenedor = $(".contenedor-tarjetas");
     let template = document.getElementsByTagName("template")[0];

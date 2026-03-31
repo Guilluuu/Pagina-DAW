@@ -34,7 +34,7 @@ async function cargarServicioEspecifico() {
 
         const nombre = servicio.querySelector("nombre")?.textContent.trim() ?? "";
         const subtitulo = servicio.querySelector("subtitulo")?.textContent.trim() ?? "";
-        const banner = servicio.querySelector("banner")?.textContent.trim() ?? "";
+        const banner = servicio.querySelector("imagen")?.textContent.trim() ?? "";
 
         document.getElementById("titulo-servicio").textContent = nombre;
         document.getElementById("subtitulo-servicio").textContent = subtitulo;

@@ -37,7 +37,6 @@
     display: block;
     width: 100%;
     height: auto;
-    border-radius: var(--radio-tarjeta);
     object-fit: cover;
 }
 
@@ -79,7 +78,6 @@
         rgba(238, 241, 218, 1) 0%,
         rgba(199, 217, 221, 0.9) 100%
     );
-    border-radius: var(--radio-tarjeta);
 }
 
 .cta-servicio__caja h2 {

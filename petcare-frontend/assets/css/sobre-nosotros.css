@@ -1,1 +1,116 @@
 @import "main.css";
+
+.multicol-container {
+    column-width: 50%;
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+.header-multicol {
+    column-count: 2;
+    padding: 100px 175px 55px 175px;
+}
+
+.header-multicol img {
+    float: right;
+    break-inside: avoid;
+    width: inherit;
+    width: 15vw;
+    margin: 0px 35px 0px 0px;
+    background-color: var(--color-acentuado-primario);
+    padding: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-info {
+    border: medium solid var(--color-acentuado-primario);
+    margin: 4vh 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    background-color: var(--color-fondo-primario);
+    border-color: var(--color-fondo-alternativo);
+    background-blend-mode: hard-light;
+}
+
+.about-us-info img {
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.botones-navegacion {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
+.contenedor-multicol {
+    column-width: 50%;
+    column-count: 2;
+    column-gap: 2rem;
+    width: 75%;
+    margin: auto;
+    padding: 35px;
+    background: linear-gradient(0deg, rgba(113, 212, 154, 0.15) 50%, rgba(145, 210, 172, 0.15) 50%, rgba(255, 255, 255, 0.15) 100%);
+    font-size: x-large;
+}
+
+
+main {
+    padding: 25px;
+}
+
+.btn-pestana {
+    font-family: var(--fuente-cabeceras);
+    font-weight: 600;
+    color: var(--color-texto-main);
+    padding: 25px;
+    border-radius: 8px;
+    background-color: var(--color-fondo-inputs);
+    border: medium solid var(--color-acentuado-secundario);
+}
+
+.activo {
+    border-color: var(--color-acentuado-primario);
+}
+
+
+@media screen and (max-width: 992px) {
+    .header-multicol {
+        column-count: 1;
+        padding: 35px;        
+    }
+
+    .header-multicol img {
+        break-inside: avoid;
+        width: 15vw;
+        background-color: var(--color-acentuado-primario);
+        padding: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .contenedor-multicol {
+        column-width: 50%;
+        column-count: 1;
+        column-gap: 2rem;
+        width: 95%;
+        margin: auto;
+        padding: 35px;
+        background: linear-gradient(0deg, rgba(113, 212, 154, 0.15) 50%, rgba(145, 210, 172, 0.15) 50%, rgba(255, 255, 255, 0.15) 100%);
+        font-size: large;
+    }
+
+
+    .botones-navegacion {
+        flex-direction: column;
+        max-width: 85%;
+        margin: auto;
+    }
+    main{
+        padding: 0px;
+    }
+
+}

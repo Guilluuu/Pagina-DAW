@@ -1,1 +1,215 @@
 @import "main.css";
+
+* {
+    box-sizing: border-box;
+}
+
+.cabecera-consejo {
+    padding: 2.5rem var(--espacio-x-mobile) 3rem;
+}
+
+.intro-consejo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.texto-consejo h1 {
+    margin: 0 0 1rem;
+    font-size: var(--fs-h1-mobile);
+    line-height: 1.1;
+    max-width: 14ch;
+}
+
+.texto-consejo p {
+    margin: 0;
+    max-width: var(--ancho-contenido-texto);
+    font-size: var(--fs-body-mobile);
+    line-height: 1.7;
+    color: var(--color-texto-secondary);
+}
+
+.imagen-consejo {
+    margin: 0;
+}
+
+.imagen-consejo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.contenido-consejo {
+    padding: 1.5rem var(--espacio-x-mobile) 0;
+    background-color: var(--color-fondo-tarjetas);
+}
+
+.contenido-consejo article {
+    max-width: var(--ancho-contenido-texto);
+    margin: 0 auto 2rem;
+}
+
+.contenido-consejo h3 {
+    margin: 0 0 1rem;
+    font-size: var(--fs-h2-mobile);
+    line-height: 1.2;
+}
+
+.contenido-consejo p {
+    margin: 0 0 1rem;
+    color: var(--color-texto-secondary);
+    line-height: 1.7;
+    font-size: var(--fs-body-mobile);
+}
+
+.cta-consejo {
+    padding: 1.5rem var(--espacio-x-mobile) 3rem;
+    background-color: var(--color-fondo-tarjetas);
+}
+
+.cta-consejo__caja {
+    max-width: var(--ancho-contenido-estrecho);
+    margin: 0 auto;
+    padding: 2rem 1.25rem;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        rgba(238, 241, 218, 1) 0%,
+        rgba(199, 217, 221, 0.9) 100%
+    );
+}
+
+.cta-consejo__caja h2 {
+    margin: 0 0 0.75rem;
+    font-size: var(--fs-h2-mobile);
+    line-height: 1.25;
+}
+
+.cta-consejo__caja p {
+    margin: 0 0 1.5rem;
+    color: var(--color-texto-secondary);
+    line-height: 1.7;
+    font-size: var(--fs-body-mobile);
+}
+
+.cta-consejo__boton {
+    display: inline-block;
+    padding: 0.9rem 1.4rem;
+    background-color: var(--color-cta-primary);
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+@media (min-width: 768px) {
+    .cabecera-consejo,
+    .contenido-consejo,
+    .cta-consejo {
+        padding-left: var(--espacio-x-tablet);
+        padding-right: var(--espacio-x-tablet);
+    }
+
+    .cabecera-consejo {
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .intro-consejo {
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .texto-consejo,
+    .imagen-consejo {
+        flex: 1 1 0;
+    }
+
+    .texto-consejo h1 {
+        font-size: var(--fs-h1-tablet);
+    }
+
+    .texto-consejo p,
+    .contenido-consejo p,
+    .cta-consejo__caja p {
+        font-size: var(--fs-body-tablet);
+    }
+
+    .contenido-consejo h3,
+    .cta-consejo__caja h2 {
+        font-size: var(--fs-h2-tablet);
+    }
+
+    .imagen-consejo img {
+        min-height: 18rem;
+    }
+
+    .contenido-consejo {
+        padding-top: 2rem;
+    }
+
+    .cta-consejo {
+        padding-bottom: 4rem;
+    }
+
+    .cta-consejo__caja {
+        padding: 2.5rem 2rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cabecera-consejo,
+    .contenido-consejo,
+    .cta-consejo {
+        padding-left: var(--espacio-x-desktop);
+        padding-right: var(--espacio-x-desktop);
+    }
+
+    .cabecera-consejo {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+
+    .intro-consejo {
+        gap: 4rem;
+    }
+
+    .texto-consejo h1 {
+        font-size: var(--fs-h1-desktop);
+    }
+
+    .texto-consejo p,
+    .contenido-consejo p,
+    .cta-consejo__caja p {
+        font-size: var(--fs-body-desktop);
+    }
+
+    .contenido-consejo h3,
+    .cta-consejo__caja h2 {
+        font-size: var(--fs-h2-desktop);
+    }
+
+    .imagen-consejo img {
+        min-height: 22rem;
+    }
+
+    .contenido-consejo article {
+        max-width: var(--ancho-contenido-texto);
+    }
+
+    .cta-consejo {
+        padding-bottom: 5rem;
+    }
+}

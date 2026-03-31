@@ -1,0 +1,184 @@
+{
+  "consejos": [
+    {
+      "id": "consejo-perro-01",
+      "categoria": "perro",
+      "titulo": "¿Cómo debemos educar al perro para evitar problemas de eliminación en casa?",
+      "etiquetas": [
+        "Comportamiento",
+        "Cachorro"
+      ],
+      "imagen": "assets/imgs/perros-5.webp",
+      "preview": "Cuando un perro hace sus necesidades en casa, siempre hay un motivo. Entender las causas es el primer paso para corregir este comportamiento desde la educación positiva.",
+      "contenido": "Que tu perro haga sus necesidades en casa puede ser frustrante, pero es importante recordar que nunca lo hace por venganza o maldad. En el caso de los cachorros, suele ser una cuestión de falta de aprendizaje o de no salir con la frecuencia necesaria. En perros adultos, los motivos pueden ir desde el estrés y la ansiedad por separación hasta problemas de salud subyacentes.\n\nEn PetCare recomendamos establecer una rutina de paseos con horarios fijos y premiar al perro inmediatamente después de que haga sus necesidades en la calle, usando golosinas o caricias. Si ocurre un accidente en casa, evita los castigos o los gritos, ya que esto solo generará miedo y podría empeorar el problema. Si el comportamiento persiste, es aconsejable acudir a consulta para descartar infecciones urinarias u otros problemas médicos."
+    },
+    {
+      "id": "consejo-perro-02",
+      "categoria": "perro",
+      "titulo": "¿Cómo tratar la displasia de cadera en perros?",
+      "etiquetas": [
+        "Salud",
+        "Prevención"
+      ],
+      "imagen": "assets/imgs/perros-3.png",
+      "preview": "La displasia de cadera es una patología frecuente que dificulta la movilidad de tu mascota. Descubre cómo mejorar su calidad de vida con el tratamiento adecuado.",
+      "contenido": "La displasia de cadera es una enfermedad en la que la articulación de la cadera no se desarrolla correctamente, provocando desgaste, dolor y, con el tiempo, artritis. Es más común en razas grandes, aunque puede afectar a cualquier perro. Los síntomas incluyen dificultad para levantarse, cojera o rechazo a subir escaleras.\n\nEl tratamiento depende de la gravedad y la edad del perro. En casos leves, en PetCare apostamos por un manejo conservador: control estricto del peso para no sobrecargar la articulación, suplementos articulares y fisioterapia. En casos más severos, puede ser necesaria una intervención quirúrgica para devolverle la movilidad y eliminar el dolor. Mantener a tu perro en un peso ideal es la mejor forma de prevención."
+    },
+    {
+      "id": "consejo-perro-03",
+      "categoria": "perro",
+      "titulo": "Consejos para quitar las pulgas y garrapatas a tu perro",
+      "etiquetas": [
+        "Prevención",
+        "Cuidados"
+      ],
+      "imagen": "assets/imgs/perros-4.jpeg",
+      "preview": "Con la llegada del buen tiempo, los parásitos externos se convierten en un problema. Aprende a proteger a tu perro de pulgas y garrapatas de forma efectiva.",
+      "contenido": "Las pulgas y garrapatas no solo causan picor y molestias a tu perro, sino que pueden transmitir enfermedades graves tanto a las mascotas como a los humanos. Es fundamental revisar el pelaje de tu mascota después de cada paseo por zonas de campo o hierba alta.\n\nPara prevenir y tratar estos parásitos, existen múltiples opciones seguras y eficaces: pipetas, collares antiparasitarios y pastillas masticables. En PetCare siempre recomendamos consultar con nuestros veterinarios para elegir el método que mejor se adapte al estilo de vida de tu perro. Además, si encuentras una garrapata ya enganchada, es importante extraerla correctamente con unas pinzas especiales para evitar que la cabeza se quede dentro de la piel."
+    },
+    {
+      "id": "consejo-perro-04",
+      "categoria": "perro",
+      "titulo": "¿Cómo enseño a mi perro a sentarse y otros trucos?",
+      "etiquetas": [
+        "Comportamiento",
+        "Cachorro"
+      ],
+      "imagen": "assets/imgs/perros-1.jpeg",
+      "preview": "El adiestramiento mediante refuerzo positivo no solo es más efectivo, sino que fortalece el vínculo entre tú y tu mascota. Te damos las claves para empezar.",
+      "contenido": "Enseñar trucos básicos a tu perro como sentarse, dar la pata o quedarse quieto es excelente para su estimulación mental. La clave del éxito es utilizar siempre el refuerzo positivo: premiar los comportamientos deseados en lugar de castigar los errores. Puedes usar pequeños trozos de comida que le gusten mucho, juguetes o caricias.\n\nPara enseñarle a sentarse, colócate frente a él con un premio en la mano. Acerca la mano a su nariz y súbela lentamente hacia atrás, sobre su cabeza. Su instinto será seguir la mano con la mirada, lo que hará que baje la parte trasera de su cuerpo. En el momento en que se siente, di 'sienta' y dale el premio. Las sesiones deben ser cortas, de unos 5 a 10 minutos al día, para que el perro no se frustre ni se aburra."
+    },
+    {
+      "id": "consejo-perro-05",
+      "categoria": "perro",
+      "titulo": "Diabetes en perros: consejos, síntomas y tratamiento",
+      "etiquetas": [
+        "Salud",
+        "Senior"
+      ],
+      "imagen": "assets/imgs/perros-2.jpeg",
+      "preview": "La diabetes es una enfermedad común en perros mayores. Detectarla a tiempo es vital para administrar un tratamiento que le permita llevar una vida normal.",
+      "contenido": "La diabetes canina ocurre cuando el cuerpo del perro no produce suficiente insulina o no la utiliza correctamente, lo que provoca niveles altos de azúcar en sangre. Los síntomas más comunes son un aumento excesivo de la sed (bebe mucha agua), orina con mucha más frecuencia, y pérdida de peso a pesar de tener un apetito voraz.\n\nSi observas estos síntomas, es crucial acudir a tu clínica PetCare para realizar un análisis de sangre. El tratamiento principal consiste en la administración diaria de insulina mediante inyecciones, las cuales son indoloras y fáciles de aprender a poner en casa. Además, se requiere una dieta específica, rica en fibra y baja en grasas, junto con una rutina de ejercicio constante. Con un buen control, un perro diabético puede vivir feliz durante muchos años."
+    },
+    {
+      "id": "consejo-gato-01",
+      "categoria": "gato",
+      "titulo": "Gatos mayores: prevención de enfermedades renales",
+      "etiquetas": [
+        "Salud",
+        "Senior"
+      ],
+      "imagen": "assets/imgs/gatos-1.jpeg",
+      "preview": "La insuficiencia renal es uno de los problemas más comunes en gatos de edad avanzada. Descubre cómo cuidarlos y qué síntomas vigilar.",
+      "contenido": "A medida que los gatos envejecen, sus riñones pueden empezar a perder su capacidad para filtrar toxinas de la sangre. La enfermedad renal crónica es progresiva, pero si se detecta a tiempo, se puede ralentizar significativamente. Los primeros signos que suelen notar los dueños son que el gato bebe mucha más agua de lo normal, orina en grandes cantidades, pierde peso y puede tener vómitos o mal aliento.\n\nPara prevenir complicaciones, en PetCare recomendamos realizar chequeos geriátricos anuales a partir de los 7-8 años, incluyendo análisis de sangre y orina. Aunque el daño renal no es reversible, el tratamiento con dietas específicas bajas en fósforo y proteínas de alta calidad, junto con una buena hidratación, mejora enormemente su calidad de vida."
+    },
+    {
+      "id": "consejo-gato-02",
+      "categoria": "gato",
+      "titulo": "¿Cómo evitar y tratar las bolas de pelo en los gatos?",
+      "etiquetas": [
+        "Cuidados",
+        "Nutrición"
+      ],
+      "imagen": "assets/imgs/gatos-2.jpeg",
+      "preview": "El acicalamiento es natural en los gatos, pero la ingestión excesiva de pelo puede causar problemas digestivos. Te explicamos cómo ayudar a tu felino.",
+      "contenido": "Los gatos son animales extremadamente limpios y dedican gran parte de su día a acicalarse. Al hacerlo, su lengua áspera arrastra el pelo muerto, que acaban tragando. Normalmente, este pelo pasa por el tracto digestivo sin problemas, pero en ocasiones se acumula en el estómago formando las temidas bolas de pelo, que el gato expulsa mediante vómitos.\n\nSi tu gato vomita bolas de pelo con frecuencia o notas que tiene estreñimiento, tos seca o falta de apetito, es importante actuar. El cepillado diario es la medida preventiva más eficaz, especialmente en épocas de muda. Además, puedes ofrecerle malta para gatos, una pasta que facilita el tránsito intestinal del pelo, y consultar en PetCare sobre piensos formulados específicamente para el control de bolas de pelo."
+    },
+    {
+      "id": "consejo-gato-03",
+      "categoria": "gato",
+      "titulo": "Estrés y cistitis idiopática felina: ¿cómo se relacionan?",
+      "etiquetas": [
+        "Comportamiento",
+        "Salud"
+      ],
+      "imagen": "assets/imgs/gatos-3.jpeg",
+      "preview": "Los gatos son muy sensibles a los cambios en su entorno. El estrés prolongado puede desencadenar inflamaciones dolorosas en su vejiga.",
+      "contenido": "La cistitis idiopática es una inflamación de la vejiga del gato que no está causada por bacterias ni cálculos, sino que está fuertemente vinculada al estrés. Los gatos son animales de rutinas, y cambios como una mudanza, la llegada de un nuevo miembro a la familia, obras en casa o incluso cambios en su arena pueden provocarles mucha ansiedad.\n\nLos síntomas de la cistitis incluyen orinar fuera del arenero, maullar de dolor al hacer pis o la presencia de sangre en la orina. El tratamiento médico alivia el dolor, pero para evitar recaídas hay que tratar el entorno. En PetCare recomendamos enriquecer su espacio con rascadores, lugares altos donde esconderse, usar difusores de feromonas felinas para aportarles tranquilidad y asegurar que tienen zonas separadas para comer, dormir y usar el arenero."
+    },
+    {
+      "id": "consejo-gato-04",
+      "categoria": "gato",
+      "titulo": "La importancia del cuidado dental en tu gato",
+      "etiquetas": [
+        "Salud",
+        "Prevención"
+      ],
+      "imagen": "assets/imgs/gatos-5.jpeg",
+      "preview": "El sarro y la gingivitis no solo causan mal aliento, sino que pueden derivar en infecciones graves. Aprende a cuidar la boca de tu compañero felino.",
+      "contenido": "Al igual que los humanos, los gatos acumulan placa bacteriana en los dientes que, con el tiempo, se convierte en sarro. Esto provoca gingivitis (inflamación de las encías), dolor agudo al masticar y, si no se trata, la pérdida de piezas dentales. Además, las bacterias de la boca pueden pasar al torrente sanguíneo y afectar a órganos como el corazón o los riñones.\n\nAcostumbrar a tu gato desde pequeño al cepillado dental con pastas específicas para mascotas es ideal, pero sabemos que no siempre es fácil. Existen alternativas como enjuagues bucales para añadir al agua de bebida, premios dentales o piensos con un diseño especial que limpia el diente al masticar. Si notas mal aliento, encías enrojecidas o que tu gato rechaza la comida seca, pide cita en PetCare para una revisión y posible limpieza bucal."
+    },
+    {
+      "id": "consejo-gato-05",
+      "categoria": "gato",
+      "titulo": "Depresión invernal: ¿las mascotas también la sufren?",
+      "etiquetas": [
+        "Comportamiento",
+        "Bienestar"
+      ],
+      "imagen": "assets/imgs/gatos-4.jpg",
+      "preview": "Los días grises y cortos del invierno no solo afectan a las personas. Descubre si tu mascota está pasando por una época de apatía por la falta de luz.",
+      "contenido": "El trastorno afectivo estacional, conocido comúnmente como depresión invernal, está relacionado con la falta de luz solar, que altera la producción de melatonina y serotonina. Aunque es más estudiado en humanos, se ha observado que algunos perros y gatos pueden mostrarse más letárgicos, dormir más de la cuenta, tener menos ganas de jugar o comer en exceso durante los meses de invierno.\n\nPara ayudar a tu mascota a superar estos meses grises, procura que sus camas estén cerca de las ventanas para aprovechar al máximo la luz natural del día. Mantén una rutina de juegos interactivos dentro de casa para estimularlos física y mentalmente. Si notas un cambio de comportamiento muy drástico y prolongado, siempre es recomendable consultarlo en PetCare para descartar otros problemas de salud."
+    },
+    {
+      "id": "consejo-otros-01",
+      "categoria": "otros",
+      "titulo": "El cuidado del pico y las uñas en aves domésticas",
+      "etiquetas": [
+        "Cuidados",
+        "Prevención"
+      ],
+      "imagen": "assets/imgs/other-1.webp",
+      "preview": "Canarios, periquitos o loros necesitan desgastar su pico y uñas de forma natural. Te contamos cómo evitar el sobrecrecimiento que les dificulta comer.",
+      "contenido": "El pico y las uñas de las aves están en constante crecimiento durante toda su vida. En la naturaleza, el roce con las ramas y la manipulación de alimentos duros los mantienen en una longitud adecuada. Sin embargo, en cautividad, es común que crezcan en exceso, lo que puede impedir que el ave se alimente correctamente o se mueva por la jaula sin engancharse.\n\nPara evitarlo, es fundamental proporcionarles perchas de madera natural de distintos grosores en lugar de las típicas perchas de plástico lisas. También puedes colocar bloques de calcio o piedras de afilar específicas en su jaula, que además de aportarles minerales, les sirven para frotar el pico. Si el sobrecrecimiento ya es evidente, no intentes cortarlo en casa; acude a PetCare para que nuestro especialista en animales exóticos lo recorte de forma segura."
+    },
+    {
+      "id": "consejo-otros-02",
+      "categoria": "otros",
+      "titulo": "Problemas digestivos en conejos: la parada intestinal",
+      "etiquetas": [
+        "Salud",
+        "Urgencias"
+      ],
+      "imagen": "assets/imgs/other-2.webp",
+      "preview": "Si tu conejo deja de comer y hacer caca, es una urgencia veterinaria. Conoce qué es el íleo paralítico y cómo debes actuar rápidamente.",
+      "contenido": "Los conejos tienen un sistema digestivo muy delicado que debe estar siempre en movimiento. Cuando un conejo deja de comer o disminuye su ingesta, el tránsito intestinal se ralentiza o se detiene por completo, una condición conocida como estasis gastrointestinal o parada intestinal. Esto genera gases dolorosos y, si no se trata a tiempo, puede ser mortal.\n\nLas causas más comunes son una dieta pobre en fibra, estrés, dolor o bolas de pelo. Si notas que tu conejo lleva más de 10-12 horas sin comer ni defecar, o está apático y encogido por el dolor, debes acudir de inmediato a Urgencias. Para prevenirlo, asegúrate de que el heno de buena calidad constituya al menos el 80% de su dieta diaria, complementado con verduras frescas y agua limpia siempre disponible."
+    },
+    {
+      "id": "consejo-otros-03",
+      "categoria": "otros",
+      "titulo": "La importancia de la luz UV y la temperatura en reptiles",
+      "etiquetas": [
+        "Cuidados",
+        "Bienestar"
+      ],
+      "imagen": "assets/imgs/other-3.jpeg",
+      "preview": "Iguanas, tortugas y camaleones dependen de su entorno para regular su cuerpo. Una iluminación y temperatura incorrectas pueden causarles graves enfermedades.",
+      "contenido": "Los reptiles son animales de sangre fría (ectotermos), lo que significa que no pueden regular su temperatura corporal internamente y dependen de fuentes de calor externas. Cada especie tiene unos rangos de temperatura y humedad muy específicos que debes replicar en su terrario creando gradientes, es decir, una zona más cálida para calentarse y otra más fresca para descansar.\n\nAdemás del calor, la mayoría de los reptiles necesitan radiación ultravioleta B (UVB) para poder sintetizar la vitamina D3, que a su vez es esencial para absorber el calcio de su dieta. Sin una lámpara UVB adecuada, pueden desarrollar enfermedad ósea metabólica, que causa deformidades en los huesos y debilidad general. Revisa y cambia los tubos de luz periódicamente, ya que pierden su eficacia antes de fundirse, y consulta en PetCare los parámetros ideales para tu mascota."
+    },
+    {
+      "id": "consejo-perro-06",
+      "categoria": "perro",
+      "titulo": "Cuidado de las almohadillas plantares en perros",
+      "etiquetas": [
+        "Cuidados",
+        "Salud"
+      ],
+      "imagen": "assets/imgs/perros-6.webp",
+      "preview": "Las patas de tu perro están en contacto directo con el suelo. Protegerlas del calor extremo, el frío o terrenos agresivos es esencial para evitar heridas.",
+      "contenido": "Las almohadillas de los perros son resistentes, pero no invulnerables. Durante el verano, el asfalto caliente puede causar quemaduras severas y muy dolorosas. Una buena regla es la de los cinco segundos: si pones el dorso de tu mano contra el asfalto y no aguantas cinco segundos, está demasiado caliente para que tu perro pasee por ahí. En invierno, la nieve o la sal que se echa en las calles también pueden agrietarlas y resecarlas.\n\nPara cuidarlas, hidrátalas regularmente con cremas o ceras específicas para almohadillas caninas, nunca con cremas para humanos, ya que el pH es diferente. Si tu perro se hace una herida, un corte o ves que se lame insistentemente las patas, límpiale la zona con agua y acude a nuestra clínica para evitar infecciones mayores."
+    },
+    {
+      "id": "consejo-gato-06",
+      "categoria": "gato",
+      "titulo": "¿Por qué mi gato muerde las plantas y cuáles son tóxicas?",
+      "etiquetas": [
+        "Prevención",
+        "Comportamiento"
+      ],
+      "imagen": "assets/imgs/gatos-6.avif",
+      "preview": "Es común que los gatos mordisqueen hojas en casa, pero muchas plantas decorativas son un peligro mortal. Conoce cuáles evitar y cómo darles alternativas seguras.",
+      "contenido": "Aunque los gatos son carnívoros estrictos, a menudo sienten curiosidad por las plantas, ya sea por aburrimiento, para jugar o para purgarse. El problema es que muchas plantas comunes en los hogares, como los lirios, el aloe vera, la flor de pascua, los potos o la monstera, son altamente tóxicas para ellos y pueden causarles desde vómitos hasta fallos renales agudos.\n\nSi tienes plantas en casa, es fundamental que compruebes que son seguras para felinos (como las cintas, los helechos o las palmeras de salón). Si tu gato es un mordedor empedernido, lo mejor es ofrecerle alternativas seguras como la hierba gatera (catnip) o plantar semillas de trigo o avena en macetas a las que pueda acceder libremente. Si sospechas que ha ingerido una planta tóxica, contacta rápidamente con PetCare de urgencia."
+    }
+  ]
+}

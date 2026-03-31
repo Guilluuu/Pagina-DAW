@@ -1,81 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <servicios>
-    <servicio id="cirugia-veterinaria">
-        <nombre>Cirugía Veterinaria</nombre>
-        <imagen>assets/imgs/placeholder.png</imagen>
-        <descripcion-corta>Procedimientos quirúrgicos especializados para garantizar la salud de tu mascota con tecnología de vanguardia y protocolos de seguridad rigurosos.</descripcion-corta>
+    <servicio id="cirugia-tejidos-blandos">
+        <nombre>Cirugía de Tejidos Blandos</nombre>
+        <imagen>assets/imgs/servicios-cirugia-tejidos-blandos.jpg</imagen>
+        <descripcion-corta>Procedimientos quirúrgicos especializados para tratar afecciones en órganos internos, piel y musculatura con tecnología de vanguardia y máxima seguridad.</descripcion-corta>
         <subtitulo>Tecnología avanzada para intervenciones seguras y precisas</subtitulo>
-        <banner>assets/imgs/img-servicio-especifico-banner.png</banner>
 
         <bloque>
-            <titulo>1. Cirugía General</titulo>
-            <texto>Realizamos intervenciones quirúrgicas habituales con protocolos de seguridad estrictos.</texto>
-            <texto>Contamos con monitorización continua y seguimiento postoperatorio personalizado.</texto>
+            <titulo>1. Cirugía Preventiva y Rutinaria</titulo>
+            <texto>Realizamos intervenciones habituales como esterilizaciones y extirpación de pequeños bultos con protocolos de seguridad muy estrictos.</texto>
+            <texto>Contamos con monitorización continua durante toda la operación y un seguimiento postoperatorio totalmente personalizado para asegurar una rápida recuperación.</texto>
         </bloque>
 
         <bloque>
-            <titulo>2. Cirugía Especializada</titulo>
-            <texto>Abordamos procedimientos de mayor complejidad con apoyo diagnóstico y planificación previa.</texto>
-        </bloque>
-    </servicio>
-
-    <servicio id="diagnostico-por-imagen">
-        <nombre>Diagnóstico por Imagen</nombre>
-        <imagen>assets/imgs/placeholder.png</imagen>
-        <descripcion-corta>Tecnología avanzada de radiología digital, ecografía y estudios especializados para diagnósticos precisos y tratamientos efectivos.</descripcion-corta>
-        <subtitulo>Tecnología avanzada para diagnósticos precisos y tratamientos efectivos</subtitulo>
-        <banner>assets/imgs/img-servicio-especifico-banner.png</banner>
-
-        <bloque>
-            <titulo>1. Radiología Digital</titulo>
-            <texto>Contamos con equipos de radiología digital de última generación que nos permiten obtener imágenes de alta calidad en segundos.</texto>
-            <texto>Las radiografías digitales pueden ser ampliadas, mejoradas y compartidas fácilmente con especialistas.</texto>
-        </bloque>
-
-        <bloque>
-            <titulo>2. Ecografía Veterinaria</titulo>
-            <texto>La ecografía es una herramienta diagnóstica no invasiva que nos permite visualizar los órganos internos en tiempo real.</texto>
-        </bloque>
-
-        <bloque>
-            <titulo>3. Tomografía y Resonancia</titulo>
-            <texto>Para casos complejos, contamos con acceso a servicios de tomografía computarizada y resonancia magnética.</texto>
+            <titulo>2. Cirugía Abdominal y Torácica</titulo>
+            <texto>Abordamos procedimientos de mayor complejidad, como la resolución de obstrucciones intestinales o problemas respiratorios, siempre con apoyo diagnóstico previo.</texto>
+            <texto>Nuestros quirófanos están equipados para actuar con rapidez en casos de intervenciones de urgencia.</texto>
         </bloque>
     </servicio>
 
     <servicio id="medicina-interna">
         <nombre>Medicina Interna</nombre>
-        <imagen>assets/imgs/placeholder.png</imagen>
-        <descripcion-corta>Diagnóstico y tratamiento de enfermedades complejas con un enfoque sistemático y basado en evidencia por nuestros especialistas.</descripcion-corta>
+        <imagen>assets/imgs/servicios-medicina-interna.jpg</imagen>
+        <descripcion-corta>Diagnóstico y tratamiento de enfermedades que afectan a los órganos internos de tu mascota, abordando patologías complejas de forma integral.</descripcion-corta>
         <subtitulo>Atención especializada para enfermedades complejas y crónicas</subtitulo>
-        <banner>assets/imgs/img-servicio-especifico-banner.png</banner>
 
         <bloque>
-            <titulo>1. Diagnóstico integral</titulo>
-            <texto>Estudiamos patologías complejas mediante pruebas específicas y evaluación clínica completa.</texto>
+            <titulo>1. Diagnóstico Integral</titulo>
+            <texto>Estudiamos patologías complejas que pueden afectar al hígado, riñones, sistema digestivo o pulmones mediante pruebas de laboratorio y diagnóstico por imagen.</texto>
+            <texto>Evaluamos a la mascota en su conjunto, buscando la causa principal del problema en lugar de tratar solo los síntomas visibles.</texto>
         </bloque>
 
         <bloque>
-            <titulo>2. Seguimiento continuado</titulo>
-            <texto>Realizamos planes de control y tratamiento adaptados a cada mascota.</texto>
+            <titulo>2. Manejo de Enfermedades Crónicas</titulo>
+            <texto>Diseñamos planes de control a largo plazo para enfermedades como la diabetes, la insuficiencia renal o problemas de tiroides.</texto>
+            <texto>Acompañamos a las familias en el día a día, ajustando la medicación y las dietas para asegurar la mejor calidad de vida posible para el animal.</texto>
         </bloque>
     </servicio>
 
-    <servicio id="odontologia-veterinaria">
-        <nombre>Odontología Veterinaria</nombre>
-        <imagen>assets/imgs/placeholder.png</imagen>
-        <descripcion-corta>Cuidado dental completo para mantener la salud bucal de tu mascota, desde limpiezas profesionales hasta tratamientos especializados.</descripcion-corta>
-        <subtitulo>Salud bucodental para mejorar el bienestar general de tu mascota</subtitulo>
-        <banner>assets/imgs/img-servicio-especifico-banner.png</banner>
+    <servicio id="neurologia">
+        <nombre>Neurología</nombre>
+        <imagen>assets/imgs/servicios-neurologia.png</imagen>
+        <descripcion-corta>Evaluación y tratamiento de trastornos del sistema nervioso, incluyendo el cerebro, la médula espinal y los nervios periféricos.</descripcion-corta>
+        <subtitulo>Expertos en el cuidado del sistema nervioso central y periférico</subtitulo>
 
         <bloque>
-            <titulo>1. Limpieza dental</titulo>
-            <texto>Eliminamos sarro y placa para prevenir infecciones y enfermedades periodontales.</texto>
+            <titulo>1. Evaluación Neurológica Completa</titulo>
+            <texto>Realizamos exámenes exhaustivos de los reflejos, la marcha y la sensibilidad para localizar con exactitud dónde se encuentra la lesión nerviosa.</texto>
+            <texto>Tratamos problemas frecuentes como hernias discales, epilepsia, síndrome vestibular y alteraciones del equilibrio.</texto>
         </bloque>
 
         <bloque>
-            <titulo>2. Tratamientos especializados</titulo>
-            <texto>Realizamos extracciones, revisiones y tratamientos adaptados a cada caso.</texto>
+            <titulo>2. Pruebas Diagnósticas Avanzadas</titulo>
+            <texto>Trabajamos en conjunto con servicios de resonancia magnética y análisis de líquido cefalorraquídeo para confirmar diagnósticos complejos y establecer el mejor plan de acción.</texto>
+        </bloque>
+    </servicio>
+
+    <servicio id="urgencias-intensivos">
+        <nombre>Urgencias y Cuidados Intensivos</nombre>
+        <imagen>assets/imgs/servicios-urgencias.png</imagen>
+        <descripcion-corta>Atención veterinaria inmediata para situaciones críticas y hospitalización monitorizada 24 horas para pacientes que requieren soporte vital.</descripcion-corta>
+        <subtitulo>Atención vital inmediata cuando cada segundo cuenta</subtitulo>
+
+        <bloque>
+            <titulo>1. Estabilización de Urgencias</titulo>
+            <texto>Actuamos de forma rápida ante atropellos, intoxicaciones, golpes de calor, reacciones alérgicas severas o dificultad respiratoria aguda.</texto>
+            <texto>Nuestro equipo de urgencias está preparado para realizar maniobras de reanimación y estabilización hemodinámica en cualquier momento del día o la noche.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Unidad de Cuidados Intensivos (UCI)</titulo>
+            <texto>Disponemos de jaulas de hospitalización con control de temperatura, suministro de oxígeno y monitorización continua de las constantes vitales.</texto>
+            <texto>Los pacientes críticos están vigilados en todo momento por personal veterinario especializado para administrar fluidoterapia, transfusiones y medicación por vía intravenosa.</texto>
+        </bloque>
+    </servicio>
+
+    <servicio id="rehabilitacion">
+        <nombre>Rehabilitación</nombre>
+        <imagen>assets/imgs/servicios-rehab.jpeg</imagen>
+        <descripcion-corta>Terapias físicas para recuperar la movilidad, aliviar el dolor y mejorar la calidad de vida tras cirugías, lesiones o por desgaste articular.</descripcion-corta>
+        <subtitulo>Recuperando la movilidad y el bienestar paso a paso</subtitulo>
+
+        <bloque>
+            <titulo>1. Fisioterapia y Ejercicio Terapéutico</titulo>
+            <texto>Diseñamos tablas de ejercicios específicos para fortalecer la musculatura, mejorar la coordinación y recuperar la amplitud de movimiento tras una lesión o cirugía.</texto>
+            <texto>Utilizamos técnicas manuales, masajes y estiramientos para reducir tensiones musculares y aliviar el dolor crónico en pacientes mayores.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Terapias Físicas Avanzadas</titulo>
+            <texto>Aplicamos tratamientos de láserterapia para acelerar la cicatrización y reducir la inflamación de forma no invasiva.</texto>
+            <texto>También ofrecemos hidroterapia (cinta subacuática), ideal para que los perros hagan ejercicio reduciendo el impacto y el peso sobre sus articulaciones doloridas.</texto>
+        </bloque>
+    </servicio>
+
+    <servicio id="traumatologia">
+        <nombre>Traumatología</nombre>
+        <imagen>assets/imgs/servicios-traumatologia.jpeg</imagen>
+        <descripcion-corta>Diagnóstico y resolución quirúrgica o conservadora de fracturas, luxaciones y enfermedades que afectan a los huesos y articulaciones.</descripcion-corta>
+        <subtitulo>Soluciones especializadas para el sistema musculoesquelético</subtitulo>
+
+        <bloque>
+            <titulo>1. Resolución de Fracturas</titulo>
+            <texto>Utilizamos placas, tornillos y fijadores externos de alta calidad para reparar fracturas óseas complejas causadas por traumatismos o caídas.</texto>
+            <texto>Planificamos cada intervención minuciosamente utilizando modelos y radiografías digitales para garantizar la correcta alineación del hueso.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Cirugía Articular</titulo>
+            <texto>Somos expertos en el tratamiento de la rotura del ligamento cruzado en perros y en la corrección de problemas de desarrollo como la displasia de cadera o codo.</texto>
+        </bloque>
+    </servicio>
+
+    <servicio id="dermatologia">
+        <nombre>Dermatología</nombre>
+        <imagen>assets/imgs/servicios-dermatologia.jpeg</imagen>
+        <descripcion-corta>Estudio y tratamiento de problemas de la piel, el pelo y las uñas, incluyendo alergias, infecciones y parásitos.</descripcion-corta>
+        <subtitulo>Cuidando la salud exterior para proteger el interior</subtitulo>
+
+        <bloque>
+            <titulo>1. Diagnóstico de Problemas Cutáneos</titulo>
+            <texto>Investigamos las causas del picor excesivo, la pérdida de pelo, las rojeces y las costras mediante raspados de piel, citologías y cultivos de hongos o bacterias.</texto>
+            <texto>Tratamos infecciones recurrentes de oídos (otitis), que muchas veces están directamente relacionadas con problemas dermatológicos subyacentes.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Manejo de Alergias</titulo>
+            <texto>Realizamos pruebas de alergia ambientales y alimentarias para identificar qué está provocando la reacción en la mascota.</texto>
+            <texto>Diseñamos planes de tratamiento con dietas de eliminación, inmunoterapia (vacunas para la alergia) y champús terapéuticos específicos.</texto>
+        </bloque>
+    </servicio>
+
+    <servicio id="cirugia-cardiaca">
+        <nombre>Cirugía Cardiaca</nombre>
+        <imagen>assets/imgs/servicios-cirugia-cardiaca.jpg</imagen>
+        <descripcion-corta>Intervenciones quirúrgicas de alta especialización para corregir defectos congénitos y patologías adquiridas en el corazón y grandes vasos.</descripcion-corta>
+        <subtitulo>Intervenciones de máxima precisión para cuidar su corazón</subtitulo>
+
+        <bloque>
+            <titulo>1. Corrección de Defectos Congénitos</titulo>
+            <texto>Llevamos a cabo cirugías para solucionar malformaciones de nacimiento como el conducto arterioso persistente, mejorando la esperanza y calidad de vida del cachorro.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Cirugía Torácica Especializada</titulo>
+            <texto>Abordamos problemas en el pericardio (la membrana que envuelve el corazón) y realizamos procedimientos vasculares complejos.</texto>
+            <texto>Todo el proceso se realiza bajo la supervisión de un equipo conjunto de cardiólogos y anestesistas especializados en pacientes críticos.</texto>
+        </bloque>
+    </servicio>
+
+    <servicio id="oncologia">
+        <nombre>Oncología</nombre>
+        <imagen>assets/imgs/servicios-oncologia.jpg</imagen>
+        <descripcion-corta>Diagnóstico temprano, estadiaje y tratamiento de los distintos tipos de cáncer mediante un abordaje compasivo y multidisciplinar.</descripcion-corta>
+        <subtitulo>Acompañamiento, esperanza y calidad de vida frente al cáncer</subtitulo>
+
+        <bloque>
+            <titulo>1. Diagnóstico y Estadiaje</titulo>
+            <texto>Analizamos cualquier masa o bulto sospechoso mediante biopsias y citologías para determinar de qué tipo de células se trata.</texto>
+            <texto>Realizamos un mapeo completo del cuerpo (estadiaje) con ecografías y radiografías para saber si la enfermedad se ha extendido a otros órganos y decidir la mejor estrategia.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Terapias Oncológicas</titulo>
+            <texto>Ofrecemos tratamientos médicos como la quimioterapia, adaptada siempre a la especie y peso del animal para minimizar los efectos secundarios, que en mascotas son mucho más leves que en humanos.</texto>
+            <texto>Trabajamos en equipo con el servicio de cirugía para la extirpación de tumores con márgenes limpios, priorizando siempre el bienestar y la ausencia de dolor del paciente.</texto>
+        </bloque>
+    </servicio>
+
+    <servicio id="odontologia">
+        <nombre>Odontología</nombre>
+        <imagen>assets/imgs/servicios-odontologia.jpeg</imagen>
+        <descripcion-corta>Cuidado dental completo para mantener la salud bucal de tu mascota, desde limpiezas por ultrasonidos hasta extracciones complejas.</descripcion-corta>
+        <subtitulo>Salud bucodental para mejorar el bienestar general de tu mascota</subtitulo>
+
+        <bloque>
+            <titulo>1. Limpieza Dental Profesional</titulo>
+            <texto>Eliminamos el sarro y la placa bacteriana mediante equipos de ultrasonidos bajo anestesia general, garantizando una limpieza profunda y sin estrés para el animal.</texto>
+            <texto>Realizamos un pulido final de los dientes para alisar la superficie y retrasar la nueva aparición de sarro, previniendo el mal aliento y las infecciones de encías.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Radiología y Cirugía Oral</titulo>
+            <texto>Utilizamos radiografías dentales para evaluar el estado de las raíces de los dientes por debajo de la encía, descubriendo problemas dolorosos que no se ven a simple vista.</texto>
+            <texto>Llevamos a cabo extracciones seguras de piezas dentales fracturadas o enfermas, así como la extirpación de bultos o tumores en la cavidad oral.</texto>
         </bloque>
     </servicio>
 </servicios>

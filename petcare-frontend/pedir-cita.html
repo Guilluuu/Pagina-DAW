@@ -34,19 +34,19 @@
       <fieldset class="fieldset fieldset-propietario">
         <input class="borde-asimetrico input-texto" type="text" id="nombre" name="nombre" required
           placeholder="Nombre completo">
-        <div id="datos-contacto">
+        <section id="datos-contacto">
           <input class="borde-asimetrico input-texto" type="tel" id="telefono" name="telefono" required
             placeholder="Número de teléfono">
           <input class="borde-asimetrico input-texto" type="email" id="email" name="email" required
             placeholder="Correo electrónico">
-        </div>
+        </section>
       </fieldset>
 
       <fieldset class="fieldset fieldset-mascota">
         <input class="borde-asimetrico input-texto" type="text" id="nombreMascota" name="nombreMascota" required
           placeholder="Nombre de la mascota">
         <label for="especie">Tipo de mascota</label>
-        <div class="opciones-especie">
+        <section class="opciones-especie">
           <input type="radio" id="perro" name="especie" value="perro" required>
           <label class="borde-asimetrico" for="perro"><img class="icono-mascota" src="assets/imgs/dog-svgrepo-com.svg"
               alt="Perro"></label>
@@ -56,18 +56,18 @@
           <input type="radio" id="otro" name="especie" value="otro">
           <label class="borde-asimetrico" for="otro"><img class="icono-mascota" src="assets/imgs/mouse.svg"
               alt="Otro"></label>
-        </div>
+        </section>
       </fieldset>
 
       <fieldset class="fieldset-cita fieldset">
-        <div id="fecha">
+        <section id="fecha">
           <label for="fecha">Fecha de la cita:</label>
           <input type="date" id="fecha" name="fecha" required>
-        </div>
-        <div id="hora">
+        </section>
+        <section id="hora">
           <label for="hora">Hora de la cita:</label>
           <input type="time" id="hora" name="hora" required>
-        </div>
+        </section>
       </fieldset>
       <button class="borde-asimetrico boton-submit" type="submit"">Pedir cita</button>
     </form>

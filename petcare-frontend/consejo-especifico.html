@@ -6,65 +6,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="authors" content="Marina Collazo Couñago, Guillermo Fernández Castro, Andrés Daparte Cabo">
   <meta name="keywords" content="width=device-width, initial-scale=1.0">
-  <title>PetCare</title>
+  <title>PetCare | Consejo</title>
   <link rel="icon" type="image/x-icon" href="assets/imgs/logo.svg">
+  
   <!-- Añadimos bootstrap (archivos necesarios descargados en local)-->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <script src="assets/js/bootstrap.bundle.min.js"></script>
 
   <link rel="stylesheet" href="assets/css/consejo-especifico.css">
+  <script src="assets/js/main.js"></script>
 </head>
 
 <body>
-  <nav class="main-navbar">
-    <a class="main-logo" href="index.html"> <img src="assets/imgs/logo.svg" alt="logo PetCare"> PetCare </a>
-    <a href="servicios.html"> Servicios</a>
-    <a href="consejos.html"> Consejos de salud</a>
-    <a href="sobre-nosotros.html"> Sobre Nosotros</a>
+  <nav class="main-navbar" aria-label="Navegación principal">
+    <a class="main-logo" href="index.html">
+      <img src="assets/imgs/logo.svg" alt="logo PetCare">
+      PetCare
+    </a>
+    <a href="servicios.html">Servicios</a>
+    <a href="consejos.html">Consejos de salud</a>
+    <a href="sobre-nosotros.html">Sobre Nosotros</a>
     <a class="pedir-cita-navbar borde-asimetrico" href="clinicas.html">Pedir cita</a>
     <a class="urgencias-navbar borde-asimetrico" href="urgencias.html">Urgencias</a>
-    <button class="menu-hamburguesa-moviles">☰</button>
+    <button class="menu-hamburguesa-moviles" type="button" aria-label="Abrir menú">☰</button>
   </nav>
 
   <main>
-    <section>
-      <strong>Esto es el nombre de un consejo aleatorio</strong>
-      <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:40px;height:40px;">
+    <header class="bg-gradient-1 cabecera-consejo">
+      <a href="consejos.html" style="color: black;">← Volver a Consejos</a>
+      <section class="intro-consejo">
+        <article class="texto-consejo">
+          <h1 id="titulo-consejo"></h1>
+          <p id="subtitulo-consejo"></p>
+        </article>
+
+        <figure class="imagen-consejo">
+          <img id="imagen-consejo" class="borde-asimetrico-2" src="" alt="">
+        </figure>
+      </section>
+    </header>
+
+    <section class="contenido-consejo" aria-labelledby="detalle-consejo">
+      <h2 id="detalle-consejo" class="visually-hidden">Detalle del consejo</h2>
+      <div id="bloques-consejo"></div>
     </section>
-    <hgroup>
-      <h2>1. Lorem Ipsum</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
-        Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero.
-        Cras elementum porttitor ex, eget pharetra tortor egestas ac. Mauris ultrices leo mollis, sodales nibh
-        vitae, lobortis turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-        curae; Etiam molestie vulputate velit, sed interdum turpis. Sed eget magna dignissim, rhoncus sapien sit
-        amet, feugiat risus. Mauris at nunc scelerisque, porttitor nulla scelerisque, porta risus. Cras
-        elementum ut libero nec cursus. Phasellus at vehicula sem, ac ultricies lectus.</p>
-      <h2>2. Lorem Ipsum</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
-        Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero.
-        Cras elementum porttitor ex, eget pharetra tortor egestas ac. Mauris ultrices leo mollis, sodales nibh
-        vitae, lobortis turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-        curae; Etiam molestie vulputate velit, sed interdum turpis. Sed eget magna dignissim, rhoncus sapien sit
-        amet, feugiat risus. Mauris at nunc scelerisque, porttitor nulla scelerisque, porta risus. Cras
-        elementum ut libero nec cursus. Phasellus at vehicula sem, ac ultricies lectus.</p>
-      <h2>3. Lorem Ipsum</h2>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a efficitur ipsum, a volutpat felis.
-        Vestibulum dictum at erat id fringilla. Aenean ut velit ultricies, dignissim turpis id, finibus libero.
-        Cras elementum porttitor ex, eget pharetra tortor egestas ac. Mauris ultrices leo mollis, sodales nibh
-        vitae, lobortis turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-        curae; Etiam molestie vulputate velit, sed interdum turpis. Sed eget magna dignissim, rhoncus sapien sit
-        amet, feugiat risus. Mauris at nunc scelerisque, porttitor nulla scelerisque, porta risus. Cras
-        elementum ut libero nec cursus. Phasellus at vehicula sem, ac ultricies lectus.</p>
-    </hgroup>
   </main>
 
-  <footer>
-    <h2>¿Tienes más preguntas?</h2>
-    <a href="clinicas.html">Pedir cita</a>
-    <a href="consejos.html">Más consejos</a>
+  <footer class="cta-consejo">
+    <section class="cta-consejo__caja borde-asimetrico-2">
+      <h2>¿Tienes más preguntas?</h2>
+      <p>Nuestro equipo está disponible para responder todas tus preguntas</p>
+      <a class="cta-consejo__boton borde-asimetrico" href="consejos.html">Más consejos</a>
+    </section>
   </footer>
 
+  <script src="assets/js/consejo-especifico.js"></script>
 </body>
 
 </html>

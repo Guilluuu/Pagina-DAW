@@ -33,8 +33,8 @@ async function cargarServicios() {
             const li = document.createElement("li");
 
             li.innerHTML = `
-                <a class="tarjeta-servicio" href="servicio-especifico.html?id=${id}">
-                    <img src="${imagen}" alt="${nombre}">
+                <a class="tarjeta-servicio borde-asimetrico-2" href="servicio-especifico.html?id=${id}">
+                    <img src="${imagen}" class="borde-asimetrico-2" alt="${nombre}">
                     <h3 class="titulo-tarjeta">${nombre}</h3>
                     <p>${descripcion}</p>
                 </a>

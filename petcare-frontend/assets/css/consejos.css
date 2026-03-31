@@ -9,3 +9,41 @@ li.nav-item {
     flex: wrap;
 }
 
+[aria-selected="true"] {
+    font-weight: bold;
+    border: 3px solid var(--color-acentuado-primario) !important;
+}
+
+.imagen-carta {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
+
+.p-carta {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+}
+
+.container article {
+    transition: transform 0.3s ease-in-out;
+}
+
+.container article:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.articulo-header{
+        width: 50%;
+}
+
+    
+@media screen and (max-width: 1024px) {
+
+    .articulo-header{
+        width: 100%;
+    }
+
+}

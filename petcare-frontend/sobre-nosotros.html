@@ -12,7 +12,8 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="assets/css/sobre-nosotros.css">
-
+  <script src="assets/js/sobre-nosotros.js"></script>
+  <script src="assets/js/main.js"></script>
 </head>
 
 <body>
@@ -26,31 +27,28 @@
     <button class="menu-hamburguesa-moviles">☰</button>
   </nav>
 
-  <header>
+  <header class="header-multicol bg-gradient-1">
     <h1>¿Quiénes somos?</h1>
-    <p>Esto es un poco de texto de quiénes somos</p>
-    <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:200px;height:200px;">
+    <p>Somos una red de clínicas veterinarias comprometidas con la excelencia clínica, el bienestar animal y la responsabilidad ambiental. Nuestro equipo de profesionales altamente capacitados trabaja cada día para garantizar la mejor atención a tus mascotas con tecnología avanzada y protocolos rigurosos de calidad.</p>
+    <img class="borde-asimetrico" src="assets/imgs/logo.svg">
   </header>
 
-  <main>
-    <section>
-      <h2>
-        <img src="assets/imgs/dark-warning-icon.svg" alt="Icono de aviso negro" style="width:40px;height:40px;">
-        Información sobre nosotros
-      </h2>
-      <p>Conoce más sobre nuestros valores, principios y compromiso con el bienestar animal</p>
-      <img src="assets/imgs/placeholder.png" alt="imagen consejo 1" style="width:200px;height:200px;">
-    </section>
+  <section class="about-us-info borde-asimetrico">
+    <h2>
+      <img src="assets/imgs/dark-warning-icon.svg" alt="Icono de aviso negro" style="width:40px;height:40px;">
+      Información sobre nosotros
+    </h2>
+    <p>Conoce más sobre nuestros valores, principios y compromiso con el bienestar animal</p>
+  </section>
 
-    <section>
-      <button>Sostenibilidad</button>
-      <p>Texto apartado de sostenibilidad</p>
-      <button>Nuestros principios</button>
-      <p>Texto apartado de Nuestros Principios</p>
-      <button>Medicina veterinaria</button>
-      <p>Texto apartado de Medicina Veterinaria</p>
-      <button>Por qué PetCare</button>
-      <p>Texto apartado de Por qué PetCare</p>
+  <main>
+    <nav class="botones-navegacion">
+      <button class="btn-pestana activo" data-clave="sostenibilidad">Sostenibilidad</button>
+      <button class="btn-pestana" data-clave="principios">Nuestros principios</button>
+      <button class="btn-pestana" data-clave="medicina">Medicina veterinaria</button>
+      <button class="btn-pestana" data-clave="por_que">Por qué PetCare</button>
+    </nav>
+    <section id="area-despliegue-texto" class="contenedor-multicol borde-asimetrico">
     </section>
   </main>
 
