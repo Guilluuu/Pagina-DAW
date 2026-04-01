@@ -6,30 +6,41 @@ document.addEventListener("DOMContentLoaded", () => {
     inicializarEventosBusqueda();
 });
 
-async function cargarServicios() {
+function cargarServicios() {
+    // XMLHttpRequest (Objeto integrado en JS para realizar peticiones HTTP)
+    let xhr = new XMLHttpRequest();
+    
+    // Configuración de la petición: Método GET, ruta relativa, petición asíncrona (true)
+    xhr.open("GET", "assets/xml/servicios.xml", true);
+    
+    xhr.onreadystatechange = function () {
+        // readyState 4 (operación completada) y status 200 (respuesta HTTP OK)
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // responseXML (propiedad que devuelve la respuesta parseada directamente como un árbol de nodos XML)
+            let documentoXML = xhr.responseXML;
+            procesarServicios(documentoXML);
+        }
+    };
+    
+    xhr.onerror = function() {
+        console.error("Error al cargar servicios:", xhr.statusText);
+        mostrarErrorServicios("Error al cargar los servicios");
+    };
+    
+    xhr.send();
+}
+
+function procesarServicios(xmlDoc) {
     try {
-        const respuesta = await fetch("assets/xml/servicios.xml");
+        // Extracción de la colección de nodos <servicio> del XML
+        let listaServicios = xmlDoc.getElementsByTagName("servicio");
 
-        if (!respuesta.ok) {
-            throw new Error("No se pudo cargar el archivo XML");
-        }
-
-        const textoXML = await respuesta.text();
-        const parser = new DOMParser();
-        const xml = parser.parseFromString(textoXML, "application/xml");
-
-        const errorXML = xml.querySelector("parsererror");
-        if (errorXML) {
-            throw new Error("El XML tiene errores de sintaxis");
-        }
-
-        const servicios = xml.querySelectorAll("servicio");
-        
-        servicios.forEach(servicio => {
-            const id = servicio.getAttribute("id");
-            const nombre = servicio.querySelector("nombre")?.textContent.trim() ?? "";
-            const imagen = servicio.querySelector("imagen")?.textContent.trim() ?? "";
-            const descripcion = servicio.querySelector("descripcion-corta")?.textContent.trim() ?? "";
+        Array.from(listaServicios).forEach(servicio => {
+            // Acceso a los valores internos del XML
+            let id = servicio.getAttribute("id");
+            let nombre = servicio.getElementsByTagName("nombre")[0].textContent.trim();
+            let imagen = servicio.getElementsByTagName("imagen")[0].textContent.trim();
+            let descripcion = servicio.getElementsByTagName("descripcion-corta")[0].textContent.trim();
 
             serviciosGlobal.push({
                 id,
@@ -42,8 +53,8 @@ async function cargarServicios() {
         renderizarServicios();
 
     } catch (error) {
-        console.error("Error al cargar servicios:", error);
-        mostrarErrorServicios("Error al cargar los servicios");
+        console.error("Error al procesar servicios:", error);
+        mostrarErrorServicios("Error al procesar los servicios");
     }
 }
 
