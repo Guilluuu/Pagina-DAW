@@ -426,7 +426,7 @@ Como rasgo relativamente distintivo de la interfaz de usuario se han definido m�
 \subsubsection{Página principal}
 \begin{figure}[H]
 \centering
-\includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/mockups/home.png}
+\includegraphics[width=\linewidth,height=0.90\textheight,keepaspectratio]{imgs_documento/mockups/home.png}
 \caption{Mockup de página principal}
 \end{figure}
 \clearpage
@@ -485,7 +485,6 @@ Como rasgo relativamente distintivo de la interfaz de usuario se han definido m�
 \includegraphics[width=\linewidth,height=0.95\textheight,keepaspectratio]{imgs_documento/mockups/pedir.cita.png}
 \caption{Mockup del formulario para pedir cita}
 \end{figure}
-\clearpage
 
 \section{Estructura de ficheros}
 
@@ -733,7 +732,7 @@ A continuación, se detalla el código CSS correspondiente a esta implementació
 \subsection{CSS Flex Container --- Solicitud de cita}
 % ─────────────────────────────────────────────────────────────────────────────
 
-Para la página de solicitud de cita (que se abre como un iframe al hacer clic en el botón de pedir cita de la tarjeta de una clínica) hemos decidido utilizar el módulo \textit{CSS Flexbox}. A diferencia de CSS Grid, que es ideal para la estructura general de la página (pues permite la distribución bidimensional de elementos), Flexbox brilla en la alineación y distribución de elementos en una sola dimensión (filas o columnas).
+Para la página de solicitud de cita (que se abre como un iframe al hacer click en el botón de pedir cita de la tarjeta de una clínica) hemos decidido utilizar el módulo \textit{CSS Flexbox}. A diferencia de CSS Grid, que es ideal para la estructura general de la página (pues permite la distribución bidimensional de elementos), Flexbox brilla en la alineación y distribución de elementos en una sola dimensión (filas o columnas).
 
 Hemos aplicado Flexbox a diferentes niveles de profundidad dentro del formulario para lograr una estructura sólida e intuitiva:
 
@@ -966,7 +965,7 @@ Buscar
 \subsubsection{Navegación dinámica por pestañas en la página Sobre Nosotros}
 % ─────────────────────────────────────────────────────────────────────────────
 
-En la página ``Quiénes somos'', hemos implementado un sistema interactivo de pestañas. Este efecto permite al usuario alternar entre diferentes secciones de texto (Sostenibilidad, Principios, Medicina veterinaria y Por qué PetCare) pulsando sobre sus respectivos botones. Al hacer clic, el contenido inferior se actualiza instantáneamente sin necesidad de recargar la página web, y el botón pulsado se resalta visualmente para indicar en qué sección nos encontramos.
+En la página ``Quiénes somos'', hemos implementado un sistema interactivo de pestañas. Este efecto permite al usuario alternar entre diferentes secciones de texto (Sostenibilidad, Principios, Medicina veterinaria y Por qué PetCare) pulsando sobre sus respectivos botones. Al hacer click, el contenido inferior se actualiza instantáneamente sin necesidad de recargar la página web, y el botón pulsado se resalta visualmente para indicar en qué sección nos encontramos.
 
 \begin{figure}[H]
     \centering
@@ -988,7 +987,7 @@ El funcionamiento de este efecto se basa en la interacción coordinada entre la 
 \item \textbf{Preparación del HTML:} En el documento, creamos botones (\texttt{<button>}) con la clase común \texttt{btn-pestana}. El elemento clave aquí es el atributo personalizado \texttt{data-clave}, que almacena un identificador único para cada botón (por ejemplo, \texttt{data-clave="sostenibilidad"}). Además, definimos un contenedor vacío (\texttt{<section id="area-despliegue-texto">}) que actuará como ``pizarra'' donde inyectaremos el texto.
 \item \textbf{Origen de los datos:} En JavaScript, creamos un objeto constante llamado \texttt{repositorioTextos}. Este objeto actúa como un diccionario donde las claves coinciden exactamente con los valores de los atributos \texttt{data-clave} del HTML, y sus valores contienen el código HTML del texto a mostrar.
 \item \textbf{Acceso al DOM:} Utilizando el método \texttt{querySelectorAll(".btn-pestana")}, capturamos todos los botones en una lista. Simultáneamente, capturamos el contenedor de destino mediante \texttt{getElementById("area-despliegue-texto")}.
-\item \textbf{Manejo de Eventos (El clic):} Iteramos sobre la lista de botones usando un bucle \texttt{forEach} para asignar a cada uno un escuchador de eventos (\texttt{addEventListener}) de tipo \texttt{click}.
+\item \textbf{Manejo de Eventos (el click):} Iteramos sobre la lista de botones usando un bucle \texttt{forEach} para asignar a cada uno un escuchador de eventos (\texttt{addEventListener}) de tipo \texttt{click}.
 \item \textbf{Actualización visual y de contenido:} Cuando se dispara el evento, el código realiza dos acciones. Primero, elimina la clase CSS \texttt{activo} de todos los botones y se la añade únicamente al botón que acaba de ser pulsado (\texttt{evento.currentTarget}), actualizando así la interfaz. Segundo, lee el atributo \texttt{data-clave} de ese botón y utiliza ese valor para buscar el texto correspondiente en el \texttt{repositorioTextos}, inyectándolo finalmente en el contenedor mediante la propiedad \texttt{innerHTML}.
 \end{itemize}
 
@@ -1267,16 +1266,12 @@ function renderizarConsejos(listaConsejos) {
 \subsubsection{Autocompletado dinámico del nombre de la clínica en pedir cita}
 % ─────────────────────────────────────────────────────────────────────────────
 
-Hemos implementado un sistema de persistencia de datos a corto plazo que conecta la página de Clínicas con la ventana modal del formulario de citas. Cuando el usuario hace clic en el botón ``Pedir cita'' de una tarjeta específica, el formulario modal se abre mostrando automáticamente el nombre exacto de la clínica seleccionada y su ubicación en la cabecera, evitando que el usuario tenga que introducir o recordar esta información.
+Hemos implementado un sistema de persistencia de datos a corto plazo que conecta la página de Clínicas con la ventana modal del formulario de citas. Cuando el usuario hace click en el botón ``Pedir cita'' de una tarjeta específica, el formulario modal se abre mostrando automáticamente el nombre exacto de la clínica seleccionada y su ubicación en la cabecera, evitando que el usuario tenga que introducir o recordar esta información.
 
 \begin{figure}[H]
     \centering
-    \begin{minipage}{0.48\textwidth}
-        \centering
-        \includegraphics[width=\linewidth,keepaspectratio]{capturas_js/autocompletado-1.png}
-        \caption{Formulario previo a la selección}
-    \end{minipage}\hfill
-    \begin{minipage}{0.48\textwidth}
+
+    \begin{minipage}{\textwidth}
         \centering
         \includegraphics[width=\linewidth,keepaspectratio]{capturas_js/autocompletado-2.png}
         \caption{Formulario autocompletado mediante sessionStorage}
@@ -1485,7 +1480,7 @@ function procesarServicios(xmlDoc) {
 }
 \end{lstlisting}
 
-\textit{Nota metodológica:} Para la página de detalle de un servicio individual (\texttt{servicio-especifico.js}), hemos utilizado una tercera aproximación técnica: la moderna \textbf{API Fetch} combinada con la clase \textbf{\texttt{DOMParser}} para transformar la respuesta de texto en un documento XML.
+Para la página de detalle de un servicio individual (\texttt{servicio-especifico.js}), hemos utilizado una tercera aproximación técnica: la \textbf{API Fetch} combinada con la clase \textbf{\texttt{DOMParser}} para transformar la respuesta de texto en un documento XML.
 
 \begin{figure}[H]
 \centering
@@ -1621,7 +1616,7 @@ document.addEventListener("DOMContentLoaded", function () {
 \appendix
 
 % =============================================================================
-\section{Galería las versiones finales de las páginas}
+\section{Galería:  versiones finales de las páginas}
 % =============================================================================
 
 Este apéndice recoge capturas de pantalla de la versión final de cada página del sitio en los tres formatos de visualización: escritorio (1440\,px), tablet (768\,px) y móvil (390\,px), mostrando el comportamiento responsivo del conjunto completo de la interfaz.
@@ -1840,12 +1835,12 @@ Este apéndice recoge capturas de pantalla de la versión final de cada página 
 \caption{Solicitud de cita --- móvil}
 \end{figure}
 
-clearpage
+\clearpage
 
 % ─────────────────────────────────────────────────────────────────────────────
 \section{Mapas de Etiquetas y Modificaciones Estructurales}
 % ─────────────────────────────────────────────────────────────────────────────
-El presente apéndice recopila la comparativa del árbol del DOM (Document Object Model) de todas las rutas que componen la aplicación. A la izquierda se presenta el mapa de bloques base, y a la derecha se ilustran las modificaciones estructurales introducidas en la Práctica 3. Los elementos resaltados en verde denotan la inyección de nuevas etiquetas, mientras que los elementos con borde discontinuo naranja indican la modificación de sus atributos (principalmente para la inclusión de clases de utilidad responsiva o \textit{frameworks} externos).
+El presente apéndice recopila la comparativa del árbol del DOM (Document Object Model) de todas las rutas que componen la aplicación. A la izquierda se presenta el mapa de bloques base, y a la derecha se ilustran las modificaciones estructurales introducidas en la Práctica 3 para facilitar la visualización de los cambios realizados (principalmente la inclusión de clases e identificadores).
 
 \vspace{1em}
 
