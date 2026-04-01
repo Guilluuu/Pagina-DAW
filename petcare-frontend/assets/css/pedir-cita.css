@@ -111,8 +111,15 @@ input[type="radio"]:checked + label {
 
 @media (max-width: 600px) {
   .opciones-especie {
-    flex-direction: column;
-    margin: auto;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+  .opciones-especie > label {
+    padding: 0.5rem 1.5rem;
+  }
+  .icono-mascota {
+    width: 2rem;
+    height: 2rem;
   }
   main{
     padding: 10px;

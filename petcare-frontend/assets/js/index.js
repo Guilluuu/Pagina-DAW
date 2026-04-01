@@ -24,7 +24,7 @@ function inicializarBuscadorClinicas() {
             
             if (termino) {
                 // Redirigir a clinicas.html y establecer el término de búsqueda
-                window.location.href = `clinicas.html?busqueda=${encodeURIComponent(termino)}`;
+                window.location.href = `clinicas.html?clinica=${encodeURIComponent(termino)}`;
             }
         });
     }
@@ -58,15 +58,17 @@ function renderizarConsejos(listaConsejos) {
             let direccion = indice === 0 ? "consejo-home--imagen-izquierda" : "consejo-home--imagen-derecha";
 
             let htmlContenido = `
-                <article class="consejo-home ${direccion}">
-                    <figure class="consejo-home__imagen">
-                        <img src="${consejo.imagen}" class="borde-asimetrico-2" alt="${consejo.titulo}">
-                    </figure>
-                    <section class="consejo-home__texto">
-                        <h3>${consejo.titulo}</h3>
-                        <p>${consejo.preview}</p>
-                    </section>
-                </article>
+                <a href="consejo-especifico.html?id=${consejo.id}" class="consejo-home-enlace">
+                    <article class="consejo-home ${direccion}">
+                        <figure class="consejo-home__imagen">
+                            <img src="${consejo.imagen}" class="borde-asimetrico-2" alt="${consejo.titulo}">
+                        </figure>
+                        <section class="consejo-home__texto">
+                            <h3>${consejo.titulo}</h3>
+                            <p>${consejo.preview}</p>
+                        </section>
+                    </article>
+                </a>
             `;
             contenedor.innerHTML += htmlContenido;
         });

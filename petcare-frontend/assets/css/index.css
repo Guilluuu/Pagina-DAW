@@ -250,6 +250,16 @@
     }
 }
 
+.consejo-home-enlace {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.consejo-home-enlace:hover {
+    opacity: 0.95;
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;

@@ -3,7 +3,20 @@ let clinicasGlobal = [];
 document.addEventListener("DOMContentLoaded", function() {
   $.getJSON("assets/json/clinicas.json", (datos) => {
     clinicasGlobal = datos.clinicas;
-    renderizarTarjetas(clinicasGlobal);
+    
+    // Procesar parámetro de búsqueda desde URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const busqueda = urlParams.get('clinica');
+    
+    if (busqueda) {
+      const clinicasFiltradas = clinicasGlobal.filter(clinica => 
+        clinica.nombre.toLowerCase().includes(busqueda.toLowerCase())
+      );
+      renderizarTarjetas(clinicasFiltradas);
+      $('.input-busqueda').val(busqueda);
+    } else {
+      renderizarTarjetas(clinicasGlobal);
+    }
 
     inicializarBuscador();
     inicializarOrden();
@@ -114,5 +127,8 @@ function inicializarHorario() {
 }
 
 function vaciarInput(){
-  $('.input-busqueda').val("");
+  let entradas = document.getElementsByClassName('input-busqueda');
+  if (entradas.length > 0) {
+    entradas[0].value = "";
+  }
 }
