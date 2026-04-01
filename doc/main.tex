@@ -1015,21 +1015,17 @@ Buscar
 En la página ``Quiénes somos'', hemos implementado un sistema interactivo de pestañas. Este efecto permite al usuario alternar entre diferentes secciones de texto (Sostenibilidad, Principios, Medicina veterinaria y Por qué PetCare) pulsando sobre sus respectivos botones. Al hacer clic, el contenido inferior se actualiza instantáneamente sin necesidad de recargar la página web, y el botón pulsado se resalta visualmente para indicar en qué sección nos encontramos.
 
 \begin{figure}[H]
-\centering
-\rotatebox{90}{\includegraphics[width=0.85\textheight,keepaspectratio]{capturas_responsivas/sobre-nosotros-desktop.png}}
-\caption{Sobre nosotros: sistema de pestañas en escritorio}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.65\linewidth,height=0.55\textheight,keepaspectratio]{capturas_responsivas/sobre-nosotros-tablet.png}
-\caption{Sobre nosotros: sistema de pestañas en tablet}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.38\linewidth,height=0.55\textheight,keepaspectratio]{capturas_responsivas/sobre-nosotros-mobile.png}
-\caption{Sobre nosotros: sistema de pestañas en móvil}
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.4\textheight,keepaspectratio]{capturas_js/nav-dinamica-sobre-nosotros-1.png} % Nota: Asumo que la extensión es .png por consistencia, ajusta a .jpg si fuera necesario según tu árbol.
+        \caption{Pestaña de sostenibilidad activa}
+    \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.4\textheight,keepaspectratio]{capturas_js/nav-dinamica-sobre-nosotros-2.png}
+        \caption{Inyección dinámica de nuevo contenido de texto}
+    \end{minipage}
 \end{figure}
 
 El funcionamiento de este efecto se basa en la interacción coordinada entre la estructura HTML y el motor de eventos de JavaScript. Para lograrlo, dividimos la lógica en las siguientes partes críticas:
@@ -1104,21 +1100,17 @@ En la página de búsqueda de clínicas, hemos desarrollado una interfaz dinámi
 Adicionalmente, la búsqueda está integrada con la página principal (\texttt{index.html}): el formulario de búsqueda de la portada captura el término introducido por el usuario y lo transmite como parámetro en la URL (\texttt{clinicas.html?clinica=\ldots}). Al cargar la página de clínicas, el script lee ese parámetro, filtra automáticamente los resultados y rellena el campo de búsqueda, cerrando así el circuito de navegación entre ambas páginas.
 
 \begin{figure}[H]
-\centering
-\rotatebox{90}{\includegraphics[width=0.85\textheight,keepaspectratio]{capturas_responsivas/clinicas-desktop.png}}
-\caption{Clínicas: buscador y filtros en escritorio}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.65\linewidth,height=0.55\textheight,keepaspectratio]{capturas_responsivas/clinicas-tablet.png}
-\caption{Clínicas: buscador y filtros en tablet}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.38\linewidth,height=0.55\textheight,keepaspectratio]{capturas_responsivas/clinicas-mobile.png}
-\caption{Clínicas: buscador y filtros en móvil}
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.4\textheight,keepaspectratio]{capturas_js/buqueda-dinamica-1.png}
+        \caption{Vista general de clínicas (sin filtros)}
+    \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.4\textheight,keepaspectratio]{capturas_js/buqueda-dinamica-2.png}
+        \caption{Renderizado condicional tras aplicar filtro}
+    \end{minipage}
 \end{figure}
 
 Este sistema se basa en manipular un array de datos (cargado previamente desde un JSON) y re-renderizar la vista cada vez que el usuario interactúa con los controles. Las partes críticas del código son las siguientes:
@@ -1196,25 +1188,27 @@ function inicializarHorario() {
 \subsubsection{Rotación dinámica de consejos aleatorios en la página de inicio}
 % ─────────────────────────────────────────────────────────────────────────────
 
-En la página principal, hemos implementado una sección de ``Consejos destacados'' que se actualiza de forma automática y autónoma. El sistema selecciona dos consejos de salud al azar y los muestra en pantalla. Cada 10 segundos, estos consejos rotan, dando paso a dos nuevos consejos mediante una transición de fundido.
+En la página principal, hemos implementado una sección de ``Consejos destacados'' 
+que se actualiza de forma automática y autónoma. El sistema selecciona dos consejos 
+de salud al azar y los muestra en pantalla. 
+Cada 10 segundos, estos consejos rotan, dando paso a dos nuevos 
+consejos mediante una transición de fundido. 
+Esto es funcionalmente equivalente a un carrusel de consejos aleatorios.
 
 \begin{figure}[H]
-\centering
-\rotatebox{90}{\includegraphics[width=0.85\textheight,keepaspectratio]{capturas_responsivas/index-desktop.png}}
-\caption{Página principal: consejos destacados rotatorios en escritorio}
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.4\textheight,keepaspectratio]{capturas_js/consejos-dinamicos-1.png}
+        \caption{Estado inicial de los consejos dinámicos}
+    \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.4\textheight,keepaspectratio]{capturas_js/consejos-dinamicos-2.png}
+        \caption{Estado tras el ciclo de actualización}
+    \end{minipage}
 \end{figure}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.65\linewidth,height=0.55\textheight,keepaspectratio]{capturas_responsivas/index-tablet.png}
-\caption{Página principal: consejos destacados rotatorios en tablet}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.38\linewidth,height=0.55\textheight,keepaspectratio]{capturas_responsivas/index-mobile.png}
-\caption{Página principal: consejos destacados rotatorios en móvil}
-\end{figure}
 
 Este efecto combina el uso de temporizadores nativos de JavaScript, lógica matemática para la aleatoriedad y manipulación asíncrona del DOM. Las partes críticas del código son:
 
@@ -1322,21 +1316,17 @@ function renderizarConsejos(listaConsejos) {
 Hemos implementado un sistema de persistencia de datos a corto plazo que conecta la página de Clínicas con la ventana modal del formulario de citas. Cuando el usuario hace clic en el botón ``Pedir cita'' de una tarjeta específica, el formulario modal se abre mostrando automáticamente el nombre exacto de la clínica seleccionada y su ubicación en la cabecera, evitando que el usuario tenga que introducir o recordar esta información.
 
 \begin{figure}[H]
-\centering
-\rotatebox{90}{\includegraphics[width=0.85\textheight,keepaspectratio]{capturas_responsivas/pedir-cita-desktop.png}}
-\caption{Formulario de cita: nombre y ubicación autocompletados en escritorio}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.65\linewidth,height=0.55\textheight,keepaspectratio]{capturas_responsivas/pedir-cita-tablet.png}
-\caption{Formulario de cita: autocompletado en tablet}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.38\linewidth,height=0.55\textheight,keepaspectratio]{capturas_responsivas/pedir-cita-mobile.png}
-\caption{Formulario de cita: autocompletado en móvil}
+    \centering
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.4\textheight,keepaspectratio]{capturas_js/autocompletado-1.png}
+        \caption{Formulario previo a la selección}
+    \end{minipage}\hfill
+    \begin{minipage}{0.48\textwidth}
+        \centering
+        \includegraphics[width=\linewidth,height=0.4\textheight,keepaspectratio]{capturas_js/autocompletado-2.png}
+        \caption{Formulario autocompletado mediante sessionStorage}
+    \end{minipage}
 \end{figure}
 
 Para comunicar la página principal con el \textit{iframe}, hemos utilizado la API \texttt{SessionStorage} de HTML5. Las partes críticas del código son:
@@ -1674,6 +1664,7 @@ document.addEventListener("DOMContentLoaded", function () {
 \end{figure}
 
 \clearpage
+\appendix
 
 % =============================================================================
 \section{Galería las versiones finales de las páginas}
