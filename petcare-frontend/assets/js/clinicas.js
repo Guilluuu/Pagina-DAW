@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 function renderizarTarjetas(listaClinicas) {
   let contenedor = $(".contenedor-tarjetas");
-  contenedor.empty(); // Método de jQuery que elimina todos los nodos hijos y sus eventos asociados
+  contenedor.empty(); 
   let template = document.getElementsByTagName("template")[0];
 
   listaClinicas.forEach(clinica => {
@@ -24,6 +24,8 @@ function renderizarTarjetas(listaClinicas) {
     copia.querySelector('.texto-ubicacion').textContent = clinica.ubicacion;
     copia.querySelector('.texto-horario').textContent = clinica.horario;
     copia.querySelector('.texto-telefono').textContent = clinica.telefono;
+
+    if (clinica.urgencias == false) copia.querySelector('.alerta-urgencias').style.visibility = "hidden";
 
     let btncita = copia.querySelector(".pedir-cita");
     btncita.addEventListener("click", () => {
@@ -57,7 +59,6 @@ function inicializarBuscador() {
 function inicializarOrden(){
   let ordenascendente = true;
   let btnordenar = document.querySelector('.contenedor-filtros li:first-child button');
-  let contenedortarjetas = document.querySelector('.contenedor-tarjetas');
 
   btnordenar.addEventListener("click", (e) => {
     e.preventDefault();

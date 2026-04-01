@@ -51,17 +51,16 @@ main {
 }
 
 .contenedor-tarjetas {
-    margin-top: 2rem;
-    list-style: none;
-    margin-bottom: 5rem;
-    width: 100%;
-    overflow: hidden;
-    padding: 2rem;
+  list-style: none;
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
 }
 
 .contenedor-tarjetas li {
-  width: 47%;
-  margin-bottom: 2rem;
+  width: 100%;
+  float: none;
+  margin: 20px auto;
 }
 
 .titulo img {
@@ -81,7 +80,7 @@ main {
   grid-template-areas:
     'foto titulo'
     'foto ubicacion'
-    'foto alerta'
+    'foto .'
     'separador separador'
     'horario horario'
     'telefono llamar-ahora';
@@ -90,39 +89,36 @@ main {
   gap: 1rem;
   background-color: #f2f2f2;
   padding: 1.5rem;
+
   box-sizing: border-box;
   transition: transform 0.3s ease-in-out;
+
   width: 100%;
-  aspect-ratio: 2/1;
+  height: max-content;
+  aspect-ratio: initial;
   overflow: hidden;
 }
-
 .tarjeta:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
-.titulo-clinica {  
+
+.titulo-clinica {
   grid-area: titulo;
-  margin: 0;
 }
-.ubicacion {  
+
+.ubicacion {
   grid-area: ubicacion;
   margin: 10px;
 }
-.horario {  
+
+.horario {
   grid-area: horario;
-  margin: 0;
-}
-.numero-telefono {  
-  font-size: 0.8rem;
-  grid-area: telefono;
-  margin: 0;
 }
 
-.alerta-urgencias {  
-  grid-area: alerta;
-  padding: 0.25rem 0.5rem;
-  margin: 0;
+.numero-telefono {
+  font-size: 0.8rem;
+  grid-area: telefono;
 }
 
 .foto-clinica {
@@ -160,51 +156,25 @@ main {
   align-content: center;
   justify-content: flex-start;
   gap: 0.5rem;
-  margin: 0;
 }
 
-@media screen and (max-width: 1024px) {
-  .contenedor-tarjetas {
-    margin: auto;
-    width: 100%;
-  }
-
-  .contenedor-tarjetas li {
-    width: 100%;
-    float: none;
-    margin: 20px auto;
-  }
-
-  .tarjeta {
-    width: 100%;
-    aspect-ratio: initial;
-    height: max-content;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'foto'
-      'titulo'
-      'ubicacion'
-      'alerta'
-      'separador'
-      'horario'
-      'telefono'
-      'llamar-ahora';
-  }
-
-  .header {
-    margin: auto;
-    padding: 1rem;
-  }
-}
 
 @media screen and (min-width: 992px) {
+  .contenedor-tarjetas {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
+  }
+
   .contenedor-tarjetas li {
     width: 47%;
+    margin-bottom: 2rem;
   }
 
   .contenedor-tarjetas li:nth-child(odd) {
     float: left;
     margin-right: 6%;
+    clear: both;
   }
 
   .contenedor-tarjetas li:nth-child(even) {
