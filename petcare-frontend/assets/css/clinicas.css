@@ -230,7 +230,7 @@ header a:visited {
   color: red;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
   .contenedor-tarjetas {
     margin-top: 2rem;
     margin-bottom: 5rem;
