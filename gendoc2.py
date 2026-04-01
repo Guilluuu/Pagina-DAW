@@ -15,6 +15,13 @@ PUERTO = 8088
 
 MAX_REPETICIONES = 3   # Máximo de hermanos con la misma estructura antes de colapsar
 
+# Parámetros de URL que deben añadirse a páginas de detalle para que carguen
+# contenido real. Solo se aplican a los archivos actuales (DIR_P3).
+PARAMS_URL_DETALLE = {
+    'servicio-especifico.html': '?id=neurologia',
+    'consejo-especifico.html':  '?id=consejo-perro-01',
+}
+
 ETIQUETAS_BLOQUE = {
     'main', 'header', 'footer', 'nav', 'aside', 'section', 'article',
     'div', 'form', 'table', 'thead', 'tbody', 'tfoot', 'tr', 'th', 'td',
@@ -149,7 +156,6 @@ def colapsar_repetidos(soup, max_repeticiones=MAX_REPETICIONES):
     coloca un marcador visual indicando cuántos han sido omitidos.
     """
     for parent in soup.find_all(True):
-        # Ignorar placeholders ya insertados al construir la lista de hijos
         hijos = [
             c for c in parent.children
             if hasattr(c, 'name') and c.name is not None and not c.get('data-placeholder')
@@ -159,7 +165,6 @@ def colapsar_repetidos(soup, max_repeticiones=MAX_REPETICIONES):
         while i < len(hijos):
             firma = estructura_elemento(hijos[i])
 
-            # Avanzar j mientras los hermanos compartan firma
             j = i + 1
             while (
                 j < len(hijos)
@@ -172,22 +177,18 @@ def colapsar_repetidos(soup, max_repeticiones=MAX_REPETICIONES):
             if repeticiones > max_repeticiones:
                 excedente = repeticiones - max_repeticiones
 
-                # Eliminar los elementos sobrantes
                 for elem in hijos[i + max_repeticiones:j]:
                     elem.decompose()
 
-                # Insertar marcador tras el último elemento conservado
                 ultimo_conservado = hijos[i + max_repeticiones - 1]
                 placeholder = soup.new_tag('div')
                 placeholder['data-placeholder'] = str(excedente)
                 ultimo_conservado.insert_after(placeholder)
 
-                # Recalcular la lista tras la modificación
                 hijos = [
                     c for c in parent.children
                     if hasattr(c, 'name') and c.name is not None
                 ]
-                # Saltar los conservados + el placeholder recién insertado
                 i = i + max_repeticiones + 1
             else:
                 i = j
@@ -206,7 +207,6 @@ def aplicar_formato_cajas(soup):
         if tag.get('data-placeholder') is not None:
             continue
 
-        # Etiqueta compuesta con id y clases si existen
         label = tag.name
         if tag.get('id'):
             label += f' #{tag["id"]}'
@@ -216,23 +216,43 @@ def aplicar_formato_cajas(soup):
         tag['data-etiqueta'] = label
         tag.name = 'div'
 
-        # Eliminar nodos de texto directos para no contaminar el diagrama
         for text_node in tag.find_all(string=True, recursive=False):
             if text_node.strip():
                 text_node.extract()
 
 
 # ---------------------------------------------------------------------------
+# Helpers de URL
+# ---------------------------------------------------------------------------
+
+def construir_url(ruta_relativa, params=''):
+    """
+    Devuelve la URL completa para el servidor HTTP local, añadiendo opcionalmente
+    un sufijo de query string (p.ej. '?id=neurologia').
+    """
+    ruta_url = urllib.parse.quote(ruta_relativa.replace('\\', '/'))
+    return f"http://localhost:{PUERTO}/{ruta_url}{params}"
+
+
+def params_para(archivo):
+    """
+    Devuelve el parámetro de URL que debe usarse al servir 'archivo', o cadena
+    vacía si no se requiere ninguno. Solo se aplica a archivos en DIR_P3.
+    """
+    return PARAMS_URL_DETALLE.get(archivo, '')
+
+
+# ---------------------------------------------------------------------------
 # Captura de pantalla
 # ---------------------------------------------------------------------------
 
-def capturar_pantalla(page, ruta_relativa, ruta_salida, viewport=None, full_page=True, ajustar_body=False):
+def capturar_pantalla(page, ruta_relativa, ruta_salida,
+                       viewport=None, full_page=True, ajustar_body=False,
+                       params=''):
     page.set_viewport_size(viewport if viewport else {"width": 1280, "height": 800})
-
-    ruta_url = urllib.parse.quote(ruta_relativa.replace('\\', '/'))
-    url_localhost = f"http://localhost:{PUERTO}/{ruta_url}"
+    url = construir_url(ruta_relativa, params)
     # networkidle garantiza que finalicen las peticiones fetch de JSON/XML
-    page.goto(url_localhost, wait_until='networkidle')
+    page.goto(url, wait_until='networkidle')
 
     if ajustar_body:
         page.locator("body").screenshot(path=ruta_salida)
@@ -242,14 +262,13 @@ def capturar_pantalla(page, ruta_relativa, ruta_salida, viewport=None, full_page
 
 def obtener_html_renderizado(page, directorio, archivo):
     """
-    Navega a la página vía servidor HTTP y devuelve el HTML completamente
-    renderizado por el motor JS (incluye elementos inyectados dinámicamente).
+    Navega a la página vía servidor HTTP (con parámetro de URL si procede) y
+    devuelve el HTML completamente renderizado por el motor JS.
     """
     ruta_relativa = os.path.join(directorio, archivo)
-    ruta_url = urllib.parse.quote(ruta_relativa.replace('\\', '/'))
-    url_localhost = f"http://localhost:{PUERTO}/{ruta_url}"
+    url = construir_url(ruta_relativa, params_para(archivo))
     page.set_viewport_size({"width": 1280, "height": 800})
-    page.goto(url_localhost, wait_until='networkidle')
+    page.goto(url, wait_until='networkidle')
     return page.content()
 
 
@@ -268,6 +287,10 @@ def generar_mapas(archivo, page, directorio, sufijo_salida=''):
       6. Aplicar formato de cajas con etiqueta compuesta
       7. Renderizar y capturar con Playwright
 
+    Para páginas de detalle (servicio-especifico, consejo-especifico) se navega
+    con el parámetro ?id=... definido en PARAMS_URL_DETALLE, de forma que el
+    contenido dinámico sea visible tanto en el mapa como en las capturas.
+
     Nomenclatura de salida:
       antiguo → {nombre}-boxmodel.png
       actual  → {nombre}-boxmodel-new.png
@@ -283,20 +306,20 @@ def generar_mapas(archivo, page, directorio, sufijo_salida=''):
     colapsar_repetidos(soup)
     aplicar_formato_cajas(soup)
 
-    # Inyectar hoja de estilos del diagrama
     estilo_tag = soup.new_tag('style')
     estilo_tag.string = ESTILOS_BOXMODEL
     if not soup.head:
         soup.insert(0, soup.new_tag('head'))
     soup.head.append(estilo_tag)
 
-    # Escribir HTML temporal, capturar y limpiar
     ruta_tmp = os.path.join(DIR_OUT_MAPAS, f"{nombre_base}_tmp.html")
     with open(ruta_tmp, 'w', encoding='utf-8') as f:
         f.write(str(soup))
 
     nombre_salida = f"{nombre_base}-boxmodel{sufijo_salida}.png"
-    capturar_pantalla(page, ruta_tmp, os.path.join(DIR_OUT_MAPAS, nombre_salida), ajustar_body=True)
+    capturar_pantalla(page, ruta_tmp,
+                      os.path.join(DIR_OUT_MAPAS, nombre_salida),
+                      ajustar_body=True)
     os.remove(ruta_tmp)
 
 
@@ -306,12 +329,15 @@ def generar_mapas(archivo, page, directorio, sufijo_salida=''):
 
 def generar_capturas_reales_responsivas(archivo, page, directorio):
     """
-    Genera capturas a tres viewports estándar.
+    Genera capturas a tres viewports estándar para los archivos de DIR_P3.
+    Si el archivo requiere un parámetro de URL (páginas de detalle), se incluye
+    en la navegación para que el contenido sea visible.
     full_page=False garantiza que la imagen tenga exactamente las dimensiones
     del viewport simulado, evitando capturas desproporcionadas.
     """
     nombre_base = archivo.replace('.html', '')
     ruta_relativa = os.path.join(directorio, archivo)
+    params = params_para(archivo)
 
     dispositivos = {
         'desktop': {'width': 1440, 'height': 900},
@@ -322,7 +348,8 @@ def generar_capturas_reales_responsivas(archivo, page, directorio):
     for disp, viewport in dispositivos.items():
         ruta_salida = os.path.join(DIR_OUT_CAPTURAS, f"{nombre_base}-{disp}.png")
         capturar_pantalla(page, ruta_relativa, ruta_salida,
-                          viewport=viewport, ajustar_body=False, full_page=False)
+                          viewport=viewport, ajustar_body=False,
+                          full_page=False, params=params)
 
 
 # ---------------------------------------------------------------------------
