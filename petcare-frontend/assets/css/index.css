@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.hero-home {
+.contenedor-portada {
     min-height: 34rem;
     padding: 2rem var(--espacio-x-mobile);
     display: grid;
@@ -19,20 +19,20 @@
     background-repeat: no-repeat;
 }
 
-.hero-home__busqueda {
+.contenedor-portada-busqueda {
     max-width: var(--ancho-contenido-estrecho);
     padding: 1.5rem;
     background-color: rgba(255, 255, 255, 0.94);
     box-shadow: var(--sombra-tarjeta-hover);
 }
 
-.hero-home__busqueda h1 {
+.contenedor-portada-busqueda h1 {
     margin: 0 0 1rem;
     font-size: var(--fs-h1-mobile);
     line-height: 1.1;
 }
 
-.hero-home__enlace-secundario {
+.home-enlace-secundario {
     display: inline-block;
     margin-bottom: 1rem;
     padding: 0.55rem 0.9rem;
@@ -42,14 +42,14 @@
     font-weight: 500;
 }
 
-.hero-home__formulario {
+.contenedor-portada-formulario {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.9rem;
     margin-bottom: 1rem;
 }
 
-.hero-home__formulario input[type="search"] {
+.contenedor-portada-formulario input[type="search"] {
     width: 100%;
     padding: 0.95rem 1rem;
     border: 1px solid #d9dee8;
@@ -59,12 +59,12 @@
     outline: none;
 }
 
-.hero-home__formulario input[type="search"]:focus {
+.contenedor-portada-formulario input[type="search"]:focus {
     border-color: var(--color-cta-primary);
     box-shadow: 0 0 0 3px rgba(123, 130, 168, 0.15);
 }
 
-.hero-home__formulario button {
+.contenedor-portada-formulario button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -77,12 +77,12 @@
     cursor: pointer;
 }
 
-.hero-home__formulario button img {
+.contenedor-portada-formulario button img {
     width: 1rem;
     height: 1rem;
 }
 
-.hero-home__acciones {
+.contenedor-portada-acciones {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -91,7 +91,7 @@
     gap: 0.8rem;
 }
 
-.hero-home__boton {
+.btn-portada-principal {
     display: block;
     padding: 0.95rem 1rem;
     text-align: center;
@@ -99,21 +99,21 @@
     color: white;
 }
 
-.hero-home__boton--secundario {
+.btn-portada-principal--secundario {
     background-color: var(--color-cta-secondary);
 }
 
-.hero-home__boton--urgencia {
+.btn-portada-principal--urgencia {
     background-color: var(--color-cta-critical);
 }
 
-.hero-home__destacado {
+.contenedor-portada-destacado {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero-home__destacado a {
+.contenedor-portada-destacado a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -128,12 +128,12 @@
     text-align: center;
 }
 
-.consejos-home {
+.seccion-servicios-inicio {
     padding: 1rem 0 2rem;
     background-color: var(--color-fondo-tarjetas);
 }
 
-.consejo-home {
+.tarjeta-servicio-inicio {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -141,19 +141,19 @@
     padding: 1.5rem var(--espacio-x-mobile);
 }
 
-.consejo-home--imagen-izquierda {
+.tarjeta-servicio-inicio--imagen-izquierda {
     background-color: var(--color-fondo-alternativo);
 }
 
-.consejo-home--imagen-derecha {
+.tarjeta-servicio-inicio--imagen-derecha {
     background-color: var(--color-fondo-gradiente);
 }
 
-.consejo-home__imagen {
+.tarjeta-servicio-inicio-imagen {
     margin: 0;
 }
 
-.consejo-home__imagen img {
+.tarjeta-servicio-inicio-imagen img {
     display: block;
     width: 100%;
     max-width: 18rem;
@@ -162,13 +162,13 @@
     margin: 0 auto;
 }
 
-.consejo-home__texto h3 {
+.tarjeta-servicio-inicio-texto h3 {
     margin: 0 0 1rem;
     font-size: var(--fs-h2-mobile);
     line-height: 1.2;
 }
 
-.consejo-home__texto p {
+.tarjeta-servicio-inicio-texto p {
     margin: 0;
     max-width: var(--ancho-contenido-texto);
     font-size: var(--fs-body-mobile);
@@ -184,13 +184,13 @@
     background-color: rgba(173, 178, 212, 0.45);
 }
 
-.footer-home__bloque h2 {
+.footer-home-bloque h2 {
     margin: 0 0 1rem;
     font-size: var(--fs-h2-mobile);
     line-height: 1.2;
 }
 
-.footer-home__bloque p {
+.footer-home-bloque p {
     margin: 0;
     max-width: var(--ancho-contenido-texto);
     font-size: var(--fs-body-mobile);
@@ -198,7 +198,7 @@
     color: var(--color-texto-secondary);
 }
 
-.footer-home__redes {
+.footer-home-redes {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -206,7 +206,7 @@
     gap: 0.8rem;
 }
 
-.footer-home__redes a {
+.footer-home-redes a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -216,15 +216,15 @@
     background-color: var(--color-cta-primary);
 }
 
-.footer-home__redes li:nth-child(2) a {
+.footer-home-redes li:nth-child(2) a {
     background-color: var(--color-acentuado-primario);
 }
 
-.footer-home__redes li:nth-child(3) a {
+.footer-home-redes li:nth-child(3) a {
     background-color: var(--color-cta-secondary);
 }
 
-.footer-home__redes img {
+.footer-home-redes img {
     width: 1.4rem;
     height: 1.4rem;
 }
@@ -272,42 +272,42 @@
 }
 
 @media (min-width: 768px) {
-    .hero-home,
-    .consejo-home,
+    .contenedor-portada,
+    .tarjeta-servicio-inicio,
     .footer-home {
         padding-left: var(--espacio-x-tablet);
         padding-right: var(--espacio-x-tablet);
     }
 
-    .hero-home {
+    .contenedor-portada {
         padding-top: 3rem;
         padding-bottom: 3rem;
     }
 
-    .hero-home__busqueda h1 {
+    .contenedor-portada-busqueda h1 {
         font-size: var(--fs-h1-tablet);
     }
 
-    .hero-home__formulario {
+    .contenedor-portada-formulario {
         grid-template-columns: 1fr auto;
     }
 
-    .hero-home__formulario button {
+    .contenedor-portada-formulario button {
         min-width: 8.5rem;
     }
 
-    .hero-home__acciones {
+    .contenedor-portada-acciones {
         grid-template-columns: 1fr 1fr;
     }
 
-    .consejo-home__texto h3,
-    .footer-home__bloque h2,
-    .hero-home__destacado a {
+    .tarjeta-servicio-inicio-texto h3,
+    .footer-home-bloque h2,
+    .contenedor-portada-destacado a {
         font-size: var(--fs-h2-tablet);
     }
 
-    .consejo-home__texto p,
-    .footer-home__bloque p {
+    .tarjeta-servicio-inicio-texto p,
+    .footer-home-bloque p {
         font-size: var(--fs-body-tablet);
     }
 
@@ -318,14 +318,14 @@
 }
 
 @media (min-width: 1024px) {
-    .hero-home,
-    .consejo-home,
+    .contenedor-portada,
+    .tarjeta-servicio-inicio,
     .footer-home {
         padding-left: var(--espacio-x-desktop);
         padding-right: var(--espacio-x-desktop);
     }
 
-    .hero-home {
+    .contenedor-portada {
         min-height: 38rem;
         grid-template-columns: minmax(32rem, 42rem) minmax(14rem, 18rem);
         justify-content: space-between;
@@ -335,48 +335,48 @@
         padding-bottom: 4rem;
     }
 
-    .hero-home__busqueda {
+    .contenedor-portada-busqueda {
         width: 100%;
         max-width: none;
         padding: 2.5rem;
     }
 
-    .hero-home__busqueda h1 {
+    .contenedor-portada-busqueda h1 {
         font-size: var(--fs-h1-desktop);
     }
 
-    .consejo-home {
+    .tarjeta-servicio-inicio {
         grid-template-columns: minmax(14rem, 18rem) 1fr;
         gap: 2rem;
         min-height: 20rem;
     }
 
-    .consejo-home--imagen-derecha {
+    .tarjeta-servicio-inicio--imagen-derecha {
         grid-template-columns: 1fr minmax(14rem, 18rem);
     }
 
-    .consejo-home--imagen-derecha .consejo-home__texto {
+    .tarjeta-servicio-inicio--imagen-derecha .tarjeta-servicio-inicio-texto {
         order: 1;
     }
 
-    .consejo-home--imagen-derecha .consejo-home__imagen {
+    .tarjeta-servicio-inicio--imagen-derecha .tarjeta-servicio-inicio-imagen {
         order: 2;
     }
 
-    .consejo-home__imagen img {
+    .tarjeta-servicio-inicio-imagen img {
         max-width: 100%;
         width: 100%;
         height: 16rem;
     }
 
-    .consejo-home__texto h3,
-    .footer-home__bloque h2,
-    .hero-home__destacado a {
+    .tarjeta-servicio-inicio-texto h3,
+    .footer-home-bloque h2,
+    .contenedor-portada-destacado a {
         font-size: var(--fs-h2-desktop);
     }
 
-    .consejo-home__texto p,
-    .footer-home__bloque p {
+    .tarjeta-servicio-inicio-texto p,
+    .footer-home-bloque p {
         font-size: var(--fs-body-desktop);
     }
 

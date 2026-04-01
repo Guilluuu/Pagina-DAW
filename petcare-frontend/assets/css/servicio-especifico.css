@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.cabecera-servicio {
+.cabecera-detalle {
     padding: 2.5rem var(--espacio-x-mobile) 3rem;
 }
 
@@ -29,46 +29,46 @@
     color: var(--color-texto-secondary);
 }
 
-.imagen-servicio {
+.imagen-principal-detalle {
     margin: 0;
 }
 
-.imagen-servicio img {
+.imagen-principal-detalle img {
     display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.contenido-servicio {
+.contenido-detalle {
     padding: 1.5rem var(--espacio-x-mobile) 0;
     background-color: var(--color-fondo-tarjetas);
 }
 
-.contenido-servicio article {
+.contenido-detalle article {
     max-width: var(--ancho-contenido-texto);
     margin: 0 auto 2rem;
 }
 
-.contenido-servicio h3 {
+.contenido-detalle h3 {
     margin: 0 0 1rem;
     font-size: var(--fs-h2-mobile);
     line-height: 1.2;
 }
 
-.contenido-servicio p {
+.contenido-detalle p {
     margin: 0 0 1rem;
     color: var(--color-texto-secondary);
     line-height: 1.7;
     font-size: var(--fs-body-mobile);
 }
 
-.cta-servicio {
+.btn-reserva-detalle {
     padding: 1.5rem var(--espacio-x-mobile) 3rem;
     background-color: var(--color-fondo-tarjetas);
 }
 
-.cta-servicio__caja {
+.btn-reserva-detalle-caja {
     max-width: var(--ancho-contenido-estrecho);
     margin: 0 auto;
     padding: 2rem 1.25rem;
@@ -80,20 +80,20 @@
     );
 }
 
-.cta-servicio__caja h2 {
+.btn-reserva-detalle-caja h2 {
     margin: 0 0 0.75rem;
     font-size: var(--fs-h2-mobile);
     line-height: 1.25;
 }
 
-.cta-servicio__caja p {
+.btn-reserva-detalle-caja p {
     margin: 0 0 1.5rem;
     color: var(--color-texto-secondary);
     line-height: 1.7;
     font-size: var(--fs-body-mobile);
 }
 
-.cta-servicio__boton {
+.servicio-boton {
     display: inline-block;
     padding: 0.9rem 1.4rem;
     background-color: var(--color-cta-primary);
@@ -114,14 +114,14 @@
 }
 
 @media (min-width: 768px) {
-    .cabecera-servicio,
-    .contenido-servicio,
-    .cta-servicio {
+    .cabecera-detalle,
+    .contenido-detalle,
+    .btn-reserva-detalle {
         padding-left: var(--espacio-x-tablet);
         padding-right: var(--espacio-x-tablet);
     }
 
-    .cabecera-servicio {
+    .cabecera-detalle {
         padding-top: 3.5rem;
         padding-bottom: 3.5rem;
     }
@@ -133,7 +133,7 @@
     }
 
     .texto-servicio,
-    .imagen-servicio {
+    .imagen-principal-detalle {
         flex: 1 1 0;
     }
 
@@ -142,42 +142,42 @@
     }
 
     .texto-servicio p,
-    .contenido-servicio p,
-    .cta-servicio__caja p {
+    .contenido-detalle p,
+    .btn-reserva-detalle-caja p {
         font-size: var(--fs-body-tablet);
     }
 
-    .contenido-servicio h3,
-    .cta-servicio__caja h2 {
+    .contenido-detalle h3,
+    .btn-reserva-detalle-caja h2 {
         font-size: var(--fs-h2-tablet);
     }
 
-    .imagen-servicio img {
+    .imagen-principal-detalle img {
         min-height: 18rem;
     }
 
-    .contenido-servicio {
+    .contenido-detalle {
         padding-top: 2rem;
     }
 
-    .cta-servicio {
+    .btn-reserva-detalle {
         padding-bottom: 4rem;
     }
 
-    .cta-servicio__caja {
+    .btn-reserva-detalle-caja {
         padding: 2.5rem 2rem;
     }
 }
 
 @media (min-width: 1024px) {
-    .cabecera-servicio,
-    .contenido-servicio,
-    .cta-servicio {
+    .cabecera-detalle,
+    .contenido-detalle,
+    .btn-reserva-detalle {
         padding-left: var(--espacio-x-desktop);
         padding-right: var(--espacio-x-desktop);
     }
 
-    .cabecera-servicio {
+    .cabecera-detalle {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
@@ -195,25 +195,25 @@
     }
 
     .texto-servicio p,
-    .contenido-servicio p,
-    .cta-servicio__caja p {
+    .contenido-detalle p,
+    .btn-reserva-detalle-caja p {
         font-size: var(--fs-body-desktop);
     }
 
-    .contenido-servicio h3,
-    .cta-servicio__caja h2 {
+    .contenido-detalle h3,
+    .btn-reserva-detalle-caja h2 {
         font-size: var(--fs-h2-desktop);
     }
 
-    .imagen-servicio img {
+    .imagen-principal-detalle img {
         min-height: 22rem;
     }
 
-    .contenido-servicio article {
+    .contenido-detalle article {
         max-width: var(--ancho-contenido-texto);
     }
 
-    .cta-servicio {
+    .btn-reserva-detalle {
         padding-bottom: 5rem;
     }
 }

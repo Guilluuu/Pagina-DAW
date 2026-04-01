@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function inicializarBuscadorClinicas() {
-    const formularioBusqueda = document.querySelector(".hero-home__formulario");
+    const formularioBusqueda = document.querySelector(".contenedor-portada-formulario");
     if (formularioBusqueda) {
         formularioBusqueda.addEventListener("submit", (e) => {
             e.preventDefault();
@@ -55,15 +55,15 @@ function renderizarConsejos(listaConsejos) {
         contenedor.innerHTML = "";
 
         listaConsejos.forEach((consejo, indice) => {
-            let direccion = indice === 0 ? "consejo-home--imagen-izquierda" : "consejo-home--imagen-derecha";
+            let direccion = indice === 0 ? "tarjeta-servicio-inicio--imagen-izquierda" : "tarjeta-servicio-inicio--imagen-derecha";
 
             let htmlContenido = `
                 <a href="consejo-especifico.html?id=${consejo.id}" class="consejo-home-enlace">
-                    <article class="consejo-home ${direccion}">
-                        <figure class="consejo-home__imagen">
+                    <article class="tarjeta-servicio-inicio ${direccion}">
+                        <figure class="tarjeta-servicio-inicio-imagen">
                             <img src="${consejo.imagen}" class="borde-asimetrico-2" alt="${consejo.titulo}">
                         </figure>
-                        <section class="consejo-home__texto">
+                        <section class="tarjeta-servicio-inicio-texto">
                             <h3>${consejo.titulo}</h3>
                             <p>${consejo.preview}</p>
                         </section>

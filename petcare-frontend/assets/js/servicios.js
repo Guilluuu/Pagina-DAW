@@ -127,9 +127,9 @@ function renderizarServicios() {
         const li = document.createElement("li");
 
         li.innerHTML = `
-            <a class="tarjeta-servicio borde-asimetrico-2" href="servicio-especifico.html?id=${servicio.id}">
+            <a class="item-servicio borde-asimetrico-2" href="servicio-especifico.html?id=${servicio.id}">
                 <img src="${servicio.imagen}" class="borde-asimetrico-2" alt="${servicio.nombre}">
-                <h3 class="titulo-tarjeta">${servicio.nombre}</h3>
+                <h3 class="titulo-servicio">${servicio.nombre}</h3>
                 <p>${servicio.descripcion}</p>
             </a>
         `;

@@ -40,10 +40,10 @@ function renderizarTarjetas(listaClinicas) {
 
     if (clinica.urgencias == false) copia.querySelector('.alerta-urgencias').style.visibility = "hidden";
 
+    // Almacenamiento en origen: guarda el nombre y ubicación de la clínica en SessionStorage
     let btncita = copia.querySelector(".pedir-cita");
     btncita.addEventListener("click", () => {
-      console.log(clinica.nombre);
-      console.log(clinica.ubicacion);
+      // Se guarda la información de la clínica actual en la sesión del navegador
       sessionStorage.setItem('nombreclinica', clinica.nombre);
       sessionStorage.setItem('ubicacionclinica', clinica.ubicacion);
     });

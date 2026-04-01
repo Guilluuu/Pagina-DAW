@@ -86,7 +86,7 @@
     height: 100%;
 }
 
-.tarjeta-servicio {
+.item-servicio {
     min-height: 18rem;
     height: 100%;
     padding: 1.25rem;
@@ -105,29 +105,29 @@
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.tarjeta-servicio:hover {
+.item-servicio:hover {
     transform: translateY(-8px);
     box-shadow: var(--sombra-tarjeta-hover);
 }
 
-.tarjeta-servicio img {
+.item-servicio img {
     width: 6rem;
     height: 6rem;
     object-fit: cover;
 }
 
-.titulo-tarjeta {
+.titulo-servicio {
     margin: 0;
     font-size: 1.5rem;
     line-height: 1.2;
     transition: color 0.2s ease;
 }
 
-.titulo-tarjeta:hover {
+.titulo-servicio:hover {
     color: var(--color-cta-primary);
 }
 
-.tarjeta-servicio p {
+.item-servicio p {
     margin: 0;
     font-size: var(--fs-body-mobile);
     line-height: 1.7;
@@ -171,7 +171,7 @@
     }
 
     .cabecera-servicios p,
-    .tarjeta-servicio p {
+    .item-servicio p {
         font-size: var(--fs-body-tablet);
     }
 
@@ -197,11 +197,11 @@
         gap: 1.25rem;
     }
 
-    .tarjeta-servicio {
+    .item-servicio {
         min-height: 19rem;
     }
 
-    .titulo-tarjeta {
+    .titulo-servicio {
         font-size: 1.7rem;
     }
 
@@ -236,7 +236,7 @@
     }
 
     .cabecera-servicios p,
-    .tarjeta-servicio p {
+    .item-servicio p {
         font-size: var(--fs-body-desktop);
     }
 
@@ -246,7 +246,7 @@
         margin: 0 auto;
     }
 
-    .tarjeta-servicio {
+    .item-servicio {
         min-height: 14rem;
         grid-template-columns: 7.5rem 1fr;
         grid-template-rows: auto 1fr;
@@ -255,13 +255,13 @@
         align-items: start;
     }
 
-    .tarjeta-servicio img {
+    .item-servicio img {
         grid-row: 1 / 3;
         width: 7.5rem;
         height: 7.5rem;
     }
 
-    .titulo-tarjeta {
+    .titulo-servicio {
         font-size: 1.8rem;
     }
 }

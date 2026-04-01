@@ -63,12 +63,12 @@
     font-size: var(--fs-body-mobile);
 }
 
-.cta-consejo {
+.consejo {
     padding: 1.5rem var(--espacio-x-mobile) 3rem;
     background-color: var(--color-fondo-tarjetas);
 }
 
-.cta-consejo__caja {
+.consejo-caja {
     max-width: var(--ancho-contenido-estrecho);
     margin: 0 auto;
     padding: 2rem 1.25rem;
@@ -80,20 +80,20 @@
     );
 }
 
-.cta-consejo__caja h2 {
+.consejo-caja h2 {
     margin: 0 0 0.75rem;
     font-size: var(--fs-h2-mobile);
     line-height: 1.25;
 }
 
-.cta-consejo__caja p {
+.consejo-caja p {
     margin: 0 0 1.5rem;
     color: var(--color-texto-secondary);
     line-height: 1.7;
     font-size: var(--fs-body-mobile);
 }
 
-.cta-consejo__boton {
+.consejo-boton {
     display: inline-block;
     padding: 0.9rem 1.4rem;
     background-color: var(--color-cta-primary);
@@ -116,7 +116,7 @@
 @media (min-width: 768px) {
     .cabecera-consejo,
     .contenido-consejo,
-    .cta-consejo {
+    .consejo {
         padding-left: var(--espacio-x-tablet);
         padding-right: var(--espacio-x-tablet);
     }
@@ -143,12 +143,12 @@
 
     .texto-consejo p,
     .contenido-consejo p,
-    .cta-consejo__caja p {
+    .consejo-caja p {
         font-size: var(--fs-body-tablet);
     }
 
     .contenido-consejo h3,
-    .cta-consejo__caja h2 {
+    .consejo-caja h2 {
         font-size: var(--fs-h2-tablet);
     }
 
@@ -160,11 +160,11 @@
         padding-top: 2rem;
     }
 
-    .cta-consejo {
+    .consejo {
         padding-bottom: 4rem;
     }
 
-    .cta-consejo__caja {
+    .consejo-caja {
         padding: 2.5rem 2rem;
     }
 }
@@ -172,7 +172,7 @@
 @media screen and (max-width: 1024px) {
     .cabecera-consejo,
     .contenido-consejo,
-    .cta-consejo {
+    .consejo {
         padding-left: var(--espacio-x-desktop);
         padding-right: var(--espacio-x-desktop);
     }
@@ -192,12 +192,12 @@
 
     .texto-consejo p,
     .contenido-consejo p,
-    .cta-consejo__caja p {
+    .consejo-caja p {
         font-size: var(--fs-body-desktop);
     }
 
     .contenido-consejo h3,
-    .cta-consejo__caja h2 {
+    .consejo-caja h2 {
         font-size: var(--fs-h2-desktop);
     }
 
@@ -209,7 +209,7 @@
         max-width: var(--ancho-contenido-texto);
     }
 
-    .cta-consejo {
+    .consejo {
         padding-bottom: 5rem;
     }
 }
