@@ -36,41 +36,42 @@
 \contentsline {section}{\numberline {9}Estructura de ficheros}{35}{}%
 \contentsline {section}{\numberline {10}Mapas de etiquetas HTML}{36}{}%
 \contentsline {subsection}{\numberline {10.1}Página principal}{36}{}%
-\contentsline {subsection}{\numberline {10.2}Clínicas}{38}{}%
-\contentsline {subsection}{\numberline {10.3}Urgencias}{40}{}%
-\contentsline {subsection}{\numberline {10.4}Servicios y tratamientos}{42}{}%
-\contentsline {subsection}{\numberline {10.5}Servicio específico}{44}{}%
-\contentsline {subsection}{\numberline {10.6}Sobre nosotros}{46}{}%
-\contentsline {subsection}{\numberline {10.7}Consejos de salud}{48}{}%
-\contentsline {subsection}{\numberline {10.8}Consejo específico}{50}{}%
-\contentsline {subsection}{\numberline {10.9}Solicitud de cita}{52}{}%
-\contentsline {section}{\numberline {11}Práctica 3: Responsividad}{53}{}%
-\contentsline {subsection}{\numberline {11.1}Flexible Grids con \texttt {float} --- Clínicas}{54}{}%
-\contentsline {subsection}{\numberline {11.2}Diseño multicolumna --- Sobre nosotros}{60}{}%
-\contentsline {subsection}{\numberline {11.3}CSS Flex Container --- Solicitud de cita}{66}{}%
-\contentsline {subsection}{\numberline {11.4}CSS Grid --- Servicios}{72}{}%
-\contentsline {subsection}{\numberline {11.5}Framework Bootstrap --- Consejos de salud}{77}{}%
-\contentsline {section}{\numberline {12}Práctica 4: JavaScript}{83}{}%
-\contentsline {subsection}{\numberline {12.1}Efectos visibles}{83}{}%
-\contentsline {subsubsection}{\numberline {12.1.1}Navegación dinámica por pestañas en la página Sobre Nosotros}{83}{}%
-\contentsline {subsubsection}{\numberline {12.1.2}Búsqueda dinámica de clínicas}{86}{}%
-\contentsline {subsubsection}{\numberline {12.1.3}Rotación dinámica de consejos aleatorios en la página de inicio}{89}{}%
-\contentsline {subsubsection}{\numberline {12.1.4}Autocompletado dinámico del nombre de la clínica en pedir cita}{92}{}%
-\contentsline {subsection}{\numberline {12.2}Métodos de acceso al DOM}{94}{}%
-\contentsline {subsection}{\numberline {12.3}Eventos implementados}{94}{}%
-\contentsline {subsection}{\numberline {12.4}Sintaxis ECMAScript 6}{94}{}%
-\contentsline {subsection}{\numberline {12.5}Uso de objetos jQuery}{95}{}%
-\contentsline {subsection}{\numberline {12.6}Carga de contenido en formato XML}{97}{}%
-\contentsline {subsubsection}{\numberline {12.6.1}Método utilizado: Objeto \texttt {XMLHttpRequest}}{97}{}%
-\contentsline {subsection}{\numberline {12.7}Carga de contenido en formato JSON}{102}{}%
-\contentsline {subsubsection}{\numberline {12.7.1}Método utilizado: objeto jQuery (\texttt {\$.getJSON})}{102}{}%
-\contentsline {section}{\numberline {A}Galería las versiones finales de las páginas}{107}{}%
-\contentsline {subsection}{\numberline {A.1}Página principal}{108}{}%
-\contentsline {subsection}{\numberline {A.2}Clínicas}{111}{}%
-\contentsline {subsection}{\numberline {A.3}Urgencias}{114}{}%
-\contentsline {subsection}{\numberline {A.4}Servicios}{117}{}%
-\contentsline {subsection}{\numberline {A.5}Servicio específico}{120}{}%
-\contentsline {subsection}{\numberline {A.6}Consejos de salud}{123}{}%
-\contentsline {subsection}{\numberline {A.7}Consejo específico}{126}{}%
-\contentsline {subsection}{\numberline {A.8}Sobre nosotros}{129}{}%
-\contentsline {subsection}{\numberline {A.9}Solicitud de cita}{132}{}%
+\contentsline {subsection}{\numberline {10.2}Clínicas}{37}{}%
+\contentsline {subsection}{\numberline {10.3}Urgencias}{38}{}%
+\contentsline {subsection}{\numberline {10.4}Servicios y tratamientos}{39}{}%
+\contentsline {subsection}{\numberline {10.5}Servicio específico}{40}{}%
+\contentsline {subsection}{\numberline {10.6}Sobre nosotros}{41}{}%
+\contentsline {subsection}{\numberline {10.7}Consejos de salud}{42}{}%
+\contentsline {subsection}{\numberline {10.8}Consejo específico}{43}{}%
+\contentsline {subsection}{\numberline {10.9}Solicitud de cita}{44}{}%
+\contentsline {section}{\numberline {11}Práctica 3: Responsividad}{44}{}%
+\contentsline {subsection}{\numberline {11.1}Flexible Grids con \texttt {float} --- Clínicas}{45}{}%
+\contentsline {subsection}{\numberline {11.2}Diseño multicolumna --- Sobre nosotros}{51}{}%
+\contentsline {subsection}{\numberline {11.3}CSS Flex Container --- Solicitud de cita}{57}{}%
+\contentsline {subsection}{\numberline {11.4}CSS Grid --- Servicios}{63}{}%
+\contentsline {subsection}{\numberline {11.5}Framework Bootstrap --- Consejos de salud}{68}{}%
+\contentsline {section}{\numberline {12}Práctica 4: JavaScript}{74}{}%
+\contentsline {subsection}{\numberline {12.1}Efectos visibles}{74}{}%
+\contentsline {subsubsection}{\numberline {12.1.1}Navegación dinámica por pestañas en la página Sobre Nosotros}{74}{}%
+\contentsline {subsubsection}{\numberline {12.1.2}Búsqueda dinámica de clínicas}{77}{}%
+\contentsline {subsubsection}{\numberline {12.1.3}Rotación dinámica de consejos aleatorios en la página de inicio}{80}{}%
+\contentsline {subsubsection}{\numberline {12.1.4}Autocompletado dinámico del nombre de la clínica en pedir cita}{83}{}%
+\contentsline {subsection}{\numberline {12.2}Métodos de acceso al DOM}{85}{}%
+\contentsline {subsection}{\numberline {12.3}Eventos implementados}{85}{}%
+\contentsline {subsection}{\numberline {12.4}Sintaxis ECMAScript 6}{85}{}%
+\contentsline {subsection}{\numberline {12.5}Uso de objetos jQuery}{86}{}%
+\contentsline {subsection}{\numberline {12.6}Carga de contenido en formato XML}{88}{}%
+\contentsline {subsubsection}{\numberline {12.6.1}Método utilizado: Objeto \texttt {XMLHttpRequest}}{88}{}%
+\contentsline {subsection}{\numberline {12.7}Carga de contenido en formato JSON}{93}{}%
+\contentsline {subsubsection}{\numberline {12.7.1}Método utilizado: objeto jQuery (\texttt {\$.getJSON})}{93}{}%
+\contentsline {section}{\numberline {A}Galería las versiones finales de las páginas}{98}{}%
+\contentsline {subsection}{\numberline {A.1}Página principal}{99}{}%
+\contentsline {subsection}{\numberline {A.2}Clínicas}{102}{}%
+\contentsline {subsection}{\numberline {A.3}Urgencias}{105}{}%
+\contentsline {subsection}{\numberline {A.4}Servicios}{108}{}%
+\contentsline {subsection}{\numberline {A.5}Servicio específico}{111}{}%
+\contentsline {subsection}{\numberline {A.6}Consejos de salud}{114}{}%
+\contentsline {subsection}{\numberline {A.7}Consejo específico}{117}{}%
+\contentsline {subsection}{\numberline {A.8}Sobre nosotros}{120}{}%
+\contentsline {subsection}{\numberline {A.9}Solicitud de cita}{123}{}%
+\contentsline {section}{\numberline {B}Mapas de Etiquetas y Modificaciones Estructurales}{125}{}%
