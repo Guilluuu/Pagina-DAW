@@ -66,12 +66,16 @@ main {
 }
 
 .contenedor-tarjetas {
-  margin-top: 2rem;
   list-style: none;
-  margin-bottom: 5rem;
   width: 100%;
   overflow: hidden;
-  padding: 2rem;
+  margin: auto;
+}
+
+.contenedor-tarjetas li {
+  width: 100%;
+  float: none;
+  margin: 20px auto;
 }
 
 main a:link,
@@ -81,24 +85,6 @@ header a:visited {
   text-decoration: none;
   color: var(--color-texto-main);
 }
-
-.contenedor-tarjetas li {
-  width: 47%;
-  margin-bottom: 2rem;
-}
-
-
-.contenedor-tarjetas li:nth-child(odd) {
-  float: left;
-  margin-right: 6%;
-  clear: both;
-}
-
-.contenedor-tarjetas li:nth-child(even) {
-  float: right;
-  margin-right: 0;
-}
-
 
 .tarjeta {
   display: grid;
@@ -123,9 +109,12 @@ header a:visited {
   transition: transform 0.3s ease-in-out;
 
   width: 100%;
-  aspect-ratio: 2/1;
+  height: max-content;
+  aspect-ratio: initial;
   overflow: hidden;
 }
+
+
 
 .tarjeta:hover {
   transform: translateY(-8px);
@@ -195,6 +184,7 @@ header a:visited {
 }
 
 .modal {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -211,19 +201,17 @@ header a:visited {
 }
 
 .modal-contenido {
-  display: flex;
-  flex-direction: column;
   background-color: var(--color-fondo-tarjetas, #fff);
   padding: 2rem;
   width: 90%;
-  max-width: 800px;
+  max-width: 600px;
   position: relative;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .modal-contenido iframe {
   width: 100%;
-  min-height: 60vh;
+  height: 550px;
   border: none;
 }
 
@@ -242,58 +230,27 @@ header a:visited {
   color: red;
 }
 
-
-
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .contenedor-tarjetas {
-    margin: auto;
-    width: 100%;
-
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    padding: 2rem;
   }
 
   .contenedor-tarjetas li {
-    width: 100%;
-    float: none;
-    margin: 20px auto;
+    width: 47%;
+    margin-bottom: 2rem;
   }
 
-  .contenedor-busqueda,
-  .formulario-busqueda {
-    flex-direction: column;
+  .contenedor-tarjetas li:nth-child(odd) {
+    float: left;
+    margin-right: 6%;
+    clear: both;
   }
 
-
-  .boton-reset {
-    margin: auto;
+  .contenedor-tarjetas li:nth-child(even) {
+    float: right;
+    margin-right: 0;
   }
-
-  .tarjeta {
-    width: 100%;
-    aspect-ratio: initial;
-    height: max-content;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'foto'
-      'titulo'
-      'ubicacion'
-      'alerta'
-      'separador'
-      'horario'
-      'telefono'
-      'pedir-cita';
-  }
-
-  .header-busqueda {
-    margin: auto;
-    padding: 1rem;
-  }
-
-  .formulario-busqueda {
-    margin: auto;
-  }
-
-  .contenedor-filtros {
-    justify-content: center;
-  }
-
 }
+
