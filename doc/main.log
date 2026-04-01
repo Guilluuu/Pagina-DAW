@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.4.1)  1 APR 2026 22:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2025/dev/Debian) (preloaded format=pdflatex 2026.4.1)  1 APR 2026 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -540,7 +540,7 @@ t line 140.
 File: imgs_documento/storyboard_daw.png Graphic file (type png)
 <use imgs_documento/storyboard_daw.png>
 Package pdftex.def Info: imgs_documento/storyboard_daw.png  used on input line 
-218.
+217.
 (pdftex.def)             Requested size: 650.43001pt x 438.40157pt.
 
 
@@ -554,7 +554,7 @@ Overfull \vbox (52.44334pt too high) has occurred while \output is active []
 File: imgs_documento/arquitecturaDeInformacion.png Graphic file (type png)
 <use imgs_documento/arquitecturaDeInformacion.png>
 Package pdftex.def Info: imgs_documento/arquitecturaDeInformacion.png  used on 
-input line 226.
+input line 225.
 (pdftex.def)             Requested size: 401.5899pt x 617.94112pt.
 
 Overfull \vbox (19.95445pt too high) has occurred while \output is active []
@@ -565,13 +565,13 @@ Overfull \vbox (19.95445pt too high) has occurred while \output is active []
 File: imgs_documento/arquitecturaDeInformacion.png Graphic file (type png)
 <use imgs_documento/arquitecturaDeInformacion.png>
 Package pdftex.def Info: imgs_documento/arquitecturaDeInformacion.png  used on 
-input line 234.
+input line 233.
 (pdftex.def)             Requested size: 243.21852pt x 617.91711pt.
 <imgs_documento/mapaDeNavegacion.png, id=42, 701.62125pt x 905.3825pt>
 File: imgs_documento/mapaDeNavegacion.png Graphic file (type png)
 <use imgs_documento/mapaDeNavegacion.png>
 Package pdftex.def Info: imgs_documento/mapaDeNavegacion.png  used on input lin
-e 242.
+e 241.
 (pdftex.def)             Requested size: 469.75502pt x 606.18867pt.
 
 
@@ -587,7 +587,7 @@ Overfull \vbox (8.20201pt too high) has occurred while \output is active []
 File: imgs_documento/casosDeUso_daw.png Graphic file (type png)
 <use imgs_documento/casosDeUso_daw.png>
 Package pdftex.def Info: imgs_documento/casosDeUso_daw.png  used on input line 
-250.
+249.
 (pdftex.def)             Requested size: 469.74673pt x 416.4001pt.
 
 
@@ -599,7 +599,7 @@ Package pdftex.def Info: imgs_documento/casosDeUso_daw.png  used on input line
 <imgs_documento/bocetos1.png, id=59, 869.2475pt x 1929.2075pt>
 File: imgs_documento/bocetos1.png Graphic file (type png)
 <use imgs_documento/bocetos1.png>
-Package pdftex.def Info: imgs_documento/bocetos1.png  used on input line 319.
+Package pdftex.def Info: imgs_documento/bocetos1.png  used on input line 318.
 (pdftex.def)             Requested size: 278.40363pt x 617.8889pt.
 
 
@@ -612,7 +612,7 @@ Overfull \vbox (38.17401pt too high) has occurred while \output is active []
 <imgs_documento/bocetos2.png, id=67, 839.135pt x 1734.48pt>
 File: imgs_documento/bocetos2.png Graphic file (type png)
 <use imgs_documento/bocetos2.png>
-Package pdftex.def Info: imgs_documento/bocetos2.png  used on input line 326.
+Package pdftex.def Info: imgs_documento/bocetos2.png  used on input line 325.
 (pdftex.def)             Requested size: 298.93854pt x 617.9017pt.
 
 
@@ -622,7 +622,7 @@ Package pdftex.def Info: imgs_documento/bocetos2.png  used on input line 326.
 <imgs_documento/bocetos3.png, id=71, 782.925pt x 1750.54pt>
 File: imgs_documento/bocetos3.png Graphic file (type png)
 <use imgs_documento/bocetos3.png>
-Package pdftex.def Info: imgs_documento/bocetos3.png  used on input line 333.
+Package pdftex.def Info: imgs_documento/bocetos3.png  used on input line 332.
 (pdftex.def)             Requested size: 276.3574pt x 617.90685pt.
 
 
@@ -632,7 +632,7 @@ Package pdftex.def Info: imgs_documento/bocetos3.png  used on input line 333.
 <imgs_documento/bocetos4.png, id=75, 708.6475pt x 2031.59pt>
 File: imgs_documento/bocetos4.png Graphic file (type png)
 <use imgs_documento/bocetos4.png>
-Package pdftex.def Info: imgs_documento/bocetos4.png  used on input line 340.
+Package pdftex.def Info: imgs_documento/bocetos4.png  used on input line 339.
 (pdftex.def)             Requested size: 215.52623pt x 617.88258pt.
 
 
@@ -642,7 +642,7 @@ Package pdftex.def Info: imgs_documento/bocetos4.png  used on input line 340.
 <imgs_documento/bocetos5.png, id=79, 668.4975pt x 961.5925pt>
 File: imgs_documento/bocetos5.png Graphic file (type png)
 <use imgs_documento/bocetos5.png>
-Package pdftex.def Info: imgs_documento/bocetos5.png  used on input line 347.
+Package pdftex.def Info: imgs_documento/bocetos5.png  used on input line 346.
 (pdftex.def)             Requested size: 429.57101pt x 617.91145pt.
 
 
@@ -654,7 +654,7 @@ Package pdftex.def Info: imgs_documento/bocetos5.png  used on input line 347.
 File: imgs_documento/wireframes/Wireframe_home.png Graphic file (type png)
 <use imgs_documento/wireframes/Wireframe_home.png>
 Package pdftex.def Info: imgs_documento/wireframes/Wireframe_home.png  used on 
-input line 357.
+input line 356.
 (pdftex.def)             Requested size: 469.7446pt x 488.97772pt.
 
 
@@ -666,7 +666,7 @@ input line 357.
 File: imgs_documento/wireframes/Wireframe_clinicas.png Graphic file (type png)
 <use imgs_documento/wireframes/Wireframe_clinicas.png>
 Package pdftex.def Info: imgs_documento/wireframes/Wireframe_clinicas.png  used
- on input line 365.
+ on input line 364.
 (pdftex.def)             Requested size: 469.74944pt x 575.44307pt.
 
 
@@ -679,7 +679,7 @@ File: imgs_documento/wireframes/Wireframe_urgencias.png Graphic file (type png)
 
 <use imgs_documento/wireframes/Wireframe_urgencias.png>
 Package pdftex.def Info: imgs_documento/wireframes/Wireframe_urgencias.png  use
-d on input line 373.
+d on input line 372.
 (pdftex.def)             Requested size: 469.74944pt x 489.32233pt.
 
 
@@ -692,7 +692,7 @@ File: imgs_documento/wireframes/Wireframe-ServiciosYTratamientos.png Graphic fi
 le (type png)
 <use imgs_documento/wireframes/Wireframe-ServiciosYTratamientos.png>
 Package pdftex.def Info: imgs_documento/wireframes/Wireframe-ServiciosYTratamie
-ntos.png  used on input line 381.
+ntos.png  used on input line 380.
 (pdftex.def)             Requested size: 469.74944pt x 493.56313pt.
 
 
@@ -705,7 +705,7 @@ File: imgs_documento/wireframes/Wireframe_ServicioConcreto.png Graphic file (ty
 pe png)
 <use imgs_documento/wireframes/Wireframe_ServicioConcreto.png>
 Package pdftex.def Info: imgs_documento/wireframes/Wireframe_ServicioConcreto.p
-ng  used on input line 389.
+ng  used on input line 388.
 (pdftex.def)             Requested size: 469.74944pt x 489.32233pt.
 
 
@@ -718,7 +718,7 @@ File: imgs_documento/wireframes/Wireframe_QuienesSomos.png Graphic file (type p
 ng)
 <use imgs_documento/wireframes/Wireframe_QuienesSomos.png>
 Package pdftex.def Info: imgs_documento/wireframes/Wireframe_QuienesSomos.png  
-used on input line 397.
+used on input line 396.
 (pdftex.def)             Requested size: 469.7446pt x 572.10394pt.
 
 
@@ -731,7 +731,7 @@ File: imgs_documento/wireframes/Wireframe_Consejos-de-salud.png Graphic file (t
 ype png)
 <use imgs_documento/wireframes/Wireframe_Consejos-de-salud.png>
 Package pdftex.def Info: imgs_documento/wireframes/Wireframe_Consejos-de-salud.
-png  used on input line 405.
+png  used on input line 404.
 (pdftex.def)             Requested size: 469.7446pt x 563.62833pt.
 
 
@@ -744,7 +744,7 @@ File: imgs_documento/wireframes/Wireframe_ConsejoSalud.png Graphic file (type p
 ng)
 <use imgs_documento/wireframes/Wireframe_ConsejoSalud.png>
 Package pdftex.def Info: imgs_documento/wireframes/Wireframe_ConsejoSalud.png  
-used on input line 413.
+used on input line 412.
 (pdftex.def)             Requested size: 469.74944pt x 489.32233pt.
 
 
@@ -757,13 +757,13 @@ File: imgs_documento/wireframes/Wireframe_ventanaModalCita.png Graphic file (ty
 pe png)
 <use imgs_documento/wireframes/Wireframe_ventanaModalCita.png>
 Package pdftex.def Info: imgs_documento/wireframes/Wireframe_ventanaModalCita.p
-ng  used on input line 421.
+ng  used on input line 420.
 (pdftex.def)             Requested size: 469.74525pt x 526.1438pt.
 <imgs_documento/mockups/home.png, id=126, 1922.18124pt x 2552.53625pt>
 File: imgs_documento/mockups/home.png Graphic file (type png)
 <use imgs_documento/mockups/home.png>
-Package pdftex.def Info: imgs_documento/mockups/home.png  used on input line 43
-0.
+Package pdftex.def Info: imgs_documento/mockups/home.png  used on input line 42
+9.
 (pdftex.def)             Requested size: 465.2925pt x 617.87927pt.
 
 
@@ -779,7 +779,7 @@ Overfull \vbox (36.12192pt too high) has occurred while \output is active []
 File: imgs_documento/mockups/clinicas.png Graphic file (type png)
 <use imgs_documento/mockups/clinicas.png>
 Package pdftex.def Info: imgs_documento/mockups/clinicas.png  used on input lin
-e 438.
+e 437.
 (pdftex.def)             Requested size: 469.747pt x 390.5278pt.
 
 
@@ -790,7 +790,7 @@ e 438.
 File: imgs_documento/mockups/urgencias.png Graphic file (type png)
 <use imgs_documento/mockups/urgencias.png>
 Package pdftex.def Info: imgs_documento/mockups/urgencias.png  used on input li
-ne 446.
+ne 445.
 (pdftex.def)             Requested size: 469.747pt x 376.8606pt.
 
 
@@ -801,7 +801,7 @@ ne 446.
 File: imgs_documento/mockups/servicios.png Graphic file (type png)
 <use imgs_documento/mockups/servicios.png>
 Package pdftex.def Info: imgs_documento/mockups/servicios.png  used on input li
-ne 454.
+ne 453.
 (pdftex.def)             Requested size: 469.747pt x 284.4804pt.
 
 
@@ -812,7 +812,7 @@ ne 454.
 File: imgs_documento/mockups/consejos.png Graphic file (type png)
 <use imgs_documento/mockups/consejos.png>
 Package pdftex.def Info: imgs_documento/mockups/consejos.png  used on input lin
-e 462.
+e 461.
 (pdftex.def)             Requested size: 469.747pt x 461.3948pt.
 
 
@@ -823,7 +823,7 @@ e 462.
 File: imgs_documento/mockups/quienes-somos.png Graphic file (type png)
 <use imgs_documento/mockups/quienes-somos.png>
 Package pdftex.def Info: imgs_documento/mockups/quienes-somos.png  used on inpu
-t line 470.
+t line 469.
 (pdftex.def)             Requested size: 469.747pt x 401.41095pt.
 
 
@@ -835,7 +835,7 @@ pt>
 File: imgs_documento/mockups/servicio-especifico.png Graphic file (type png)
 <use imgs_documento/mockups/servicio-especifico.png>
 Package pdftex.def Info: imgs_documento/mockups/servicio-especifico.png  used o
-n input line 478.
+n input line 477.
 (pdftex.def)             Requested size: 469.747pt x 532.768pt.
 
 
@@ -846,7 +846,7 @@ n input line 478.
 File: imgs_documento/mockups/pedir.cita.png Graphic file (type png)
 <use imgs_documento/mockups/pedir.cita.png>
 Package pdftex.def Info: imgs_documento/mockups/pedir.cita.png  used on input l
-ine 486.
+ine 485.
 (pdftex.def)             Requested size: 469.75555pt x 473.09506pt.
 
 
@@ -857,7 +857,7 @@ ine 486.
 File: imgs_documento/estructuraDeFicheros.png Graphic file (type png)
 <use imgs_documento/estructuraDeFicheros.png>
 Package pdftex.def Info: imgs_documento/estructuraDeFicheros.png  used on input
- line 495.
+ line 494.
 (pdftex.def)             Requested size: 334.56726pt x 617.90251pt.
 
 
@@ -873,13 +873,13 @@ Overfull \vbox (17.11586pt too high) has occurred while \output is active []
 File: mapasDeEtiquetas/index-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/index-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/index-boxmodel.png  used on input lin
-e 505.
+e 504.
 (pdftex.def)             Requested size: 469.74208pt x 435.24539pt.
 <mapasDeEtiquetas/clinicas-boxmodel.png, id=180, 1284.8pt x 1829.83624pt>
 File: mapasDeEtiquetas/clinicas-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/clinicas-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/clinicas-boxmodel.png  used on input 
-line 512.
+line 511.
 (pdftex.def)             Requested size: 433.84634pt x 617.8921pt.
 
 
@@ -893,13 +893,13 @@ Overfull \vbox (13.33385pt too high) has occurred while \output is active []
 File: mapasDeEtiquetas/urgencias-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/urgencias-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/urgencias-boxmodel.png  used on input
- line 519.
+ line 518.
 (pdftex.def)             Requested size: 469.74208pt x 582.03981pt.
 <mapasDeEtiquetas/servicios-boxmodel.png, id=189, 1284.8pt x 1196.47pt>
 File: mapasDeEtiquetas/servicios-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/servicios-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/servicios-boxmodel.png  used on input
- line 526.
+ line 525.
 (pdftex.def)             Requested size: 469.74208pt x 437.44731pt.
 
 
@@ -910,7 +910,7 @@ File: mapasDeEtiquetas/servicio-especifico-boxmodel.png Graphic file (type png)
 
 <use mapasDeEtiquetas/servicio-especifico-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/servicio-especifico-boxmodel.png  use
-d on input line 533.
+d on input line 532.
 (pdftex.def)             Requested size: 469.74208pt x 293.5888pt.
 
 
@@ -919,7 +919,7 @@ d on input line 533.
 File: mapasDeEtiquetas/sobre-nosotros-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/sobre-nosotros-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/sobre-nosotros-boxmodel.png  used on 
-input line 540.
+input line 539.
 (pdftex.def)             Requested size: 469.74208pt x 325.51659pt.
 
 
@@ -928,7 +928,7 @@ input line 540.
 File: mapasDeEtiquetas/consejos-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/consejos-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/consejos-boxmodel.png  used on input 
-line 547.
+line 546.
 (pdftex.def)             Requested size: 469.74208pt x 485.88947pt.
 
 
@@ -937,7 +937,7 @@ line 547.
 File: mapasDeEtiquetas/consejo-especifico-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/consejo-especifico-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/consejo-especifico-boxmodel.png  used
- on input line 554.
+ on input line 553.
 (pdftex.def)             Requested size: 469.74208pt x 293.5888pt.
 
 
@@ -946,7 +946,7 @@ Package pdftex.def Info: mapasDeEtiquetas/consejo-especifico-boxmodel.png  used
 File: mapasDeEtiquetas/pedir-cita-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/pedir-cita-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/pedir-cita-boxmodel.png  used on inpu
-t line 561.
+t line 560.
 (pdftex.def)             Requested size: 469.74208pt x 507.90863pt.
 
 
@@ -954,7 +954,7 @@ t line 561.
 
 [44 <./mapasDeEtiquetas/pedir-cita-boxmodel.png (PNG copy)>]
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 572.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 571.
 
 
 [45]
@@ -962,7 +962,7 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <12> not available
 File: capturas_responsivas/clinicas-desktop.png Graphic file (type png)
 <use capturas_responsivas/clinicas-desktop.png>
 Package pdftex.def Info: capturas_responsivas/clinicas-desktop.png  used on inp
-ut line 631.
+ut line 630.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 
 
@@ -971,7 +971,7 @@ ut line 631.
 File: capturas_responsivas/clinicas-tablet.png Graphic file (type png)
 <use capturas_responsivas/clinicas-tablet.png>
 Package pdftex.def Info: capturas_responsivas/clinicas-tablet.png  used on inpu
-t line 637.
+t line 636.
 (pdftex.def)             Requested size: 292.7022pt x 390.26959pt.
 
 
@@ -980,7 +980,7 @@ t line 637.
 File: capturas_responsivas/clinicas-mobile.png Graphic file (type png)
 <use capturas_responsivas/clinicas-mobile.png>
 Package pdftex.def Info: capturas_responsivas/clinicas-mobile.png  used on inpu
-t line 643.
+t line 642.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -989,7 +989,7 @@ t line 643.
 File: mapasDeEtiquetas/clinicas-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/clinicas-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/clinicas-boxmodel-new.png  used on in
-put line 651.
+put line 650.
 (pdftex.def)             Requested size: 328.08037pt x 552.8667pt.
 
 
@@ -1005,7 +1005,7 @@ put line 651.
 File: capturas_responsivas/sobre-nosotros-desktop.png Graphic file (type png)
 <use capturas_responsivas/sobre-nosotros-desktop.png>
 Package pdftex.def Info: capturas_responsivas/sobre-nosotros-desktop.png  used 
-on input line 709.
+on input line 708.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 
 
@@ -1014,7 +1014,7 @@ on input line 709.
 File: capturas_responsivas/sobre-nosotros-tablet.png Graphic file (type png)
 <use capturas_responsivas/sobre-nosotros-tablet.png>
 Package pdftex.def Info: capturas_responsivas/sobre-nosotros-tablet.png  used o
-n input line 715.
+n input line 714.
 (pdftex.def)             Requested size: 292.7022pt x 390.26959pt.
 
 
@@ -1024,7 +1024,7 @@ n input line 715.
 File: capturas_responsivas/sobre-nosotros-mobile.png Graphic file (type png)
 <use capturas_responsivas/sobre-nosotros-mobile.png>
 Package pdftex.def Info: capturas_responsivas/sobre-nosotros-mobile.png  used o
-n input line 721.
+n input line 720.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1034,21 +1034,21 @@ n input line 721.
 File: mapasDeEtiquetas/sobre-nosotros-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/sobre-nosotros-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/sobre-nosotros-boxmodel-new.png  used
- on input line 727.
+ on input line 726.
 (pdftex.def)             Requested size: 469.74208pt x 374.6927pt.
 
 
 [55 <./capturas_responsivas/sobre-nosotros-mobile.png (PNG copy)>]
 
 [56 <./mapasDeEtiquetas/sobre-nosotros-boxmodel-new.png (PNG copy)>]
-Overfull \hbox (9.67555pt too wide) in paragraph at lines 743--744
+Overfull \hbox (9.67555pt too wide) in paragraph at lines 742--743
 []\T1/lmr/bx/n/10.95 (-20) Apilamiento ló-gi-co (Co-lum-nas): \T1/lmr/m/n/10.95
  (-20) Los con-te-ne-do-res prin-ci-pa-les co-mo \T1/lmtt/m/n/10.95 .fieldset-p
 ropietario
  []
 
 
-Overfull \hbox (26.00485pt too wide) in paragraph at lines 744--745
+Overfull \hbox (26.00485pt too wide) in paragraph at lines 743--744
 \T1/lmr/m/n/10.95 (-20) (te-lé-fono y email), \T1/lmtt/m/n/10.95 .opciones-espe
 cie \T1/lmr/m/n/10.95 (-20) (bo-to-nes de ra-dio pa-ra el ti-po de mas-co-ta) y
  \T1/lmtt/m/n/10.95 .fieldset-cita
@@ -1063,7 +1063,7 @@ cie \T1/lmr/m/n/10.95 (-20) (bo-to-nes de ra-dio pa-ra el ti-po de mas-co-ta) y
 File: capturas_responsivas/pedir-cita-desktop.png Graphic file (type png)
 <use capturas_responsivas/pedir-cita-desktop.png>
 Package pdftex.def Info: capturas_responsivas/pedir-cita-desktop.png  used on i
-nput line 796.
+nput line 795.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 
 
@@ -1072,7 +1072,7 @@ nput line 796.
 File: capturas_responsivas/pedir-cita-tablet.png Graphic file (type png)
 <use capturas_responsivas/pedir-cita-tablet.png>
 Package pdftex.def Info: capturas_responsivas/pedir-cita-tablet.png  used on in
-put line 802.
+put line 801.
 (pdftex.def)             Requested size: 292.7022pt x 390.26959pt.
 
 
@@ -1081,7 +1081,7 @@ put line 802.
 File: capturas_responsivas/pedir-cita-mobile.png Graphic file (type png)
 <use capturas_responsivas/pedir-cita-mobile.png>
 Package pdftex.def Info: capturas_responsivas/pedir-cita-mobile.png  used on in
-put line 808.
+put line 807.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1090,21 +1090,21 @@ put line 808.
 File: mapasDeEtiquetas/pedir-cita-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/pedir-cita-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/pedir-cita-boxmodel-new.png  used on 
-input line 814.
+input line 813.
 (pdftex.def)             Requested size: 469.74208pt x 313.40604pt.
 
 
 [61 <./capturas_responsivas/pedir-cita-mobile.png (PNG copy)>]
 
 [62 <./mapasDeEtiquetas/pedir-cita-boxmodel-new.png (PNG copy)>]
-Overfull \hbox (16.15205pt too wide) in paragraph at lines 831--832
+Overfull \hbox (16.15205pt too wide) in paragraph at lines 830--831
 []\T1/lmr/bx/n/10.95 (-20) Diseño ba-se (Dis-po-si-ti-vos mó-vi-les): \T1/lmr/m
 /n/10.95 (-20) Con-ver-ti-mos el con-te-ne-dor de la lis-ta (\T1/lmtt/m/n/10.95
  .lista-servicios\T1/lmr/m/n/10.95 (-20) )
  []
 
 
-Overfull \hbox (5.77084pt too wide) in paragraph at lines 831--832
+Overfull \hbox (5.77084pt too wide) in paragraph at lines 830--831
 \T1/lmr/m/n/10.95 (-20) en una cua-drí-cu-la apli-can-do \T1/lmtt/m/n/10.95 dis
 play: grid\T1/lmr/m/n/10.95 (-20) . A tra-vés de la pro-pie-dad \T1/lmtt/m/n/10
 .95 grid-template-columns:
@@ -1114,7 +1114,7 @@ play: grid\T1/lmr/m/n/10.95 (-20) . A tra-vés de la pro-pie-dad \T1/lmtt/m/n/10
 File: capturas_responsivas/servicios-desktop.png Graphic file (type png)
 <use capturas_responsivas/servicios-desktop.png>
 Package pdftex.def Info: capturas_responsivas/servicios-desktop.png  used on in
-put line 859.
+put line 858.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 
 
@@ -1125,7 +1125,7 @@ put line 859.
 File: capturas_responsivas/servicios-tablet.png Graphic file (type png)
 <use capturas_responsivas/servicios-tablet.png>
 Package pdftex.def Info: capturas_responsivas/servicios-tablet.png  used on inp
-ut line 865.
+ut line 864.
 (pdftex.def)             Requested size: 292.7022pt x 390.26959pt.
 
 
@@ -1134,7 +1134,7 @@ ut line 865.
 File: capturas_responsivas/servicios-mobile.png Graphic file (type png)
 <use capturas_responsivas/servicios-mobile.png>
 Package pdftex.def Info: capturas_responsivas/servicios-mobile.png  used on inp
-ut line 871.
+ut line 870.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1143,7 +1143,7 @@ ut line 871.
 File: mapasDeEtiquetas/servicios-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/servicios-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/servicios-boxmodel-new.png  used on i
-nput line 877.
+nput line 876.
 (pdftex.def)             Requested size: 469.74208pt x 498.00002pt.
 
 
@@ -1157,7 +1157,7 @@ File: lstlang1.sty 2024/09/23 1.10c listings language file
 File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 903.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 902.
 
 
 [68
@@ -1167,7 +1167,7 @@ LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
 File: capturas_responsivas/consejos-desktop.png Graphic file (type png)
 <use capturas_responsivas/consejos-desktop.png>
 Package pdftex.def Info: capturas_responsivas/consejos-desktop.png  used on inp
-ut line 936.
+ut line 935.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 
 
@@ -1176,7 +1176,7 @@ ut line 936.
 File: capturas_responsivas/consejos-tablet.png Graphic file (type png)
 <use capturas_responsivas/consejos-tablet.png>
 Package pdftex.def Info: capturas_responsivas/consejos-tablet.png  used on inpu
-t line 942.
+t line 941.
 (pdftex.def)             Requested size: 292.7022pt x 390.26959pt.
 
 
@@ -1185,7 +1185,7 @@ t line 942.
 File: capturas_responsivas/consejos-mobile.png Graphic file (type png)
 <use capturas_responsivas/consejos-mobile.png>
 Package pdftex.def Info: capturas_responsivas/consejos-mobile.png  used on inpu
-t line 948.
+t line 947.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1194,7 +1194,7 @@ t line 948.
 File: mapasDeEtiquetas/consejos-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/consejos-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/consejos-boxmodel-new.png  used on in
-put line 954.
+put line 953.
 (pdftex.def)             Requested size: 360.13364pt x 552.8614pt.
 
 
@@ -1206,17 +1206,17 @@ put line 954.
 File: capturas_js/nav-dinamica-sobre-nosotros-1.png Graphic file (type png)
 <use capturas_js/nav-dinamica-sobre-nosotros-1.png>
 Package pdftex.def Info: capturas_js/nav-dinamica-sobre-nosotros-1.png  used on
- input line 976.
+ input line 975.
 (pdftex.def)             Requested size: 225.4804pt x 167.38228pt.
 <capturas_js/nav-dinamica-sobre-nosotros-2.png, id=335, 1874.00125pt x 1399.227
 5pt>
 File: capturas_js/nav-dinamica-sobre-nosotros-2.png Graphic file (type png)
 <use capturas_js/nav-dinamica-sobre-nosotros-2.png>
 Package pdftex.def Info: capturas_js/nav-dinamica-sobre-nosotros-2.png  used on
- input line 981.
+ input line 980.
 (pdftex.def)             Requested size: 225.4804pt x 168.3484pt.
 
-Overfull \hbox (5.1388pt too wide) in paragraph at lines 990--991
+Overfull \hbox (5.1388pt too wide) in paragraph at lines 989--990
 []\T1/lmr/bx/n/10.95 (-20) Origen de los da-tos: \T1/lmr/m/n/10.95 (-20) En Ja-
 vaS-cript, crea-mos un ob-je-to cons-tan-te lla-ma-do \T1/lmtt/m/n/10.95 reposi
 torioTextos\T1/lmr/m/n/10.95 (-20) .
@@ -1236,29 +1236,29 @@ sobre-nosotros-2.png>]
 File: capturas_js/buqueda-dinamica-1.png Graphic file (type png)
 <use capturas_js/buqueda-dinamica-1.png>
 Package pdftex.def Info: capturas_js/buqueda-dinamica-1.png  used on input line
- 1061.
+ 1060.
 (pdftex.def)             Requested size: 225.4804pt x 119.19647pt.
 <capturas_js/buqueda-dinamica-2.png, id=349, 1874.00125pt x 990.70125pt>
 File: capturas_js/buqueda-dinamica-2.png Graphic file (type png)
 <use capturas_js/buqueda-dinamica-2.png>
 Package pdftex.def Info: capturas_js/buqueda-dinamica-2.png  used on input line
- 1066.
+ 1065.
 (pdftex.def)             Requested size: 225.4804pt x 119.19647pt.
 
-Overfull \hbox (11.0916pt too wide) in paragraph at lines 1074--1075
+Overfull \hbox (11.0916pt too wide) in paragraph at lines 1073--1074
 \T1/lmr/m/n/10.95 (-20) dis-pa-ra con ca-da pul-sa-ción de te-cla. Ex-trae-mos 
 el va-lor es-cri-to con \T1/lmtt/m/n/10.95 $('.input-busqueda').val()
  []
 
 
-Overfull \hbox (95.72696pt too wide) in paragraph at lines 1075--1076
+Overfull \hbox (95.72696pt too wide) in paragraph at lines 1074--1075
 []\T1/lmr/bx/n/10.95 (-20) Ordenación al-fa-bé-ti-ca: \T1/lmr/m/n/10.95 (-20) C
 ap-tu-ra-mos el pri-mer bo-tón de fil-tros me-dian-te \T1/lmtt/m/n/10.95 queryS
 elector('.contenedor-filtros
  []
 
 
-Overfull \hbox (2.74539pt too wide) in paragraph at lines 1076--1077
+Overfull \hbox (2.74539pt too wide) in paragraph at lines 1075--1076
 []\T1/lmr/bx/n/10.95 (-20) Filtro de clí-ni-cas abier-tas: \T1/lmr/m/n/10.95 (-
 20) Se-lec-cio-na-mos el se-gun-do bo-tón de la lis-ta con \T1/lmtt/m/n/10.95 q
 uerySelectorAll\T1/lmr/m/n/10.95 (-20) .
@@ -1278,13 +1278,13 @@ uerySelectorAll\T1/lmr/m/n/10.95 (-20) .
 File: capturas_js/consejos-dinamicos-1.png Graphic file (type png)
 <use capturas_js/consejos-dinamicos-1.png>
 Package pdftex.def Info: capturas_js/consejos-dinamicos-1.png  used on input li
-ne 1157.
+ne 1156.
 (pdftex.def)             Requested size: 225.4804pt x 198.54002pt.
 <capturas_js/consejos-dinamicos-2.png, id=363, 1874.00125pt x 1650.165pt>
 File: capturas_js/consejos-dinamicos-2.png Graphic file (type png)
 <use capturas_js/consejos-dinamicos-2.png>
 Package pdftex.def Info: capturas_js/consejos-dinamicos-2.png  used on input li
-ne 1162.
+ne 1161.
 (pdftex.def)             Requested size: 225.4804pt x 198.54002pt.
 
 
@@ -1300,24 +1300,24 @@ ng>]
 File: capturas_js/autocompletado-1.png Graphic file (type png)
 <use capturas_js/autocompletado-1.png>
 Package pdftex.def Info: capturas_js/autocompletado-1.png  used on input line 1
-277.
+276.
 (pdftex.def)             Requested size: 225.4804pt x 102.90054pt.
 <capturas_js/autocompletado-2.png, id=376, 1843.88875pt x 989.6975pt>
 File: capturas_js/autocompletado-2.png Graphic file (type png)
 <use capturas_js/autocompletado-2.png>
 Package pdftex.def Info: capturas_js/autocompletado-2.png  used on input line 1
-282.
+281.
 (pdftex.def)             Requested size: 225.4804pt x 121.0238pt.
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1290.
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 1289.
 
-Overfull \hbox (6.9646pt too wide) in paragraph at lines 1291--1292
+Overfull \hbox (6.9646pt too wide) in paragraph at lines 1290--1291
 \T1/lmr/m/n/10.95 (-20) tro del ifra-me) cuen-ta con su pro-pio ar-chi-vo Ja-va
 S-cript. Es-cu-cha-mos el even-to \T1/lmtt/m/n/10.95 DOMContentLoaded
  []
 
 
-Overfull \hbox (0.52434pt too wide) in paragraph at lines 1292--1293
+Overfull \hbox (0.52434pt too wide) in paragraph at lines 1291--1292
 \T1/lmr/m/n/10.95 (-20) va-ria-bles al-ma-ce-na-das pre-via-men-te. Me-dian-te 
 una com-pro-ba-ción ló-gi-ca (\T1/lmtt/m/n/10.95 if (nombreclinica)\T1/lmr/m/n/
 10.95 (-20) ),
@@ -1331,7 +1331,7 @@ una com-pro-ba-ción ló-gi-ca (\T1/lmtt/m/n/10.95 if (nombreclinica)\T1/lmr/m/n/
 2.png (PNG copy)>]
 
 [84]
-Overfull \hbox (21.29144pt too wide) in paragraph at lines 1354--1355
+Overfull \hbox (21.29144pt too wide) in paragraph at lines 1353--1354
 []\T1/lmtt/m/n/10.95 DOMContentLoaded\T1/lmr/m/n/10.95 (-20) : Pre-sen-te en la
  ca-be-ce-ra de to-dos los ar-chi-vos \T1/lmr/m/it/10.95 (-20) script \T1/lmr/m
 /n/10.95 (-20) (ej. \T1/lmtt/m/n/10.95 main.js\T1/lmr/m/n/10.95 (-20) , \T1/lmt
@@ -1339,14 +1339,14 @@ t/m/n/10.95 clinicas.js\T1/lmr/m/n/10.95 (-20) ).
  []
 
 
-Overfull \hbox (97.36612pt too wide) in paragraph at lines 1355--1356
+Overfull \hbox (97.36612pt too wide) in paragraph at lines 1354--1355
 \T1/lmr/m/n/10.95 (-20) ejem-plo, en \T1/lmtt/m/n/10.95 main.js \T1/lmr/m/n/10.
 95 (-20) pa-ra des-ple-gar el me-nú ham-bur-gue-sa mó-vil (\T1/lmtt/m/n/10.95 b
 otonHamburguesa.addEventListener('click',
  []
 
 
-Overfull \hbox (15.10356pt too wide) in paragraph at lines 1356--1357
+Overfull \hbox (15.10356pt too wide) in paragraph at lines 1355--1356
 []\T1/lmtt/m/n/10.95 input\T1/lmr/m/n/10.95 (-20) : Uti-li-za-do en \T1/lmtt/m/
 n/10.95 clinicas.js \T1/lmr/m/n/10.95 (-20) y \T1/lmtt/m/n/10.95 servicios.js \
 T1/lmr/m/n/10.95 (-20) (\T1/lmtt/m/n/10.95 inputBusqueda.addEventListener(ïnput
@@ -1364,14 +1364,14 @@ T1/lmr/m/n/10.95 (-20) (\T1/lmtt/m/n/10.95 inputBusqueda.addEventListener(ïnput
 [87] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
 )
-Overfull \hbox (16.46866pt too wide) in paragraph at lines 1456--1457
+Overfull \hbox (16.46866pt too wide) in paragraph at lines 1455--1456
 []\T1/lmr/bx/n/10.95 (-20) Instanciación y Con-fi-gu-ra-ción: \T1/lmr/m/n/10.95
  (-20) Crea-mos una nue-va ins-tan-cia me-dian-te \T1/lmtt/m/n/10.95 new XMLHtt
 pRequest()
  []
 
 
-Overfull \hbox (56.0853pt too wide) in paragraph at lines 1457--1458
+Overfull \hbox (56.0853pt too wide) in paragraph at lines 1456--1457
 []\T1/lmr/bx/n/10.95 (-20) Escucha de cam-bios de es-ta-do: \T1/lmr/m/n/10.95 (
 -20) Asig-na-mos una fun-ción al con-tro-la-dor de even-tos \T1/lmtt/m/n/10.95 
 .onreadystatechange\T1/lmr/m/n/10.95 (-20) .
@@ -1385,7 +1385,7 @@ Overfull \hbox (56.0853pt too wide) in paragraph at lines 1457--1458
 File: capturas_responsivas/servicios-desktop.png Graphic file (type png)
 <use capturas_responsivas/servicios-desktop.png>
 Package pdftex.def Info: capturas_responsivas/servicios-desktop.png  used on in
-put line 1493.
+put line 1492.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 
 
@@ -1393,7 +1393,7 @@ put line 1493.
 File: capturas_responsivas/servicios-tablet.png Graphic file (type png)
 <use capturas_responsivas/servicios-tablet.png>
 Package pdftex.def Info: capturas_responsivas/servicios-tablet.png  used on inp
-ut line 1499.
+ut line 1498.
 (pdftex.def)             Requested size: 268.30643pt x 357.7419pt.
 
 
@@ -1401,7 +1401,7 @@ ut line 1499.
 File: capturas_responsivas/servicios-mobile.png Graphic file (type png)
 <use capturas_responsivas/servicios-mobile.png>
 Package pdftex.def Info: capturas_responsivas/servicios-mobile.png  used on inp
-ut line 1505.
+ut line 1504.
 (pdftex.def)             Requested size: 165.30313pt x 357.73294pt.
 
 
@@ -1416,7 +1416,7 @@ ut line 1505.
 File: capturas_responsivas/urgencias-desktop.png Graphic file (type png)
 <use capturas_responsivas/urgencias-desktop.png>
 Package pdftex.def Info: capturas_responsivas/urgencias-desktop.png  used on in
-put line 1605.
+put line 1604.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 
 
@@ -1425,7 +1425,7 @@ put line 1605.
 File: capturas_responsivas/urgencias-tablet.png Graphic file (type png)
 <use capturas_responsivas/urgencias-tablet.png>
 Package pdftex.def Info: capturas_responsivas/urgencias-tablet.png  used on inp
-ut line 1611.
+ut line 1610.
 (pdftex.def)             Requested size: 268.30643pt x 357.7419pt.
 
 
@@ -1434,7 +1434,7 @@ ut line 1611.
 File: capturas_responsivas/urgencias-mobile.png Graphic file (type png)
 <use capturas_responsivas/urgencias-mobile.png>
 Package pdftex.def Info: capturas_responsivas/urgencias-mobile.png  used on inp
-ut line 1617.
+ut line 1616.
 (pdftex.def)             Requested size: 165.30313pt x 357.73294pt.
 
 
@@ -1445,7 +1445,7 @@ ut line 1617.
 File: capturas_responsivas/index-desktop.png Graphic file (type png)
 <use capturas_responsivas/index-desktop.png>
 Package pdftex.def Info: capturas_responsivas/index-desktop.png  used on input 
-line 1636.
+line 1635.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 
 
@@ -1456,7 +1456,7 @@ line 1636.
 File: capturas_responsivas/index-tablet.png Graphic file (type png)
 <use capturas_responsivas/index-tablet.png>
 Package pdftex.def Info: capturas_responsivas/index-tablet.png  used on input l
-ine 1642.
+ine 1641.
 (pdftex.def)             Requested size: 317.0862pt x 422.7816pt.
 
 
@@ -1465,7 +1465,7 @@ ine 1642.
 File: capturas_responsivas/index-mobile.png Graphic file (type png)
 <use capturas_responsivas/index-mobile.png>
 Package pdftex.def Info: capturas_responsivas/index-mobile.png  used on input l
-ine 1648.
+ine 1647.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1475,12 +1475,12 @@ ine 1648.
 File: capturas_responsivas/clinicas-desktop.png Graphic file (type png)
 <use capturas_responsivas/clinicas-desktop.png>
 Package pdftex.def Info: capturas_responsivas/clinicas-desktop.png  used on inp
-ut line 1660.
+ut line 1659.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 File: capturas_responsivas/clinicas-tablet.png Graphic file (type png)
 <use capturas_responsivas/clinicas-tablet.png>
 Package pdftex.def Info: capturas_responsivas/clinicas-tablet.png  used on inpu
-t line 1666.
+t line 1665.
 (pdftex.def)             Requested size: 317.0862pt x 422.7816pt.
 
 
@@ -1490,7 +1490,7 @@ t line 1666.
 File: capturas_responsivas/clinicas-mobile.png Graphic file (type png)
 <use capturas_responsivas/clinicas-mobile.png>
 Package pdftex.def Info: capturas_responsivas/clinicas-mobile.png  used on inpu
-t line 1672.
+t line 1671.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1500,12 +1500,12 @@ t line 1672.
 File: capturas_responsivas/urgencias-desktop.png Graphic file (type png)
 <use capturas_responsivas/urgencias-desktop.png>
 Package pdftex.def Info: capturas_responsivas/urgencias-desktop.png  used on in
-put line 1684.
+put line 1683.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 File: capturas_responsivas/urgencias-tablet.png Graphic file (type png)
 <use capturas_responsivas/urgencias-tablet.png>
 Package pdftex.def Info: capturas_responsivas/urgencias-tablet.png  used on inp
-ut line 1690.
+ut line 1689.
 (pdftex.def)             Requested size: 317.0862pt x 422.7816pt.
 
 
@@ -1515,7 +1515,7 @@ ut line 1690.
 File: capturas_responsivas/urgencias-mobile.png Graphic file (type png)
 <use capturas_responsivas/urgencias-mobile.png>
 Package pdftex.def Info: capturas_responsivas/urgencias-mobile.png  used on inp
-ut line 1696.
+ut line 1695.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1525,12 +1525,12 @@ ut line 1696.
 File: capturas_responsivas/servicios-desktop.png Graphic file (type png)
 <use capturas_responsivas/servicios-desktop.png>
 Package pdftex.def Info: capturas_responsivas/servicios-desktop.png  used on in
-put line 1708.
+put line 1707.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 File: capturas_responsivas/servicios-tablet.png Graphic file (type png)
 <use capturas_responsivas/servicios-tablet.png>
 Package pdftex.def Info: capturas_responsivas/servicios-tablet.png  used on inp
-ut line 1714.
+ut line 1713.
 (pdftex.def)             Requested size: 317.0862pt x 422.7816pt.
 
 
@@ -1540,7 +1540,7 @@ ut line 1714.
 File: capturas_responsivas/servicios-mobile.png Graphic file (type png)
 <use capturas_responsivas/servicios-mobile.png>
 Package pdftex.def Info: capturas_responsivas/servicios-mobile.png  used on inp
-ut line 1720.
+ut line 1719.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1553,7 +1553,7 @@ File: capturas_responsivas/servicio-especifico-desktop.png Graphic file (type p
 ng)
 <use capturas_responsivas/servicio-especifico-desktop.png>
 Package pdftex.def Info: capturas_responsivas/servicio-especifico-desktop.png  
-used on input line 1732.
+used on input line 1731.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 <capturas_responsivas/servicio-especifico-tablet.png, id=475, 770.88pt x 1027.8
 4pt>
@@ -1561,7 +1561,7 @@ File: capturas_responsivas/servicio-especifico-tablet.png Graphic file (type pn
 g)
 <use capturas_responsivas/servicio-especifico-tablet.png>
 Package pdftex.def Info: capturas_responsivas/servicio-especifico-tablet.png  u
-sed on input line 1738.
+sed on input line 1737.
 (pdftex.def)             Requested size: 317.0862pt x 422.7816pt.
 
 
@@ -1574,7 +1574,7 @@ File: capturas_responsivas/servicio-especifico-mobile.png Graphic file (type pn
 g)
 <use capturas_responsivas/servicio-especifico-mobile.png>
 Package pdftex.def Info: capturas_responsivas/servicio-especifico-mobile.png  u
-sed on input line 1744.
+sed on input line 1743.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1584,12 +1584,12 @@ sed on input line 1744.
 File: capturas_responsivas/consejos-desktop.png Graphic file (type png)
 <use capturas_responsivas/consejos-desktop.png>
 Package pdftex.def Info: capturas_responsivas/consejos-desktop.png  used on inp
-ut line 1756.
+ut line 1755.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 File: capturas_responsivas/consejos-tablet.png Graphic file (type png)
 <use capturas_responsivas/consejos-tablet.png>
 Package pdftex.def Info: capturas_responsivas/consejos-tablet.png  used on inpu
-t line 1762.
+t line 1761.
 (pdftex.def)             Requested size: 317.0862pt x 422.7816pt.
 
 
@@ -1599,7 +1599,7 @@ t line 1762.
 File: capturas_responsivas/consejos-mobile.png Graphic file (type png)
 <use capturas_responsivas/consejos-mobile.png>
 Package pdftex.def Info: capturas_responsivas/consejos-mobile.png  used on inpu
-t line 1768.
+t line 1767.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1612,7 +1612,7 @@ File: capturas_responsivas/consejo-especifico-desktop.png Graphic file (type pn
 g)
 <use capturas_responsivas/consejo-especifico-desktop.png>
 Package pdftex.def Info: capturas_responsivas/consejo-especifico-desktop.png  u
-sed on input line 1780.
+sed on input line 1779.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 <capturas_responsivas/consejo-especifico-tablet.png, id=497, 770.88pt x 1027.84
 pt>
@@ -1620,7 +1620,7 @@ File: capturas_responsivas/consejo-especifico-tablet.png Graphic file (type png
 )
 <use capturas_responsivas/consejo-especifico-tablet.png>
 Package pdftex.def Info: capturas_responsivas/consejo-especifico-tablet.png  us
-ed on input line 1786.
+ed on input line 1785.
 (pdftex.def)             Requested size: 317.0862pt x 422.7816pt.
 
 
@@ -1633,7 +1633,7 @@ File: capturas_responsivas/consejo-especifico-mobile.png Graphic file (type png
 )
 <use capturas_responsivas/consejo-especifico-mobile.png>
 Package pdftex.def Info: capturas_responsivas/consejo-especifico-mobile.png  us
-ed on input line 1792.
+ed on input line 1791.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1643,12 +1643,12 @@ ed on input line 1792.
 File: capturas_responsivas/sobre-nosotros-desktop.png Graphic file (type png)
 <use capturas_responsivas/sobre-nosotros-desktop.png>
 Package pdftex.def Info: capturas_responsivas/sobre-nosotros-desktop.png  used 
-on input line 1804.
+on input line 1803.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 File: capturas_responsivas/sobre-nosotros-tablet.png Graphic file (type png)
 <use capturas_responsivas/sobre-nosotros-tablet.png>
 Package pdftex.def Info: capturas_responsivas/sobre-nosotros-tablet.png  used o
-n input line 1810.
+n input line 1809.
 (pdftex.def)             Requested size: 317.0862pt x 422.7816pt.
 
 
@@ -1658,7 +1658,7 @@ n input line 1810.
 File: capturas_responsivas/sobre-nosotros-mobile.png Graphic file (type png)
 <use capturas_responsivas/sobre-nosotros-mobile.png>
 Package pdftex.def Info: capturas_responsivas/sobre-nosotros-mobile.png  used o
-n input line 1816.
+n input line 1815.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1668,12 +1668,12 @@ n input line 1816.
 File: capturas_responsivas/pedir-cita-desktop.png Graphic file (type png)
 <use capturas_responsivas/pedir-cita-desktop.png>
 Package pdftex.def Info: capturas_responsivas/pedir-cita-desktop.png  used on i
-nput line 1828.
+nput line 1827.
 (pdftex.def)             Requested size: 552.86948pt x 345.5467pt.
 File: capturas_responsivas/pedir-cita-tablet.png Graphic file (type png)
 <use capturas_responsivas/pedir-cita-tablet.png>
 Package pdftex.def Info: capturas_responsivas/pedir-cita-tablet.png  used on in
-put line 1834.
+put line 1833.
 (pdftex.def)             Requested size: 317.0862pt x 422.7816pt.
 
 
@@ -1683,7 +1683,7 @@ put line 1834.
 File: capturas_responsivas/pedir-cita-mobile.png Graphic file (type png)
 <use capturas_responsivas/pedir-cita-mobile.png>
 Package pdftex.def Info: capturas_responsivas/pedir-cita-mobile.png  used on in
-put line 1840.
+put line 1839.
 (pdftex.def)             Requested size: 178.50993pt x 386.31383pt.
 
 
@@ -1691,13 +1691,13 @@ put line 1840.
 File: mapasDeEtiquetas/index-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/index-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/index-boxmodel.png  used on input lin
-e 1857.
+e 1856.
 (pdftex.def)             Requested size: 225.4804pt x 208.9127pt.
 <mapasDeEtiquetas/index-boxmodel-new.png, id=524, 1284.8pt x 2264.46pt>
 File: mapasDeEtiquetas/index-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/index-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/index-boxmodel-new.png  used on input
- line 1862.
+ line 1861.
 (pdftex.def)             Requested size: 225.4804pt x 397.39214pt.
 
 
@@ -1705,12 +1705,12 @@ Package pdftex.def Info: mapasDeEtiquetas/index-boxmodel-new.png  used on input
 File: mapasDeEtiquetas/clinicas-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/clinicas-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/clinicas-boxmodel.png  used on input 
-line 1871.
+line 1870.
 (pdftex.def)             Requested size: 225.4804pt x 321.11961pt.
 File: mapasDeEtiquetas/clinicas-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/clinicas-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/clinicas-boxmodel-new.png  used on in
-put line 1876.
+put line 1875.
 (pdftex.def)             Requested size: 225.4804pt x 379.95338pt.
 
 
@@ -1718,12 +1718,12 @@ put line 1876.
 File: mapasDeEtiquetas/servicios-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/servicios-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/servicios-boxmodel.png  used on input
- line 1885.
+ line 1884.
 (pdftex.def)             Requested size: 225.4804pt x 209.96959pt.
 File: mapasDeEtiquetas/servicios-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/servicios-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/servicios-boxmodel-new.png  used on i
-nput line 1890.
+nput line 1889.
 (pdftex.def)             Requested size: 225.4804pt x 239.03418pt.
 
 
@@ -1732,7 +1732,7 @@ File: mapasDeEtiquetas/servicio-especifico-boxmodel.png Graphic file (type png)
 
 <use mapasDeEtiquetas/servicio-especifico-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/servicio-especifico-boxmodel.png  use
-d on input line 1899.
+d on input line 1898.
 (pdftex.def)             Requested size: 225.4804pt x 140.91919pt.
 <mapasDeEtiquetas/servicio-especifico-boxmodel-new.png, id=535, 1284.8pt x 1527
 .7075pt>
@@ -1740,17 +1740,17 @@ File: mapasDeEtiquetas/servicio-especifico-boxmodel-new.png Graphic file (type
 png)
 <use mapasDeEtiquetas/servicio-especifico-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/servicio-especifico-boxmodel-new.png 
- used on input line 1904.
+ used on input line 1903.
 (pdftex.def)             Requested size: 225.4804pt x 268.09877pt.
 File: mapasDeEtiquetas/consejos-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/consejos-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/consejos-boxmodel.png  used on input 
-line 1913.
+line 1912.
 (pdftex.def)             Requested size: 225.4804pt x 233.22127pt.
 File: mapasDeEtiquetas/consejos-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/consejos-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/consejos-boxmodel-new.png  used on in
-put line 1918.
+put line 1917.
 (pdftex.def)             Requested size: 225.4804pt x 346.13277pt.
 
 
@@ -1758,7 +1758,7 @@ put line 1918.
 File: mapasDeEtiquetas/consejo-especifico-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/consejo-especifico-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/consejo-especifico-boxmodel.png  used
- on input line 1927.
+ on input line 1926.
 (pdftex.def)             Requested size: 225.4804pt x 140.91919pt.
 <mapasDeEtiquetas/consejo-especifico-boxmodel-new.png, id=539, 1284.8pt x 1194.
 4625pt>
@@ -1766,17 +1766,17 @@ File: mapasDeEtiquetas/consejo-especifico-boxmodel-new.png Graphic file (type p
 ng)
 <use mapasDeEtiquetas/consejo-especifico-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/consejo-especifico-boxmodel-new.png  
-used on input line 1932.
+used on input line 1931.
 (pdftex.def)             Requested size: 225.4804pt x 209.6173pt.
 File: mapasDeEtiquetas/sobre-nosotros-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/sobre-nosotros-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/sobre-nosotros-boxmodel.png  used on 
-input line 1941.
+input line 1940.
 (pdftex.def)             Requested size: 225.4804pt x 156.24416pt.
 File: mapasDeEtiquetas/sobre-nosotros-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/sobre-nosotros-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/sobre-nosotros-boxmodel-new.png  used
- on input line 1946.
+ on input line 1945.
 (pdftex.def)             Requested size: 225.4804pt x 179.84811pt.
 
 
@@ -1784,23 +1784,23 @@ Package pdftex.def Info: mapasDeEtiquetas/sobre-nosotros-boxmodel-new.png  used
 File: mapasDeEtiquetas/urgencias-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/urgencias-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/urgencias-boxmodel.png  used on input
- line 1955.
+ line 1954.
 (pdftex.def)             Requested size: 225.4804pt x 279.3723pt.
 <mapasDeEtiquetas/urgencias-boxmodel-new.png, id=543, 1284.8pt x 1496.59125pt>
 File: mapasDeEtiquetas/urgencias-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/urgencias-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/urgencias-boxmodel-new.png  used on i
-nput line 1960.
+nput line 1959.
 (pdftex.def)             Requested size: 225.4804pt x 262.63815pt.
 File: mapasDeEtiquetas/pedir-cita-boxmodel.png Graphic file (type png)
 <use mapasDeEtiquetas/pedir-cita-boxmodel.png>
 Package pdftex.def Info: mapasDeEtiquetas/pedir-cita-boxmodel.png  used on inpu
-t line 1969.
+t line 1968.
 (pdftex.def)             Requested size: 225.4804pt x 243.7902pt.
 File: mapasDeEtiquetas/pedir-cita-boxmodel-new.png Graphic file (type png)
 <use mapasDeEtiquetas/pedir-cita-boxmodel-new.png>
 Package pdftex.def Info: mapasDeEtiquetas/pedir-cita-boxmodel-new.png  used on 
-input line 1974.
+input line 1973.
 (pdftex.def)             Requested size: 225.4804pt x 150.43123pt.
 
 
@@ -1831,7 +1831,7 @@ are/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/tex
 mf/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmt
 t8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtti10.pfb>
-Output written on main.pdf (132 pages, 20472028 bytes).
+Output written on main.pdf (132 pages, 20472030 bytes).
 PDF statistics:
  607 PDF objects out of 1000 (max. 8388607)
  332 compressed objects within 4 object streams
