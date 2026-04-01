@@ -3,7 +3,7 @@
     {
       "nombre": "Clínica Veterinaria Peludos",
       "ubicacion": "Calle Mayor 15, Madrid",
-      "foto": "assets/imgs/clinica1.jpg",
+      "foto": "assets/imgs/clinica-1.jpeg",
       "horario": "08:00-14:00",
       "telefono": "+34 912 345 678",
       "urgencias": false
@@ -11,7 +11,7 @@
     {
       "nombre": "Centro Veterinario San Roque",
       "ubicacion": "Avenida Constitución 42, Sevilla",
-      "foto": "assets/imgs/clinica2.jpg",
+      "foto": "assets/imgs/clinica-2.jpeg",
       "horario": "10:00-21:30",
       "telefono": "+34 954 112 233",
       "urgencias": true
@@ -19,7 +19,7 @@
     {
       "nombre": "Hospital Veterinario Huellas",
       "ubicacion": "Calle Gran Vía 88, Barcelona",
-      "foto": "assets/imgs/clinica3.jpg",
+      "foto": "assets/imgs/clinica-3.jpeg",
       "horario": "00:00-23:59",
       "telefono": "+34 931 987 654",
       "urgencias": true
@@ -27,7 +27,7 @@
     {
       "nombre": "Consultorio El Gato Feliz",
       "ubicacion": "Plaza del Ayuntamiento 3, Valencia",
-      "foto": "assets/imgs/clinica4.jpeg",
+      "foto": "assets/imgs/clinica-4.jpeg",
       "horario": "16:00-20:30",
       "telefono": "+34 963 456 789",
       "urgencias": false
@@ -35,7 +35,7 @@
     {
       "nombre": "Urgencias 24h Patitas",
       "ubicacion": "Calle Alcalá 200, Madrid",
-      "foto": "assets/imgs/clinica1.jpg",
+      "foto": "assets/imgs/clinica-5.jpg",
       "horario": "00:00-23:59",
       "telefono": "+34 900 123 456",
       "urgencias": true
@@ -43,10 +43,51 @@
     {
       "nombre": "Clínica La Mascota",
       "ubicacion": "Avenida de América 12, Bilbao",
-      "foto": "assets/imgs/clinica2.jpg",
+      "foto": "assets/imgs/clinica-6.jpeg",
       "horario": "09:00-18:00",
       "telefono": "+34 944 555 666",
       "urgencias": false
+    }
+    ,
+    {
+      "nombre": "Veterinaria Amigos Peludos",
+      "ubicacion": "Calle Príncipe 25, Zaragoza",
+      "foto": "assets/imgs/clinica-7.webp",
+      "horario": "08:30-19:00",
+      "telefono": "+34 976 234 567",
+      "urgencias": false
+    },
+    {
+      "nombre": "Hospital Veterinario Vida Animal",
+      "ubicacion": "Avenida Diagonal 100, Málaga",
+      "foto": "assets/imgs/clinica-8.jpg",
+      "horario": "07:00-22:00",
+      "telefono": "+34 952 111 222",
+      "urgencias": true
+    },
+    {
+      "nombre": "Clínica Veterinaria Bienestar",
+      "ubicacion": "Calle Larios 50, Córdoba",
+      "foto": "assets/imgs/clinica-9.jpg",
+      "horario": "09:00-20:00",
+      "telefono": "+34 957 333 444",
+      "urgencias": false
+    },
+    {
+      "nombre": "Centro de Mascotas Dr. Vet",
+      "ubicacion": "Plaza Mayor 18, Murcia",
+      "foto": "assets/imgs/clinica-10.jpeg",
+      "horario": "10:00-19:30",
+      "telefono": "+34 968 555 666",
+      "urgencias": true
+    },
+    {
+      "nombre": "Urgencias Veterinarias Nocturnas",
+      "ubicacion": "Calle Toledo 75, Granada",
+      "foto": "assets/imgs/clinicas-11.jpg",
+      "horario": "18:00-08:00",
+      "telefono": "+34 958 666 777",
+      "urgencias": true
     }
   ]
 }

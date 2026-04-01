@@ -1,5 +1,9 @@
+let serviciosGlobal = [];
+let terminoBusquedaServicios = "";
+
 document.addEventListener("DOMContentLoaded", () => {
     cargarServicios();
+    inicializarEventosBusqueda();
 });
 
 async function cargarServicios() {
@@ -20,35 +24,91 @@ async function cargarServicios() {
         }
 
         const servicios = xml.querySelectorAll("servicio");
-        const lista = document.getElementById("lista-servicios");
-
-        lista.innerHTML = "";
-
+        
         servicios.forEach(servicio => {
             const id = servicio.getAttribute("id");
             const nombre = servicio.querySelector("nombre")?.textContent.trim() ?? "";
             const imagen = servicio.querySelector("imagen")?.textContent.trim() ?? "";
             const descripcion = servicio.querySelector("descripcion-corta")?.textContent.trim() ?? "";
 
-            const li = document.createElement("li");
-
-            li.innerHTML = `
-                <a class="tarjeta-servicio borde-asimetrico-2" href="servicio-especifico.html?id=${id}">
-                    <img src="${imagen}" class="borde-asimetrico-2" alt="${nombre}">
-                    <h3 class="titulo-tarjeta">${nombre}</h3>
-                    <p>${descripcion}</p>
-                </a>
-            `;
-
-            lista.appendChild(li);
+            serviciosGlobal.push({
+                id,
+                nombre,
+                imagen,
+                descripcion
+            });
         });
+
+        renderizarServicios();
 
     } catch (error) {
         console.error("Error al cargar servicios:", error);
+        mostrarErrorServicios("Error al cargar los servicios");
+    }
+}
 
-        const lista = document.getElementById("lista-servicios");
-        if (lista) {
-            lista.innerHTML = "<li>Error al cargar los servicios.</li>";
-        }
+function inicializarEventosBusqueda() {
+    const formularioBusqueda = document.querySelector("#form-busqueda-servicios");
+    if (formularioBusqueda) {
+        const inputBusqueda = formularioBusqueda.querySelector('input[type="search"]');
+        
+        // Buscar al enviar el formulario
+        formularioBusqueda.addEventListener("submit", (e) => {
+            e.preventDefault();
+            terminoBusquedaServicios = inputBusqueda.value.trim().toLowerCase();
+            renderizarServicios();
+        });
+
+        // Buscar al escribir en tiempo real
+        inputBusqueda.addEventListener("input", (e) => {
+            terminoBusquedaServicios = e.target.value.trim().toLowerCase();
+            renderizarServicios();
+        });
+    }
+}
+
+function filtrarServicios() {
+    return serviciosGlobal.filter(servicio => {
+        return terminoBusquedaServicios === "" ||
+            servicio.nombre.toLowerCase().includes(terminoBusquedaServicios) ||
+            servicio.descripcion.toLowerCase().includes(terminoBusquedaServicios);
+    });
+}
+
+function renderizarServicios() {
+    const serviciosFiltrados = filtrarServicios();
+    const lista = document.getElementById("lista-servicios");
+
+    if (!lista) {
+        console.error("No se encontró el contenedor de servicios");
+        return;
+    }
+
+    lista.innerHTML = "";
+
+    if (serviciosFiltrados.length === 0) {
+        lista.innerHTML = '<li style="grid-column: 1 / -1; text-align: center; color: #999; padding: 40px 20px;"><p>No hay servicios que coincidan con tu búsqueda</p></li>';
+        return;
+    }
+
+    serviciosFiltrados.forEach(servicio => {
+        const li = document.createElement("li");
+
+        li.innerHTML = `
+            <a class="tarjeta-servicio borde-asimetrico-2" href="servicio-especifico.html?id=${servicio.id}">
+                <img src="${servicio.imagen}" class="borde-asimetrico-2" alt="${servicio.nombre}">
+                <h3 class="titulo-tarjeta">${servicio.nombre}</h3>
+                <p>${servicio.descripcion}</p>
+            </a>
+        `;
+
+        lista.appendChild(li);
+    });
+}
+
+function mostrarErrorServicios(mensaje) {
+    const lista = document.getElementById("lista-servicios");
+    if (lista) {
+        lista.innerHTML = `<li style="grid-column: 1 / -1; text-align: center; color: #d32f2f; padding: 40px 20px;"><p>${mensaje}</p></li>`;
     }
 }

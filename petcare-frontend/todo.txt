@@ -1,5 +1,0 @@
-
-Hacer la barra de búsqueda de servicios funcional (solo javascript no tocar html ni css)
-
-Hacer la página de servicios más "grid" (cambiar el resto de displays que haya por grid si es posible)
-

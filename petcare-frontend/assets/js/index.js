@@ -10,7 +10,25 @@ document.addEventListener("DOMContentLoaded", () => {
             intervaloConsejos = setInterval(actualizarConsejosIndex, 10000);
         })
         .catch(error => console.error("Error al cargar consejos:", error));
+    
+    inicializarBuscadorClinicas();
 });
+
+function inicializarBuscadorClinicas() {
+    const formularioBusqueda = document.querySelector(".hero-home__formulario");
+    if (formularioBusqueda) {
+        formularioBusqueda.addEventListener("submit", (e) => {
+            e.preventDefault();
+            const inputBusqueda = formularioBusqueda.querySelector('input[type="search"]');
+            const termino = inputBusqueda.value.trim();
+            
+            if (termino) {
+                // Redirigir a clinicas.html y establecer el término de búsqueda
+                window.location.href = `clinicas.html?busqueda=${encodeURIComponent(termino)}`;
+            }
+        });
+    }
+}
 
 function actualizarConsejosIndex() {
     if (consejosGlobal.length < 2) return;

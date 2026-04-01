@@ -28,17 +28,12 @@
     background-color: var(--color-fondo-tarjetas);
 }
 
-.buscador-servicios {
-    display: flex;
-    flex-direction: column;
-    gap: 0.8rem;
-}
+
 
 .buscador-servicios input[type="search"] {
     width: 100%;
     padding: 0.95rem 1rem;
     border: 1px solid #d9dee8;
-    border-radius: 12px;
     background-color: var(--color-fondo-inputs);
     color: var(--color-texto-main);
     font: inherit;
@@ -53,7 +48,6 @@
 .buscador-servicios button,
 .btn-ordenar {
     padding: 0.95rem 1rem;
-    border-radius: 12px;
     font: inherit;
     cursor: pointer;
 }
@@ -151,7 +145,15 @@
     border: 0;
 }
 
+.buscador-servicios {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.8rem;
+}
+
 @media (min-width: 768px) {
+
     .cabecera-servicios,
     .controles-servicios,
     .seccion-listado-servicios {
@@ -202,9 +204,21 @@
     .titulo-tarjeta {
         font-size: 1.7rem;
     }
+
+    .buscador-servicios {
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 1fr;
+    }
+
 }
 
 @media (min-width: 1024px) {
+
+    .buscador-servicios {
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-template-rows: 1fr;
+    }
+
     .cabecera-servicios,
     .controles-servicios,
     .seccion-listado-servicios {
