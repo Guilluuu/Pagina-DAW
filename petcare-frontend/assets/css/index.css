@@ -23,7 +23,6 @@
     max-width: var(--ancho-contenido-estrecho);
     padding: 1.5rem;
     background-color: rgba(255, 255, 255, 0.94);
-    border-radius: var(--radio-tarjeta);
     box-shadow: var(--sombra-tarjeta-hover);
 }
 
@@ -54,7 +53,6 @@
     width: 100%;
     padding: 0.95rem 1rem;
     border: 1px solid #d9dee8;
-    border-radius: 12px;
     background-color: var(--color-fondo-inputs);
     color: var(--color-texto-main);
     font: inherit;
@@ -73,7 +71,6 @@
     gap: 0.5rem;
     padding: 0.95rem 1rem;
     border: none;
-    border-radius: 12px;
     background-color: var(--color-cta-primary);
     color: white;
     font: inherit;
@@ -97,7 +94,6 @@
 .hero-home__boton {
     display: block;
     padding: 0.95rem 1rem;
-    border-radius: 12px;
     text-align: center;
     font-weight: 500;
     color: white;
@@ -126,7 +122,6 @@
     padding: 2rem;
     background-color: var(--color-cta-critical);
     color: white;
-    border-radius: var(--radio-tarjeta);
     box-shadow: var(--sombra-tarjeta-hover);
     font-family: var(--fuente-cabeceras);
     font-size: var(--fs-h2-mobile);
@@ -164,7 +159,6 @@
     max-width: 18rem;
     height: 18rem;
     object-fit: cover;
-    border-radius: 1.25rem;
     margin: 0 auto;
 }
 
@@ -233,6 +227,27 @@
 .footer-home__redes img {
     width: 1.4rem;
     height: 1.4rem;
+}
+
+#contenedor-consejos-index {
+    transition: opacity 0.3s ease-in-out;
+}
+
+#contenedor-consejos-index.fade-out {
+    opacity: 0;
+}
+
+#contenedor-consejos-index.fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .visually-hidden {

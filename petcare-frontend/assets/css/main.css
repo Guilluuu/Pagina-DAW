@@ -170,7 +170,31 @@ a {
 }
 
 
+.main-navbar a:nth-child(2),
+.main-navbar a:nth-child(3),
+.main-navbar a:nth-child(4) {
+    position: relative;
+    transition: color 0.3s ease;
+}
 
+.main-navbar a:nth-child(2)::after,
+.main-navbar a:nth-child(3)::after,
+.main-navbar a:nth-child(4)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #eee;
+    transition: width 0.3s ease;
+}
+
+.main-navbar a:nth-child(2):hover::after,
+.main-navbar a:nth-child(3):hover::after,
+.main-navbar a:nth-child(4):hover::after {
+    width: 100%;
+}
 
 @media (max-width: 1024px) {
     .menu-hamburguesa-moviles {

@@ -5,7 +5,7 @@
   padding: 0.8rem 1.2rem;
 }
 
-.header-busqueda{
+.header-busqueda {
   padding: 5rem;
 }
 
@@ -39,20 +39,20 @@
 }
 
 .contenedor-filtros {
-    display: flex;
-    justify-content: flex-start;
-    gap: 1rem;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
 }
 
 .input-busqueda {
-    background-color: white;
-    border: none;
-    width: 20rem;
-    padding: 0.6rem 1.2rem;
+  background-color: white;
+  border: none;
+  width: 20rem;
+  padding: 0.6rem 1.2rem;
 }
 
 .icono-pequeno {
@@ -60,52 +60,51 @@
   height: 1rem;
 }
 
-
 main {
-    max-width: 1000px; 
-    margin: 0 auto;    
-    padding: 0 1rem;   
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .contenedor-tarjetas {
-    margin-top: 2rem;
-    padding: 0;
-    list-style: none;
-    margin-bottom: 5rem;
-    width: 100%;
-    overflow: hidden; 
-}
-
-.contenedor-tarjetas li {
+  margin-top: 2rem;
+  list-style: none;
+  margin-bottom: 5rem;
   width: 100%;
-  margin-bottom: 2rem;
+  overflow: hidden;
+  padding: 2rem;
 }
 
-main a:link, main a:visited, header a:link, header a:visited{
+main a:link,
+main a:visited,
+header a:link,
+header a:visited {
   text-decoration: none;
   color: var(--color-texto-main);
 }
 
-
-@media screen and (min-width: 992px) {
-    .contenedor-tarjetas li {
-        width: 47%; 
-    }
-
-    .contenedor-tarjetas li:nth-child(odd) {
-        float: left; 
-        margin-right: 6%;
-    }
-
-    .contenedor-tarjetas li:nth-child(even) {
-        float: right; 
-        margin-right: 0;
-    }
+.contenedor-tarjetas li {
+  width: 47%;
+  margin-bottom: 2rem;
 }
+
+
+.contenedor-tarjetas li:nth-child(odd) {
+  float: left;
+  margin-right: 6%;
+  clear: both;
+}
+
+.contenedor-tarjetas li:nth-child(even) {
+  float: right;
+  margin-right: 0;
+}
+
 
 .tarjeta {
   display: grid;
-  grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem;
+  border: 1px solid var(--color-cta-primary);
+  box-shadow: var(--sombra-tarjeta);
+  grid-template-rows: auto auto auto 1px auto auto;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
     'foto titulo'
@@ -119,49 +118,73 @@ main a:link, main a:visited, header a:link, header a:visited{
   gap: 1rem;
   background-color: #f2f2f2;
   padding: 1.5rem;
-  width:90%;
-  max-width: 30rem;
-}
-.titulo-clinica {  
-  grid-area:titulo; 
-}
-.ubicacion {  
-  grid-area: ubicacion; 
-  font-size: 0.8rem;
-  width: 150%;
-}
-.horario {  grid-area: horario; }
-.numero-telefono {  
-  font-size: 0.8rem;
-  width: 150%;
-  grid-area: telefono; 
+
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+
+  width: 100%;
+  aspect-ratio: 2/1;
+  overflow: hidden;
 }
 
-.alerta-urgencias {  
-  grid-area: alerta; 
+.tarjeta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-clinica {
+  grid-area: titulo;
+}
+
+.ubicacion {
+  grid-area: ubicacion;
+  margin: 10px;
+}
+
+.horario {
+  grid-area: horario;
+}
+
+.numero-telefono {
+  font-size: 0.8rem;
+  grid-area: telefono;
+}
+
+.alerta-urgencias {
+  grid-area: alerta;
   padding: 0.25rem 0.5rem;
 }
 
 .foto-clinica {
-  grid-area:foto;
+  grid-area: foto;
   width: 100%;
   height: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
+  max-height: 120px;
 }
 
 .separador-tarjeta {
   grid-area: separador;
   width: 100%;
-  background-color: gainsboro;
-  border:0;
-  height: 1px;
+  background-color: gray;
+  border: 0;
+  height: 2px;
+  margin: 1rem 0;
 }
 
 .pedir-cita {
   grid-area: pedir-cita;
   justify-self: end;
   align-self: end;
+  background-color: #fff;
 }
+
+.filtro:hover, .pedir-cita:hover {
+  background-color: #eee;
+}
+
+
 
 .linea-flex {
   display: flex;
@@ -172,7 +195,7 @@ main a:link, main a:visited, header a:link, header a:visited{
 }
 
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -194,7 +217,7 @@ main a:link, main a:visited, header a:link, header a:visited{
   width: 90%;
   max-width: 600px;
   position: relative;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .modal-contenido iframe {
@@ -218,3 +241,58 @@ main a:link, main a:visited, header a:link, header a:visited{
   color: red;
 }
 
+
+
+@media screen and (max-width: 1024px) {
+  .contenedor-tarjetas {
+    margin: auto;
+    width: 100%;
+
+  }
+
+  .contenedor-tarjetas li {
+    width: 100%;
+    float: none;
+    margin: 20px auto;
+  }
+
+  .contenedor-busqueda,
+  .formulario-busqueda {
+    flex-direction: column;
+  }
+
+
+  .boton-reset {
+    margin: auto;
+  }
+
+  .tarjeta {
+    width: 100%;
+    aspect-ratio: initial;
+    height: max-content;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'foto'
+      'titulo'
+      'ubicacion'
+      'alerta'
+      'separador'
+      'horario'
+      'telefono'
+      'pedir-cita';
+  }
+
+  .header-busqueda {
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .formulario-busqueda {
+    margin: auto;
+  }
+
+  .contenedor-filtros {
+    justify-content: center;
+  }
+
+}

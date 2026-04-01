@@ -37,24 +37,16 @@ function renderizarTarjetas(listaClinicas) {
 
 
 function inicializarBuscador() {
-  let formbusqueda=$('form[name="buscarClinica"]');
-  let tarjetasclinica=$('.contenedor-tarjetas li');
+  let formbusqueda = $('form[name="buscarClinica"]');
   let funcbusqueda = (e) => {
     e.preventDefault();
-    mostrarTodasLasClinicas();
-    let input = $('.input-busqueda');
-    let txt = input.val().toLowerCase().trim();
-    tarjetasclinica.each(function() {
-      let li = $(this);
-      let nombreelemento = li.find('.titulo-clinica');
-      if (nombreelemento.length > 0) {
-        let nombre = nombreelemento.text().toLowerCase();
-        if (nombre.includes(txt)) {
-          li.css('display', "");
-        } else {
-          li.css('display', "none");
-        }}}
-      );
+    let txt = $('.input-busqueda').val().toLowerCase().trim();
+    
+    let clinicasFiltradas = clinicasGlobal.filter(clinica => 
+        clinica.nombre.toLowerCase().includes(txt)
+    );
+    
+    renderizarTarjetas(clinicasFiltradas);
   };
   formbusqueda.on('submit', funcbusqueda);
   formbusqueda.on('input', funcbusqueda);
@@ -67,19 +59,16 @@ function inicializarOrden(){
 
   btnordenar.addEventListener("click", (e) => {
     e.preventDefault();
-    mostrarTodasLasClinicas();
     vaciarInput();
 
-    let tarjetasarray = Array.from(contenedortarjetas.querySelectorAll('li'));
-    tarjetasarray.sort(function(a,b){
-      let nombrea = a.querySelector('.titulo-clinica').textContent.trim().toLowerCase();
-      let nombreb = b.querySelector('.titulo-clinica').textContent.trim().toLowerCase();
+    clinicasGlobal.sort(function(a, b){
+      let nombrea = a.nombre.toLowerCase();
+      let nombreb = b.nombre.toLowerCase();
       if (ordenascendente){
         if (nombrea < nombreb) return -1;
         if (nombrea > nombreb) return 1;
         return 0;
-      }
-      else {
+      } else {
         if (nombrea < nombreb) return 1;
         if (nombrea > nombreb) return -1;
         return 0;
@@ -87,47 +76,38 @@ function inicializarOrden(){
     });
 
     ordenascendente = !ordenascendente;
-    horariosencencido = false;
-    inicializarHorario();
+    // inicializarHorario();
 
-    tarjetasarray.forEach(function(tarjeta){
-      contenedortarjetas.appendChild(tarjeta);
-    });
+    renderizarTarjetas(clinicasGlobal);
   });
 }
 
-function inicializarHorario(){
-  let horariosencencido = false;
+function inicializarHorario() {
+  let horariosencendido = false;
   let btn = document.querySelectorAll('.contenedor-filtros li button')[1];
 
-  btn.addEventListener("click", (e)=>{
+  btn.addEventListener("click", (e) => {
     e.preventDefault();
-    horariosencencido = !horariosencencido;
-    mostrarTodasLasClinicas();
+    horariosencendido = !horariosencendido;
     vaciarInput();
 
-    let fechahoy = new Date();
-    let hora = fechahoy.getHours().toString().padStart(2, '0');
-    let minutos = fechahoy.getMinutes().toString().padStart(2, '0');
-    let horahoytexto = hora + ":" + minutos;
+    if (horariosencendido) {
+      let fechahoy = new Date();
+      let hora = fechahoy.getHours().toString().padStart(2, '0');
+      let minutos = fechahoy.getMinutes().toString().padStart(2, '0');
+      let horahoytexto = hora + ":" + minutos;
 
-    let tarjetas = $('.contenedor-tarjetas li');
-    tarjetas.each(function(){
-      let li = $(this);
-      let textohorario = li.find('.texto-horario').text().trim();
-      if (horariosencencido) {
-        let partes = textohorario.split("-");
+      let clinicasFiltradas = clinicasGlobal.filter(clinica => {
+        let partes = clinica.horario.split("-");
         let abre = partes[0].trim();
         let cierra = partes[1].trim();
-        if (horahoytexto >= abre && horahoytexto <= cierra) li.css('display', "");
-        else li.css("display", "none");
-      }
-    });
+        return horahoytexto >= abre && horahoytexto <= cierra;
+      });
+      renderizarTarjetas(clinicasFiltradas);
+    } else {
+      renderizarTarjetas(clinicasGlobal);
+    }
   });
-}
-
-function mostrarTodasLasClinicas(){
-  $('.contenedor-tarjetas li').each(function(){ $(this).css('display', "")});
 }
 
 function vaciarInput(){

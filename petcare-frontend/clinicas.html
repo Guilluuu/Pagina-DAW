@@ -10,13 +10,7 @@
   <link rel="icon" type="image/x-icon" href="assets/imgs/logo.svg">
 
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-
   <link rel="stylesheet" href="assets/css/clinicas.css">
-  <script src="assets/js/main.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="assets/js/jquery-migrate-3.6.0.min.js"></script>
-  <script src="assets/js/clinicas.js"></script>
 </head>
 
 <body>
@@ -48,7 +42,7 @@
       </a>
       <menu class="contenedor-filtros">
         <li><button class="boton borde-asimetrico filtro">Ordenar alfabéticamente</button></li>
-        <li><button class="boton borde-asimetrico filtro">Mostrar abiertas</button></li>
+        <li><button class="boton borde-asimetrico filtro">Clínicas abiertas</button></li>
       </menu>
     </search>
 
@@ -60,8 +54,8 @@
 
   <template id="molde-clinica">
     <li>
-      <article class="tarjeta borde-asimetrico">
-        <img class="foto-clinica foto-pequena" src="" alt="Foto clínica">
+      <article class="tarjeta borde-asimetrico-2">
+        <img class="foto-clinica foto-pequena borde-asimetrico" src="" alt="Foto clínica">
         <strong class="titulo-clinica">Nombre</strong>
         <address class="linea-flex ubicacion">
           <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
@@ -92,6 +86,11 @@
       <iframe src="pedir-cita.html" title="Formulario de cita"></iframe>
     </div>
   </div>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/jquery-migrate-3.6.0.min.js"></script>
+  <script src="assets/js/clinicas.js"></script>
 </body>
 
 </html>

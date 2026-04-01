@@ -46,44 +46,37 @@ main a:link, main a:visited, header a:link, header a:visited{
 
 
 main {
-    max-width: 1000px; 
     margin: 0 auto;    
     padding: 0 1rem;   
 }
 
 .contenedor-tarjetas {
     margin-top: 2rem;
-    padding: 0;
     list-style: none;
     margin-bottom: 5rem;
     width: 100%;
-    overflow: hidden; 
+    overflow: hidden;
+    padding: 2rem;
 }
 
 .contenedor-tarjetas li {
-  width: 100%;
+  width: 47%;
   margin-bottom: 2rem;
 }
 
-@media screen and (min-width: 992px) {
-    .contenedor-tarjetas li {
-        width: 47%; 
-    }
-
-    .contenedor-tarjetas li:nth-child(odd) {
-        float: left; 
-        margin-right: 6%;
-    }
-
-    .contenedor-tarjetas li:nth-child(even) {
-        float: right; 
-        margin-right: 0;
-    }
+.titulo img {
+  background-color: white;
+  border-radius: 50%;
+  border: 2px solid red;
+  width: 55px;
+  height: 55px;
 }
 
 .tarjeta {
   display: grid;
-  grid-template-rows: 1rem 1rem 1rem 1rem 1rem 1rem;
+  border: 1px solid var(--color-cta-primary);
+  box-shadow: var(--sombra-tarjeta);
+  grid-template-rows: auto auto auto 1px auto auto;
   grid-template-columns: 1fr 2fr;
   grid-template-areas:
     'foto titulo'
@@ -97,48 +90,68 @@ main {
   gap: 1rem;
   background-color: #f2f2f2;
   padding: 1.5rem;
-  width:90%;
-  max-width: 30rem;
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  aspect-ratio: 2/1;
+  overflow: hidden;
+}
+
+.tarjeta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 .titulo-clinica {  
-  grid-area:titulo; 
+  grid-area: titulo;
+  margin: 0;
 }
 .ubicacion {  
-  grid-area: ubicacion; 
-  font-size: 0.8rem;
-  width: 150%;
+  grid-area: ubicacion;
+  margin: 10px;
 }
-.horario {  grid-area: horario; }
+.horario {  
+  grid-area: horario;
+  margin: 0;
+}
 .numero-telefono {  
   font-size: 0.8rem;
-  width: 150%;
-  grid-area: telefono; 
+  grid-area: telefono;
+  margin: 0;
 }
 
 .alerta-urgencias {  
-  grid-area: alerta; 
+  grid-area: alerta;
   padding: 0.25rem 0.5rem;
+  margin: 0;
 }
 
 .foto-clinica {
-  grid-area:foto;
+  grid-area: foto;
   width: 100%;
   height: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
+  max-height: 120px;
 }
 
 .separador-tarjeta {
   grid-area: separador;
   width: 100%;
-  background-color: gainsboro;
-  border:0;
-  height: 1px;
+  background-color: gray;
+  border: 0;
+  height: 2px;
+  margin: 1rem 0;
 }
 
 .llamar-ahora {
   grid-area: llamar-ahora;
   justify-self: end;
   align-self: end;
+  background-color: #fff;
+}
+
+.filtro:hover, .llamar-ahora:hover {
+  background-color: #eee;
 }
 
 .linea-flex {
@@ -147,6 +160,56 @@ main {
   align-content: center;
   justify-content: flex-start;
   gap: 0.5rem;
+  margin: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .contenedor-tarjetas {
+    margin: auto;
+    width: 100%;
+  }
+
+  .contenedor-tarjetas li {
+    width: 100%;
+    float: none;
+    margin: 20px auto;
+  }
+
+  .tarjeta {
+    width: 100%;
+    aspect-ratio: initial;
+    height: max-content;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'foto'
+      'titulo'
+      'ubicacion'
+      'alerta'
+      'separador'
+      'horario'
+      'telefono'
+      'llamar-ahora';
+  }
+
+  .header {
+    margin: auto;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contenedor-tarjetas li {
+    width: 47%;
+  }
+
+  .contenedor-tarjetas li:nth-child(odd) {
+    float: left;
+    margin-right: 6%;
+  }
+
+  .contenedor-tarjetas li:nth-child(even) {
+    float: right;
+    margin-right: 0;
+  }
+}
 

@@ -9,10 +9,7 @@
   <title>PetCare | Inicio</title>
   <link rel="icon" type="image/x-icon" href="assets/imgs/logo.svg">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  
   <link rel="stylesheet" href="assets/css/index.css">
-  <script src="assets/js/main.js"></script>
 </head>
 
 <body>
@@ -30,14 +27,14 @@
   </nav>
 
   <header class="hero-home bg-gradient-1">
-    <section class="hero-home__busqueda">
+    <section class="hero-home__busqueda borde-asimetrico-2">
       <h1>Encuentra tu clínica</h1>
       <a class="hero-home__enlace-secundario borde-asimetrico" href="clinicas.html">Todas las clínicas</a>
 
       <form class="hero-home__formulario" action="#" method="get">
         <label class="visually-hidden" for="buscar-clinica">Buscar clínica</label>
         <input id="buscar-clinica" type="search" name="clinica" placeholder="Buscar clínica...">
-        <button type="submit">
+        <button type="submit" class="borde-asimetrico">
           <img src="assets/imgs/search-icon.svg" alt="">
           Buscar
         </button>
@@ -45,54 +42,23 @@
 
       <menu class="hero-home__acciones">
         <li>
-          <a class="hero-home__boton hero-home__boton--secundario" href="clinicas.html">Clínicas más cercanas</a>
+          <a class="hero-home__boton borde-asimetrico hero-home__boton--secundario" href="clinicas.html">Clínicas más cercanas</a>
         </li>
         <li>
-          <a class="hero-home__boton hero-home__boton--urgencia" href="urgencias.html">Urgencias</a>
+          <a class="hero-home__boton borde-asimetrico hero-home__boton--urgencia" href="urgencias.html">Urgencias</a>
         </li>
       </menu>
     </section>
 
     <aside class="hero-home__destacado">
-      <a href="urgencias.html">Urgencias</a>
+      <a href="urgencias.html" class="borde-asimetrico-2">Urgencias</a>
     </aside>
   </header>
 
   <main>
     <section class="consejos-home" aria-labelledby="consejos-home-titulo">
       <h2 id="consejos-home-titulo" class="visually-hidden">Consejos destacados</h2>
-
-      <article class="consejo-home consejo-home--imagen-izquierda">
-        <figure class="consejo-home__imagen">
-          <img src="assets/imgs/placeholder.png" alt="Consejo destacado de salud animal">
-        </figure>
-        <section class="consejo-home__texto">
-          <h3>Esto es el título de un consejo de salud animal aleatorio</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a ante luctus lacus facilisis convallis non vitae purus.
-            Duis volutpat odio diam, nec condimentum erat feugiat id. Nunc sem lacus, pharetra pulvinar mauris eget, porttitor iaculis nisi.
-            Phasellus et dolor congue, suscipit augue ut, lacinia erat. Pellentesque ut risus id nibh malesuada pharetra.
-            Phasellus cursus ex vitae laoreet malesuada. Maecenas in lobortis leo. Pellentesque tempor dolor eu erat ullamcorper,
-            sed semper diam euismod. Ut vel fermentum nisl, non blandit lacus.
-          </p>
-        </section>
-      </article>
-
-      <article class="consejo-home consejo-home--imagen-derecha">
-        <figure class="consejo-home__imagen">
-          <img src="assets/imgs/placeholder.png" alt="Segundo consejo destacado de salud animal">
-        </figure>
-        <section class="consejo-home__texto">
-          <h3>Esto es el título de un consejo de salud animal aleatorio</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam a ante luctus lacus facilisis convallis non vitae purus.
-            Duis volutpat odio diam, nec condimentum erat feugiat id. Nunc sem lacus, pharetra pulvinar mauris eget, porttitor iaculis nisi.
-            Phasellus et dolor congue, suscipit augue ut, lacinia erat. Pellentesque ut risus id nibh malesuada pharetra.
-            Phasellus cursus ex vitae laoreet malesuada. Maecenas in lobortis leo. Pellentesque tempor dolor eu erat ullamcorper,
-            sed semper diam euismod. Donec iaculis diam quam, et imperdiet turpis molestie tincidunt.
-          </p>
-        </section>
-      </article>
+      <div id="contenedor-consejos-index"></div>
     </section>
   </main>
 
@@ -115,6 +81,10 @@
       </menu>
     </section>
   </footer>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>
