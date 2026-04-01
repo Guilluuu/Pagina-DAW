@@ -8,9 +8,8 @@ from playwright.sync_api import sync_playwright
 
 # Configuración de directorios y servidor
 DIR_P3 = 'petcare-frontend'
-DIR_P2 = 'petcare-frontend-p2' 
+DIR_P2 = 'other/input' 
 DIR_OUT_MAPAS = 'doc/mapasDeEtiquetas'
-DIR_OUT_CAMBIOS = 'doc/mapasDeEtiquetas-cambios'
 DIR_OUT_CAPTURAS = 'doc/capturas_responsivas'
 PUERTO = 8088
 
@@ -63,6 +62,13 @@ class ManejadorSilencioso(SimpleHTTPRequestHandler):
 
 class ServidorTCPReutilizable(socketserver.TCPServer):
     allow_reuse_address = True
+
+def limpiar_atributos_html(soup):
+    """Elimina todos los atributos excepto 'id' de cada etiqueta HTML."""
+    for tag in soup.find_all(True):
+        atributos_a_borrar = [attr for attr in tag.attrs if attr != 'id']
+        for attr in atributos_a_borrar:
+            del tag[attr]
 
 def limpiar_y_preparar_arbol(soup):
     for tag in soup.find_all(list(ETIQUETAS_ELIMINAR)):
@@ -127,17 +133,25 @@ def capturar_pantalla(page, ruta_relativa, ruta_salida, viewport=None, full_page
     else:
         page.screenshot(path=ruta_salida, full_page=full_page)
 
-def generar_mapas(archivo, page):
+def generar_mapas(archivo, page, directorio, sufijo_salida=''):
+    """Genera mapas de etiquetas para un archivo HTML.
+    
+    Args:
+        archivo: nombre del archivo HTML
+        page: página de Playwright
+        directorio: directorio desde el cual leer el archivo
+        sufijo_salida: sufijo para añadir al nombre del archivo de salida
+    """
     nombre_base = archivo.replace('.html', '')
-    ruta_p3 = os.path.join(DIR_P3, archivo)
-    ruta_p2 = os.path.join(DIR_P2, archivo)
+    ruta_source = os.path.join(directorio, archivo)
 
-    with open(ruta_p3, 'r', encoding='utf-8') as f:
-        soup_p3 = BeautifulSoup(f, 'html.parser')
+    with open(ruta_source, 'r', encoding='utf-8') as f:
+        soup_web = BeautifulSoup(f, 'html.parser')
 
-    limpiar_y_preparar_arbol(soup_p3)
+    limpiar_y_preparar_arbol(soup_web)
 
-    soup_normal = BeautifulSoup(str(soup_p3), 'html.parser')
+    soup_normal = BeautifulSoup(str(soup_web), 'html.parser')
+    limpiar_atributos_html(soup_normal)
     aplicar_formato_cajas(soup_normal)
     
     estilo_tag = soup_normal.new_tag('style')
@@ -150,72 +164,64 @@ def generar_mapas(archivo, page):
     with open(ruta_tmp_normal, 'w', encoding='utf-8') as f:
         f.write(str(soup_normal))
     
-    capturar_pantalla(page, ruta_tmp_normal, os.path.join(DIR_OUT_MAPAS, f"{nombre_base}-etiquetas.png"), ajustar_body=True)
+    nombre_salida = f"{nombre_base}{sufijo_salida}-boxmodel.png" if sufijo_salida else f"{nombre_base}-boxmodel.png"
+    capturar_pantalla(page, ruta_tmp_normal, os.path.join(DIR_OUT_MAPAS, nombre_salida), ajustar_body=True)
     os.remove(ruta_tmp_normal)
 
-    if os.path.exists(ruta_p2):
-        with open(ruta_p2, 'r', encoding='utf-8') as f:
-            soup_p2 = BeautifulSoup(f, 'html.parser')
-        
-        limpiar_y_preparar_arbol(soup_p2)
-        comparar_arboles(soup_p2.body, soup_p3.body)
-        
-        aplicar_formato_cajas(soup_p3)
-        estilo_tag_cambios = soup_p3.new_tag('style')
-        estilo_tag_cambios.string = ESTILOS_BOXMODEL
-        if not soup_p3.head:
-            soup_p3.insert(0, soup_p3.new_tag('head'))
-        soup_p3.head.append(estilo_tag_cambios)
-
-        ruta_tmp_cambios = os.path.join(DIR_OUT_CAMBIOS, f"{nombre_base}_cambios_tmp.html")
-        with open(ruta_tmp_cambios, 'w', encoding='utf-8') as f:
-            f.write(str(soup_p3))
-        
-        capturar_pantalla(page, ruta_tmp_cambios, os.path.join(DIR_OUT_CAMBIOS, f"{nombre_base}-cambios.png"), ajustar_body=True)
-        os.remove(ruta_tmp_cambios)
-
-def generar_capturas_reales_responsivas(archivo, page):
+def generar_capturas_reales_responsivas(archivo, page, directorio, sufijo_salida=''):
+    """Genera capturas responsivas para un archivo HTML.
+    
+    Args:
+        archivo: nombre del archivo HTML
+        page: página de Playwright
+        directorio: directorio desde el cual leer el archivo
+        sufijo_salida: sufijo para añadir al nombre del archivo de salida
+    """
     nombre_base = archivo.replace('.html', '')
-    ruta_relativa = os.path.join(DIR_P3, archivo)
+    ruta_relativa = os.path.join(directorio, archivo)
 
     dispositivos = {
         'desktop': {'width': 1920, 'height': 1080},
         'tablet': {'width': 768, 'height': 1024},
-        'mobile': {'width': 375, 'height': 667}
+        'mobile': {'width': 375, 'height': 812}
     }
 
     for disp, viewport in dispositivos.items():
-        ruta_salida = os.path.join(DIR_OUT_CAPTURAS, f"{nombre_base}-{disp}.png")
-        capturar_pantalla(page, ruta_relativa, ruta_salida, viewport=viewport, ajustar_body=False, full_page=True)
+        nombre_fichero = f"{nombre_base}{sufijo_salida}-{disp}.png" if sufijo_salida else f"{nombre_base}-{disp}.png"
+        ruta_salida = os.path.join(DIR_OUT_CAPTURAS, nombre_fichero)
+        capturar_pantalla(page, ruta_relativa, ruta_salida, viewport=viewport, ajustar_body=False, full_page=False)
 
 if __name__ == '__main__':
     os.makedirs(DIR_OUT_MAPAS, exist_ok=True)
-    os.makedirs(DIR_OUT_CAMBIOS, exist_ok=True)
     os.makedirs(DIR_OUT_CAPTURAS, exist_ok=True)
 
-    archivos_html = [f for f in os.listdir(DIR_P3) if f.endswith('.html')]
+    # Arranque del servidor HTTP en segundo plano
+    print(f"Iniciando servidor local en el puerto {PUERTO}...")
+    httpd = ServidorTCPReutilizable(("", PUERTO), ManejadorSilencioso)
+    hilo_servidor = threading.Thread(target=httpd.serve_forever, daemon=True)
+    hilo_servidor.start()
 
-    if not archivos_html:
-        print(f"No hay archivos HTML en {DIR_P3}.")
-    else:
-        # Arranque del servidor HTTP en segundo plano
-        print(f"Iniciando servidor local en el puerto {PUERTO}...")
-        httpd = ServidorTCPReutilizable(("", PUERTO), ManejadorSilencioso)
-        hilo_servidor = threading.Thread(target=httpd.serve_forever, daemon=True)
-        hilo_servidor.start()
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        page = browser.new_page()
 
-        with sync_playwright() as p:
-            browser = p.chromium.launch(headless=True)
-            page = browser.new_page()
+        # 1. Generación de mapas antiguos (directorio DIR_P2)
+        archivos_antiguos = [f for f in os.listdir(DIR_P2) if f.endswith('.html')]
+        for archivo in archivos_antiguos:
+            print(f"Procesando (antiguo) {archivo}...")
+            generar_mapas(archivo, page, DIR_P2, sufijo_salida='')
+            generar_capturas_reales_responsivas(archivo, page, DIR_P2, sufijo_salida='')
 
-            for archivo in archivos_html:
-                print(f"Procesando {archivo}...")
-                generar_mapas(archivo, page)
-                generar_capturas_reales_responsivas(archivo, page)
+        # 2. Generación de mapas actuales (directorio DIR_P3)
+        archivos_nuevos = [f for f in os.listdir(DIR_P3) if f.endswith('.html')]
+        for archivo in archivos_nuevos:
+            print(f"Procesando (nuevo) {archivo}...")
+            generar_mapas(archivo, page, DIR_P3, sufijo_salida='-new')
+            generar_capturas_reales_responsivas(archivo, page, DIR_P3, sufijo_salida='-new')
 
-            browser.close()
-            
-        # Apagado del servidor
-        httpd.shutdown()
-        httpd.server_close()
-        print("\n¡Proceso completado con éxito! Revisa la carpeta doc/")
+        browser.close()
+        
+    # Apagado del servidor
+    httpd.shutdown()
+    httpd.server_close()
+    print("\n¡Proceso completado con éxito! Revisa la carpeta doc/")
