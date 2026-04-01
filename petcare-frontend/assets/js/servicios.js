@@ -1,9 +1,11 @@
 let serviciosGlobal = [];
 let terminoBusquedaServicios = "";
+let estaOrdenado = false;
 
 document.addEventListener("DOMContentLoaded", () => {
     cargarServicios();
     inicializarEventosBusqueda();
+    inicializarBotordenamiento();
 });
 
 function cargarServicios() {
@@ -78,12 +80,31 @@ function inicializarEventosBusqueda() {
     }
 }
 
+function inicializarBotordenamiento() {
+    const btnOrdenar = document.getElementById("btn-ordenar");
+    if (btnOrdenar) {
+        btnOrdenar.addEventListener("click", () => {
+            estaOrdenado = !estaOrdenado;
+            btnOrdenar.textContent = estaOrdenado ? "↕ Ordenar Z-A" : "↕ Ordenar A-Z";
+            renderizarServicios();
+        });
+    }
+}
+
 function filtrarServicios() {
-    return serviciosGlobal.filter(servicio => {
+    let serviciosFiltrados = serviciosGlobal.filter(servicio => {
         return terminoBusquedaServicios === "" ||
             servicio.nombre.toLowerCase().includes(terminoBusquedaServicios) ||
             servicio.descripcion.toLowerCase().includes(terminoBusquedaServicios);
     });
+
+    if (estaOrdenado) {
+        serviciosFiltrados.sort((a, b) => {
+            return a.nombre.localeCompare(b.nombre, 'es');
+        });
+    }
+
+    return serviciosFiltrados;
 }
 
 function renderizarServicios() {

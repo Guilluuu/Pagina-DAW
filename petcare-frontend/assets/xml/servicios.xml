@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <servicios>
+    <servicio id="neurologia">
+        <nombre>Neurología</nombre>
+        <imagen>assets/imgs/servicios-neurologia.png</imagen>
+        <descripcion-corta>Evaluación y tratamiento de trastornos del sistema nervioso, incluyendo el cerebro, la médula espinal y los nervios periféricos.</descripcion-corta>
+        <subtitulo>Expertos en el cuidado del sistema nervioso central y periférico</subtitulo>
+
+        <bloque>
+            <titulo>1. Evaluación Neurológica Completa</titulo>
+            <texto>Realizamos exámenes exhaustivos de los reflejos, la marcha y la sensibilidad para localizar con exactitud dónde se encuentra la lesión nerviosa.</texto>
+            <texto>Tratamos problemas frecuentes como hernias discales, epilepsia, síndrome vestibular y alteraciones del equilibrio.</texto>
+        </bloque>
+
+        <bloque>
+            <titulo>2. Pruebas Diagnósticas Avanzadas</titulo>
+            <texto>Trabajamos en conjunto con servicios de resonancia magnética y análisis de líquido cefalorraquídeo para confirmar diagnósticos complejos y establecer el mejor plan de acción.</texto>
+        </bloque>
+    </servicio>
+
     <servicio id="cirugia-tejidos-blandos">
         <nombre>Cirugía de Tejidos Blandos</nombre>
         <imagen>assets/imgs/servicios-cirugia-tejidos-blandos.jpg</imagen>
@@ -36,25 +54,7 @@
             <texto>Diseñamos planes de control a largo plazo para enfermedades como la diabetes, la insuficiencia renal o problemas de tiroides.</texto>
             <texto>Acompañamos a las familias en el día a día, ajustando la medicación y las dietas para asegurar la mejor calidad de vida posible para el animal.</texto>
         </bloque>
-    </servicio>
-
-    <servicio id="neurologia">
-        <nombre>Neurología</nombre>
-        <imagen>assets/imgs/servicios-neurologia.png</imagen>
-        <descripcion-corta>Evaluación y tratamiento de trastornos del sistema nervioso, incluyendo el cerebro, la médula espinal y los nervios periféricos.</descripcion-corta>
-        <subtitulo>Expertos en el cuidado del sistema nervioso central y periférico</subtitulo>
-
-        <bloque>
-            <titulo>1. Evaluación Neurológica Completa</titulo>
-            <texto>Realizamos exámenes exhaustivos de los reflejos, la marcha y la sensibilidad para localizar con exactitud dónde se encuentra la lesión nerviosa.</texto>
-            <texto>Tratamos problemas frecuentes como hernias discales, epilepsia, síndrome vestibular y alteraciones del equilibrio.</texto>
-        </bloque>
-
-        <bloque>
-            <titulo>2. Pruebas Diagnósticas Avanzadas</titulo>
-            <texto>Trabajamos en conjunto con servicios de resonancia magnética y análisis de líquido cefalorraquídeo para confirmar diagnósticos complejos y establecer el mejor plan de acción.</texto>
-        </bloque>
-    </servicio>
+    </servicio>    
 
     <servicio id="urgencias-intensivos">
         <nombre>Urgencias y Cuidados Intensivos</nombre>

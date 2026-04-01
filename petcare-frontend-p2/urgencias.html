@@ -25,7 +25,7 @@
     <a class="main-logo" href="index.html"> <img src="assets/imgs/logo.svg" alt="logo PetCare"> PetCare </a>
     <a href="servicios.html"> Servicios</a>
     <a href="consejos.html"> Consejos de salud</a>
-    <a href="sobre-nosotros.html"> Sobre Nosotros</a>
+    <a href="sobre-nosotros.html"> Quiénes somos</a>
     <a class="pedir-cita-navbar borde-asimetrico" href="clinicas.html">Pedir cita</a>
     <a class="urgencias-navbar borde-asimetrico" href="urgencias.html">Urgencias</a>
     <button class="menu-hamburguesa-moviles">☰</button>
@@ -37,22 +37,21 @@
   </header>
 
   <main>
+    <p id="sin-clinicas-disponibles" class="mensaje-vacio borde-asimetrico-2" hidden>
+      No hay clínicas de urgencias disponibles en este momento.
+    </p>
     <ul class="contenedor-tarjetas"></ul>
   </main>
 
   <template id="molde-clinica">
     <li>
-      <article class="tarjeta borde-asimetrico">
-        <img class="foto-clinica foto-pequena" src="" alt="Foto clínica">
+      <article class="tarjeta borde-asimetrico-2">
+        <img class="foto-clinica foto-pequena borde-asimetrico" src="" alt="Foto clínica">
         <strong class="titulo-clinica">Nombre</strong>
         <address class="linea-flex ubicacion">
           <img class="icono-pequeno" src="assets/imgs/location-pin.svg">
           <span class="texto-ubicacion">Ubicación</span>
         </address>
-        <p class="alerta-urgencias linea-flex filtro borde-asimetrico"> 
-          <img class="icono-pequeno" src="assets/imgs/warning-icon.svg"> 
-          Atiende urgencias
-        </p>
         <hr class="separador-tarjeta">
         <p class="linea-flex horario">
           <img class="icono-pequeno" src="assets/imgs/clock-two.svg">
@@ -63,12 +62,10 @@
           <img class="icono-pequeno" src="assets/imgs/phone.svg"> 
           <span class="texto-telefono">Teléfono</span>
         </p>
-        
         <a class="llamar-ahora boton borde-asimetrico filtro" href="">Llamar</a>
       </article>
     </li>
   </template>
-
 </body>
 
 </html>
