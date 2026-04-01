@@ -109,7 +109,7 @@ input[type="radio"]:checked + label {
 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 600px) {
   .opciones-especie {
     flex-direction: column;
     margin: auto;

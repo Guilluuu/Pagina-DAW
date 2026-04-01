@@ -195,7 +195,6 @@ header a:visited {
 }
 
 .modal {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -212,17 +211,19 @@ header a:visited {
 }
 
 .modal-contenido {
+  display: flex;
+  flex-direction: column;
   background-color: var(--color-fondo-tarjetas, #fff);
   padding: 2rem;
   width: 90%;
-  max-width: 600px;
+  max-width: 800px;
   position: relative;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .modal-contenido iframe {
   width: 100%;
-  height: 550px;
+  min-height: 60vh;
   border: none;
 }
 

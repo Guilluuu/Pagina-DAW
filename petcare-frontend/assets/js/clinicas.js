@@ -27,6 +27,8 @@ function renderizarTarjetas(listaClinicas) {
 
     let btncita = copia.querySelector(".pedir-cita");
     btncita.addEventListener("click", () => {
+      console.log(clinica.nombre);
+      console.log(clinica.ubicacion);
       sessionStorage.setItem('nombreclinica', clinica.nombre);
       sessionStorage.setItem('ubicacionclinica', clinica.ubicacion);
     });
